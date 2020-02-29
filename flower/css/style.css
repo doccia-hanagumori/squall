@@ -59,6 +59,11 @@ body#text main .container {
   width: 70%;
 }
 
+@media screen and (max-width: 767px) {
+  body#text main .container {
+    padding: 0px;
+    /*font-size: 80%;*/
+  }
 }
 
 body#text p {
@@ -112,6 +117,18 @@ ol {
   margin: 20px 0;
 }
 
+
+@media screen and (max-width: 767px) {
+  dl,
+  p,
+  ul,
+  ol {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 15px 0;
+  }
+}
 
 p {
   line-height: 2.2em;
@@ -176,12 +193,29 @@ h2 {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  h2 {
+    font-size: 130%;
+  }
+}
 
 h3 {
   font-size: 130%;
   display: block;
   margin: 20px auto;
   color: #313536;
+}
+
+@media screen and (max-width: 767px) {
+  h3 {
+    font-size: 110%;
+  }
 }
 
 header {
@@ -195,6 +229,11 @@ header .container {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  header .container {
+    padding: 0;
+  }
+}
 
 header ul {
   display: -webkit-box;
@@ -216,6 +255,12 @@ header ul li a:hover {
           transform: translateY(-3px);
 }
 
+@media screen and (max-width: 767px) {
+  header ul li a {
+    padding: 20px 10px;
+  }
+}
+
 section {
   position: relative;
   overflow: hidden;
@@ -229,6 +274,11 @@ section#top {
   background: radial-gradient(ellipse at center top, #eeeeee 0%, #daf3ef 56%, #92afe4 100%);
 }
 
+@media screen and (max-width: 767px) {
+  section#top {
+    border-radius: 0;
+  }
+}
 
 section#first {
   background: #313536;
@@ -273,6 +323,14 @@ section#contact {
   background: linear-gradient(180deg, #8c9390 0%, #435c5e 53%, #285363 100%);
   border-radius: 50% 50% 0 0 / 30% 30% 0 0;
   padding: 60px 0;
+}
+
+@media screen and (max-width: 767px) {
+  section#contact {
+    height: 700px;
+    border-radius: 0;
+    padding: 0;
+  }
 }
 
 .rellax {
@@ -358,6 +416,11 @@ input[type=submit]:focus {
   letter-spacing: 0.5em;
 }
 
+@media screen and (max-width: 767px) {
+  .title h1 {
+    font-size: 130%;
+  }
+}
 
 .title p {
   color: #293b66;
@@ -511,6 +574,29 @@ ul.illust-1 li.new::after {
           transform: rotate(-39deg);
 }
 
+@media screen and (max-width: 991px) {
+  ul.illust-1 li {
+    height: 130px;
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  ul.illust-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  ul.illust-1 li {
+    height: 180px;
+    width: 180px;
+  }
+}
 
 ul.link-1 {
   display: -webkit-box;
@@ -701,6 +787,12 @@ footer .sitename {
   font-size: 180%;
   font-family: "Sawarabi Mincho", sans-serif;
   letter-spacing: 0.5em;
+}
+
+@media screen and (max-width: 767px) {
+  footer .sitename {
+    font-size: 130%;
+  }
 }
 
 footer .bottom {
@@ -942,6 +1034,28 @@ ol.li-b li {
   margin-top: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .book {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .book:nth-child(2n+1) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .book:not(:last-of-type) {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 60px;
+  }
+  .book .book__image {
+    margin: 0 auto 20px;
+    max-width: 300px;
+  }
+}
+
 dl.book-01 {
   margin: 20px 0;
 }
@@ -955,6 +1069,12 @@ dl.book-01 dt {
 dl.book-01 dd {
   width: calc(100% - 100px);
   margin: 0 0 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .only-pc {
+    display: none;
+  }
 }
 
 
@@ -978,6 +1098,28 @@ dl.book-01 dd {
   margin-top: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .chara {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .chara:nth-child(2n+1) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .chara:not(:last-of-type) {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 60px;
+  }
+  .chara .chara__image {
+    margin: 0 auto 20px;
+    max-width: 300px;
+  }
+}
+
 dl.chara-01 {
   margin: 20px 0;
 }
@@ -992,3 +1134,9 @@ dl.chara-01 dd {
   width: calc(100% - 100px);
   margin: 0 0 0px;
 }
+
+@media screen and (max-width: 767px) {
+  .only-pc {
+    display: none;
+  }
+
