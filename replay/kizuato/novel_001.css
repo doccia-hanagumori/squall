@@ -1,0 +1,142 @@
+﻿*{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  margin:0px;
+  padding:0px;
+}
+BODY{
+  text-align:center;
+  font-size:small;
+  font-family:Verdana;
+background-color:white; color:black;font-size:10.5pt; 
+ background-image : url("back.jpg") ;
+          background-repeat : no-repeat ; 
+          background-attachment : fixed ;
+          background-position : 0%   0% ; 
+}
+A{
+  color:#316745;
+}
+A:hover{
+  color:#82ae46;
+}
+
+/* トップ */
+.main{
+  margin:auto;
+  width:452px;
+  text-align:left;
+  border-right:1px solid #839b5c;
+  border-left:1px solid #839b5c;
+}
+#index #header{
+  background:url(wood.jpg) 50% 0px;
+}
+#index #header H1{
+  color:#ffffff;
+  font-size:31px;
+  font-family:"Lucida Sans Unicode";
+  letter-spacing:15px;
+  width:100%;
+  filter:Alpha(opacity=70);
+  opacity:.70;
+  text-align:right;
+  line-height:300px;
+}
+#copy{
+  color:#f7fcfe;
+  background:#839b5c;
+  text-align:right;
+}
+#update{
+  color:#595857;
+  padding:10px 0px 0px 0px;
+  text-align:right;
+  font-size:80%;
+}
+#indexmenu OL{
+  padding:19px 0px 30px 0px;
+  margin:0px;
+}
+#indexmenu LI{
+  list-style-type:none;
+  width:100%;
+  border-bottom:1px solid #839b5c;
+  margin-top:9px;
+}
+#indexmenu LI A{
+  display:block;
+  text-decoration:none;
+  padding:1px 10px 0px 10px;
+}
+#indexmenu LI A:hover{
+  color:#316745;
+  background:#f7fcfe;
+  padding:1px 10px 0px 10px;
+}
+#index #footer{
+  background:#839b5c;
+  text-align:center;
+  font-size:xx-small;
+  letter-spacing:1px;
+  line-height:1.6em;
+  color:#f7fcfe;
+}
+#index #credit:after,
+#index #credit:before{
+  content:" - ";
+}
+#index #footer A{
+  color:#f7fcfe;
+  text-decoration:none;
+}
+
+/* 各ページ */
+#page{
+  background:url(wood.jpg) -250px repeat-y;
+}
+.text{
+  margin-left:150px;
+  text-align:left;
+  padding:30px 0px 30px 0px;
+  border-right:1px solid #839b5c;
+  border-left:1px solid #839b5c;
+  line-height:30px;
+}
+#page H1{
+  color:#f7fcfe;
+  background:#839b5c;
+  text-align:right;
+  font-size:19px;
+  font-family:"Lucida Sans Unicode";
+  font-weight:bold;
+  letter-spacing:9px;
+}
+#page #note{
+  padding:30px 10px 40px 100px;
+  line-height:1.8em;
+  font-size:105%;
+}
+#page #note P{
+  margin:1em 0em 1em 0em;
+}
+#page #note OL,
+#page #note LI{
+  margin:0em 0em 0em 1em;
+}
+#page #footer,
+#page #footer A{
+  background:#839b5c;
+  text-align:center;
+  color:#f7fcfe;
+  text-decoration:none;
+}
+#page #footer A:hover{
+  text-decoration:line-through;
+}
+#page #footer LI{
+  list-style:none;
+  display:inline;
+}
