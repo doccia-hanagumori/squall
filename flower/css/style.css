@@ -62,7 +62,8 @@ body#text main .container {
 @media screen and (max-width: 767px) {
   body#text main .container {
     padding: 5px;
-    /*font-size: 70%;*/
+    /*font-size: 60%;*/
+  width: 95%;
   }
 }
 
@@ -153,8 +154,8 @@ h1 {
 }
 
 h4 {
-  padding-left: 10px;
-  margin: 20px 0 10px;
+  padding-left: 0px;
+  margin: 20px 0 20px;
   font-size: 120%;
 }
 
