@@ -905,13 +905,13 @@ blockquote {
 }
 
 h2.h2-a {
-  padding: 0px;
+  padding: 10px;
   background: rgba(0, 0, 0, 0.3);
   color: #313536;
 }
 
 h2.h2-b {
-  padding: 0px 20px;
+  padding: 10px 0px;
   background: transparent;
   text-align: center;
 }
