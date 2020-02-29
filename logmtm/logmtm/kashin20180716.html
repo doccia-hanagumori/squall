@@ -1,0 +1,6386 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>火神被殺３日目</title>
+	<style>
+		html {
+			font-size: 14px;
+		}
+		body {
+			-webkit-text-size-adjust: 100%;
+			background-color: #ef845c;
+		}
+		.tab {
+			border: 1px solid #999;
+			width: 60%;
+			margin: 2rem auto;
+			line-height: 1.5;
+			position: relative;
+			background-color: #fbdac8;
+			border-color: #999999;
+		}
+		.tabtitle {
+			color: #000;
+			border: 1px solid transparent;
+			border-color: inherit;
+			background-color: inherit;
+			position: absolute;
+			top: -.8rem;
+			left: 1rem;
+			width: 8rem;
+			text-align: center;
+			font-size: 1rem;
+			z-index: 9999;
+			line-height: 1.4rem;
+		}
+		.player {
+			margin: 0;
+			padding: 0 .5rem;
+			padding-left: 10.5rem;
+			border-bottom: 1px dotted transparent;
+			border-color: inherit;
+			position: relative;
+		}
+		.player:last-child {
+			border-bottom: 0;
+		}
+		.player b {
+			display: block;
+			height: 100%;
+			width: 9rem;
+			padding: 0 .5rem;
+			border-right: 1px solid transparent;
+			border-color: inherit;
+			position: absolute;
+			top: 0;
+			left: 0;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.tabtitle + .player {
+			padding-top: .7rem;
+		}
+		.tabtitle + .player b {
+			padding-top: .7rem;
+			height: calc(100% - .7rem);
+		}
+		.diceroll {
+			padding: 0 .5em;
+			color: #fff;
+		}
+
+		/* 発言者：GM */
+		.p0 { color: #000066; }
+		.p0 .diceroll { background-color: #000066; }
+
+		/* 発言者：伍和　旱 */
+		.p1 { color: #330033; }
+		.p1 .diceroll { background-color: #330033; }
+
+		/* 発言者：浅木　裕 */
+		.p2 { color: #006666; }
+		.p2 .diceroll { background-color: #006666; }
+
+		/* 発言者：八柱　薪 */
+		.p3 { color: #ff0033; }
+		.p3 .diceroll { background-color: #ff0033; }
+
+		/* 発言者：氷上 融 */
+		.p4 { color: #cc00ff; }
+		.p4 .diceroll { background-color: #cc00ff; }
+
+		/* 発言者：GM */
+		.p5 { color: #990000; }
+		.p5 .diceroll { background-color: #990000; }
+
+		/* 発言者：どどんとふ */
+		.p6 { color: #00aa00; }
+		.p6 .diceroll { background-color: #00aa00; }
+
+		/* 発言者：伍和　旱 */
+		.p7 { color: #ff6600; }
+		.p7 .diceroll { background-color: #ff6600; }
+
+		/* 発言者：氷上　融 */
+		.p8 { color: #cc00ff; }
+		.p8 .diceroll { background-color: #cc00ff; }
+
+		/*横幅＝携帯サイズの設定（以下の記述は、↑の記述を上書きする）*/
+		@media(max-width:767px){
+				.tab {
+					width: 100%;
+					margin: 0;
+				}
+		}
+	</style>
+</head>
+<body>
+	<div class="tab">
+		<p class="player p0">
+			<b>GM</b>
+			さてはてそれではー。<br>
+			シノビガミセッション「火神被殺」第三回になります。始めていきましょう。<br>
+			本日もよろしくお願いします！
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			よろしくお願いします！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			よろしくおねがいします！
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			よろしくおねがいします！！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			ヨロシクオネガイシマス!!
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ナンカ＝スゴイ＝コトになって衝撃的な真実が明らかになったところで前回引きでしたが、<br>
+			このままメインフェイズ最終サイクルこと第三サイクルに突入していきます。<br>
+			皆様それぞれ泣いても笑っても最後の手番。じっくりお考えくださいまし。<br>
+			と、いうことで。<br>
+			初手欲しいって方、いらっしゃいます？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			欲しいですね。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			はい！！！！！！！！<br>
+			（力強い挙手）
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			力強い。<br>
+			2d6振ってもらって数の多い方かな。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			では、ふります<br>
+			2d6<br>
+			ShinobiGami : (2D6) → 5[1,4] → 5<br>
+			あひくい
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 7[2,5] → 7
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			５なら達成値だから……（達成値の問題ではない）
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			よし
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			達成値と期待値の勝負。<br>
+			では裕さんからですね。<br>
+			　
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			クッ……今は先手を譲ろう……
+		</p>
+		<p class="player p5">
+			<b>GM</b>
+			第三サイクル第一シーン：浅木 裕
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ダイス目は無情。さて何をなさいましょう。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ドラマシーンを取り敢えずシーン表を
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。どうぞどうぞ
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ST<br>
+			ShinobiGami : シーン表(3) → これは……夢か？　もう終わったはずの過去。しかし、それを忘れることはできない。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			夢を見ている。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			昔、何があったのかを思い出します。焼かれた料理店からボロボロになって逃げている間に<br>
+			あの時、薪を自由にすると約束したのは僕ではなかった。<br>
+			本当はその約束をしたのは氷上　融だった<br>
+			何故なのか、今はもう覚えていない。しかし、薪を守るために今一度、彼のことを思い出す必要があるんだ<br>
+			一人で歩いている中、愚かにも自ら傷つけてしまった薪と出くわします。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「なんてザマだよ、アニキ」苦笑しながら、物陰から現れる
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「相変わらず、その声、元気そうだな」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			訂正　物陰から現れる　→　物陰から声をかける<br>
+			「オレはいつだって元気だぜ」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「あれだけひどいことをしたのに、そんな声で気にかけてくれる」<br>
+			「間違っていたよ、君のことを本当に信じているならあんなことをしなくてもよかった」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「おいおい、まだ自白剤が残ってるのか？　素直すぎるぞ」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「一人で二人を相手取る必要もなかったのに、結局、危険な目にあわせようとしてる」前後しますけど↑↑<br>
+			プッっと吹き出します<br>
+			「本当らしくないよな」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……アニキは、もっとずっと大人だと思ってた。私情を挟まず、忍務に忠実で。もっと、オレの預かり知らぬところの謀をしていると、ずっと思ってた」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「でもまあこれが、浅木　裕という忍びの正体なんだ」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……そうだな。誰だって、秘密はある」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「クールな仮面もこれからも使い分けるけど、薪の前ではこれからはこの自然なままで振る舞いたい」<br>
+			「改めて約束するよ」<br>
+			「君を自由にする」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			暗闇のなか、浅木に温かいものが触れる。<br>
+			抱きしめて、浅木の顔のすぐ近くで答える。<br>
+			「じゃあ、信じてあげる」<br>
+			使命を「自由になる」に変更します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。薪の使命が「自由になる」へと変更。<br>
+			続けてどうぞ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……融のことを、教えてくれ。オレたちには、それが必要だ。そうだろ」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「ありがとう。本当にありがとう」抱きしめ返します。↑↑<br>
+			「そうだな、この術式の起動を助けてくれ。」割れたメガネを投げ捨てて、過去の一部を導き出すため特殊な術式を召喚術の応用で起動し始めようとします。<br>
+			情報判定　氷上　融の秘密を召喚術で抜きます。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です。感情修正はどうしますか？
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			では感情修正しまーす！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。では＋１もらってどうぞ。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ありがとう。やったー<br>
+			2D6+1&gt;=5 （判定：召喚術）<br>
+			ShinobiGami : (2D6+1&gt;=5) → 7[2,5]+1 → 8 → 成功
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			よし！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			全力。ええと、融の秘密は公開情報ですね。<br>
+			　
+		</p>
+		<p class="player p5">
+			<b>GM</b>
+			【秘密：氷上 融】<br>
+			あなたの命を繋いでいるのは伍和 旱に与えられた『神鏡・啼沢女』の力によるものだ。<br>
+			伍和 旱に助けられるまでの記憶を失っているあなたにとって、伍和 旱は何者にも代えがたい存在だ。<br>
+			あなたの本当の使命は『伍和 旱に恩を返す』ことである。<br>
+			<br>
+			しかし、あなたの肉体は死した不知火の一族の業火によって支配されている。<br>
+			この支配を脱するまで、あなたの使命は『八柱 薪を殺す』となる。<br>
+			支配されている間、戦闘での戦果はGMが決定する。<br>
+			　
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			以上です。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「あいつ……そういうことか」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「なぜだ、氷上　融のことを知りたいのに、伍和　旱のことしか見えない！！　クソッ」<br>
+			地面に浮かび上がっていた文様に拳を叩きつける。<br>
+			旱さんにもシーン登場要請をします。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			旱さんどうですか？
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			いえっさー
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			やさしいこんこん様。どういう感じに出てもらう感じでしょうか。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			もう少し薪さんとやりとりして状況作りますね。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			人間体かキツネ体の指定もらえるとありがたいです
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			普段、人間体なら人間体かなあ。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			じゃあ着物美人姿で出ます
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「正直、オレの活路が見いだせないんだけど、どうしたもんかな」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「薪、あの狐、何を考えてるか分からない。無理矢理にでももう吐かせるしかないと思ってるんだが、どう思う？　同族の氷上　融も誑かしている可能性がある」<br>
+			「もちろん、薪が優先だが、実は出来るならあの子も救ってやりたいと思ってるんだ」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「ま、結局、オレたちは忍だ。どう足掻いても、死んでも忍さ」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「残った不知火同士、本当は殺し合う必要もなかったのかもしれない」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「ちょっ、ちょっ、待って。慣れないな！　アニキが素直すぎて、口がニヤーってして喋れなくなるんだけど！」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「ならそのまま、ニヤけたまま付いてこい」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……わかった」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			二人で旱の古物店に忍び込みます。<br>
+			天井裏から、旱がいるかを確認している。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			高そうなお皿についている埃をはたきで掃除してます。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			よし、医霊の判定をします。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はい、対象は？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			すみません、抜けてました。伍和　旱です。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。判定どうぞ。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6&gt;=6 （判定：毒術）<br>
+			ShinobiGami : (2D6&gt;=6) → 8[2,6] → 8 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			成功ですね。<br>
+			旱さんに重傷が入ります。ロールどうぞ
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			旱は着物をたすき掛けしていて、肘から下が顕になっています。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			浅木は天井から神経毒の入った煙球を投げ込む、落下した際に直ちに辺りが旱のいた部屋が毒ガスに包まれる。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			（アニキやることが毎回えげつないなあ……）
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			(毎サイクルエスカレートしてるけどもう、覚悟決まったんで)
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			獣の聴覚で自分の後ろに煙球が落とされたことには気付きましたが、毒ガスへの対処が間に合わなかった。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			自分にマスクを付けて、薪にもマスクを渡し、解毒剤を打ち込んで万全の体制で乗り込んでいく<br>
+			大勢
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			はたきを手から落とし、毒に侵された体は前に倒れ、その勢いのまま掃除していた皿を押しつぶし、辺りに破片が散らばりました。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			私からは以上です。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			薪はマスクした上に、ストールを口の処まで巻いて、忍者風になびかせながら毒ガスに飛び込む。<br>
+			私も以上。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「浅木かああああああああああ！！！」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「アニキの毒は、効くだろ？」（わかる
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			口を抑えつつ、だが口の下は獣のように牙を向けて。憎悪に溢れた瞳で顔だけで二人を見ます。
+		</p>
+		<p class="player p5">
+			<b>GM</b>
+			第三サイクル第二シーン：氷上 融<br>
+			滑らかにどうぞ。戦場表を振るならBT。振らなくても大丈夫です。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			適用するかどうかはさておき、振ってみます<br>
+			BT<br>
+			ShinobiGami : 戦場表(6) → 極地:宇宙や深海、溶岩、魔界など。ラウンドの終わりにＧＭが1D6を振り、経過ラウンド以下なら全員1点ダメージ。ここから脱落したものは変調表を適用する。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ああ、毒牙。<br>
+			毒が。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			油断すると我々も危ない。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			や、でもマスクあるしな……
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			……振ったら自動でそこになるんですけど（振り直しor平地でいいですよ）
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			あっ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			今回はアナウンス不足だったのでどっちかでいいです
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			火の海にしてもいいですか？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			いいよぉ。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			じゃあ、極地で?
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーいハート<br>
+			?<br>
+			えーと、まあ、わかりきったことではあるんですが、<br>
+			襲撃の対象はどなたに？
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			薪さんです！！！！！！！！！！！！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はい?<br>
+			では他二名、乱入しますか？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			乱入します！！！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ふたりともそれぞれに感情があるので無条件で乱入できます。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			乱入しないわけがないでしょう
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。では４名。<br>
+			合計４Rの戦いになりますね。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			んでは襲撃描写を<br>
+			二人が乗り込んだ直後────<br>
+			店の表から熱量が膨らむ<br>
+			数瞬、光が店内を照らした後に<br>
+			ガラスと、扉と、壁を吹き飛ばし、爆風と熱が店の中へとなだれ込みます。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			迎え撃ちつつ……どっちが迎え撃つかもうわかんないな……それぞれプロットをお願いします。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			爆風によって髪を留めていた簪が吹き飛び、猛火の中で長い黒髪が舞い踊ります。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「氷上 融」のダイスシンボルの値が変更されました。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			影分身は使いませんか？＞融さん
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			アッ使います使います
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			他、プロット時に使う忍法など、ありましたらばこのタイミングで。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			なやんでます
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。判定どうぞ。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			ダイスを2つに！<br>
+			2D6&gt;=5 （判定：分身の術）<br>
+			ShinobiGami : (2D6&gt;=5) → 9[3,6] → 9 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			成功。もう一個ダイスを隠して隣に置いてください<br>
+			裏でも言ったんですけど、申し訳ないんですがGMがアナウンスしたら各人自分のダイスを置いてもらう形に変更しようと思います、お願いします<br>
+			置いてもらう→全員分置かれたのをGMが確認し、開けてくださいのアナウンスをする→それぞれに自分のダイスを開けてもらう<br>
+			で。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「氷上 融」のダイスシンボルの値が変更されました。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			さて、全員ダイスOKですか？<br>
+			ダイスてか
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			OK！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			OKです！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			OKです
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			プロット。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			OK!
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。それでは第一ラウンド、プロットを開示してください！
+		</p>
+		<p class="player p6">
+			<b>どどんとふ</b>
+			「伍和　旱」がダイスをオープンしました。出目は6(6面ダイス)です。<br>
+			「氷上 融」がダイスをオープンしました。出目は1(6面ダイス)です。<br>
+			「氷上 融」がダイスをオープンしました。出目は4(6面ダイス)です。<br>
+			「浅木　裕」がダイスをオープンしました。出目は3(6面ダイス)です。<br>
+			「八柱　薪」がダイスをオープンしました。出目は1(6面ダイス)です。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			融さんはどちらへ？
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			１！！！！！！！！！！！！！！
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			だよね！！！！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい?<br>
+			６：旱さん　３：裕さん　１：融さん、薪さん<br>
+			ですね。プロット６、旱さんの手番から処理しましょう。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			はいでは。夜雀を使います。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です、何に組み合わせますか？
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			異形化で。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あ、えーと<br>
+			忍法ですね。サポート忍法と組み合わせる形になる忍法なので、これ<br>
+			どのサポート忍法に合わせて夜雀を使いますか？
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			あー間違った！獣化です！<br>
+			名前似ているのでややこしい
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ｗ了解です。では獣化が夜雀で成功。<br>
+			接近戦攻撃に＋１です。<br>
+			違う、接近戦ダメージが＋１。<br>
+			他に何かありますか？
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			ちょっとRPします
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			――毒で蹲っていたはずの旱は、まさに獣のような速度で跳躍。<br>
+			しかしその姿はキツネではなく、人とキツネの相俟ったような、中途半端な姿でした。<br>
+			人の形を保ったまま、全身が黒い毛皮に覆われています。長髪が風になびき、炎が弾けるたびにその髪が紫色にきらめきました。<br>
+			それでは攻撃に移ります。浅木さんに血旋渦で攻撃します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			重傷ダメージ入りますけどそのまま使います？　入る直前のタイミングで兵糧丸使って回復してもいいですが。<br>
+			＞ShinobiGami : 戦場表(6) → 極地:宇宙や深海、溶岩、魔界など。ラウンドの終わりにＧＭが1D6を振り、経過ラウンド以下なら全員1点ダメージ。ここから脱落したものは変調表を適用する。<br>
+			＞ここから脱落したものは変調表を適用する。<br>
+			今気づいたぞ。すごいな。がんばってください。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			うーーーーーーーん、入る直前で兵糧丸使います
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です。兵糧丸を一個消費して重傷を回復。<br>
+			そのまま判定をどうぞ。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			2D6&gt;=5 （判定：異形化）<br>
+			ShinobiGami : (2D6&gt;=5) → 8[3,5] → 8 → 成功
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			回避判定します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			余裕ですね。裕さんは回避判定を、異形化から。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			兵糧丸を獣のように貪り、包んでいた紙を吐き捨てます。しかし瞳は裕を見つめたまま。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			感情修正、お願いします。回避か攻撃か考えてましたが<br>
+			脱落しないことやダメージもらわないことのほうが大事なので。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			おーけい！<br>
+			では感情修正を回避判定に。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6+1&gt;=6 （判定：召喚術）<br>
+			ShinobiGami : (2D6+1&gt;=6) → 7[1,6]+1 → 8 → 成功
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			薪は手裏剣を投じて旱の行動を牽制します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			回避ですね。そのままプロット３、裕さんの手番に移りましょう。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			低く唸り、薪の方を睨みつけます。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			なんか薪さんがやったみたいに適当にいい具合に隙間にRPガンガンねじ込んじゃっていいですよ。<br>
+			GMは淡々と進めていきます。待ってって言われたら待ちますが。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			医霊を旱に対して使用。<br>
+			2D6&gt;=6 （判定：毒術）<br>
+			ShinobiGami : (2D6&gt;=6) → 7[2,5] → 7 → 成功
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「浅木ィ　やはりお主はいけ好かない忍者だなァ――！」
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ひどい。重傷が入ります。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			間合足りなくないです？＞医霊
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			３なので<br>
+			あれ<br>
+			違う、コストが３か。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			すみません、読み違えた
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あぶね。駄目ですね。<br>
+			なかったことで。<br>
+			指摘ありがとうございます、ガンガン突っ込んでください、GMも気をつけます。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			医霊は間合1なので、隣接してれば食らったかな？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ですね。２～４なら届く。今は誰にも届かないですね。<br>
+			さて気を取り直して裕さんはいかがいたしましょう。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			色々間合いが別の忍法持ってるので気をつけます。<br>
+			必中を旱に使用します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です、判定を。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			すみません、やっぱり取り消して禁術を4ラウンド会った
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ｗ
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			メインフェイズだと焦ってしまって
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			よしよし。くーるだうん。初戦闘ですからねこの火神被殺では。<br>
+			何を指定します？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			分身の術を指定します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あいや<br>
+			忍法ですね。特技ではない。<br>
+			影分身？
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			こいつ……！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ダメだなんかｗ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ｗｗ大丈夫ですよｗｗｗ
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			禁術で指定、影分身にします。接近戦は自分も攻撃手段減るのが辛いや
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			確かに。では判定をどうぞ。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6&gt;=6 （判定：毒術）<br>
+			ShinobiGami : (2D6&gt;=6) → 10[4,6] → 10 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			通りましたね。では影分身に禁術が入りました。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			ぐええ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			（いいぞアニキ！　アニキ陰険！）
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			禁術も他者ダメージだから落ちるかな。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「あの時、毒を入れ替えたのがこの術の応用だったよな確か、もう使えまい。」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			影分身の使えないハグレモノ、季節限定フラペが売り切れたスタバみたいなものでは？？？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あ、流石に台無しなので極地ダメージでは落ちません。<br>
+			読めばいいんですよ。プロットを。<br>
+			裕さんは他にもう何もしませんか？
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			吹きすさぶ炎の中から現れていた影は２つ……<br>
+			その内の一つが、かき消された。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			季節限定じゃないフラペもおいしいよ！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			なしかな。ではプロット１に移動。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「……姑息な手を。だが関係ない」<br>
+			「一手で殺す」
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			それぞれ2d6を振ってください、同時行動ですが出目の上の方から処理します。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			これは感情修正のります？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			乗らないです。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			OK
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			はい！（がんばりどころだ）<br>
+			さっき低かった分揺り返しが着てくれますように
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 12[6,6] → 12
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 9[3,6] → 9
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ていうか実は出目が低い方が相手の動向見て動けるから有利なんですけどまあふ振ってくださ……
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			うっっっそ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			わあ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			っしゃ！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			でしょ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			薪さんどうぞ。<br>
+			同時処理なので、ここで当たって落とされても融さんの行動は無傷で回ってきます、大丈夫。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ってあれか、先宛ててもおちないんだよね。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			うん。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			運無駄にしたな！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			あぁ～～そうかよかった。同時攻撃なのか
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			同時行動についてはp67。<br>
+			同時攻撃か。まあ、先に薪さんからです。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			うーん、どうしよっかな。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			後の先は入らないですね
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			残像は消えたが、残った方の影は薪に近い方だ。<br>
+			ぴったりと側に張り付き……飛び道具を使わせない。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			いいか、やっちゃお。<br>
+			奥義使います。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			刺突ももとより！<br>
+			あっやっぱり！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			おお。どうぞ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「オレの神槍を警戒したな？　こっちが本命だ」<br>
+			薪は身体を深く落とし、<br>
+			純粋な抜き手で融の正中線を狙います。<br>
+			■奥義<br>
+			《逆気瞬燃/バックドラフト》<br>
+			指定特技　：身体操術<br>
+			エフェクト：クリティカルヒット<br>
+			効果・演出：全身の酸素消費を一時的に遮断してから解放することで、驚異的な瞬発力を発揮する。これによって放たれる神速の攻撃は決して避けることのできない間合い１、ダメージ４点の攻撃として作用する。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			クリティカルヒット、融に４点ですね。薪さんはRTTを４回。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			rtt<br>
+			ShinobiGami : ランダム指定特技表(6,5) → 『妖術』結界術<br>
+			rtt<br>
+			ShinobiGami : ランダム指定特技表(4,6) → 『謀術』詐術<br>
+			rtt<br>
+			ShinobiGami : ランダム指定特技表(2,9) → 『体術』飛術<br>
+			rtt<br>
+			ShinobiGami : ランダム指定特技表(6,5) → 『妖術』結界術
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			あ、頑健の追加HPで２点受けます
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あ、そっか。<br>
+			じゃあ上２つを適用します。頑健２つと妖術と謀術。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「これが八年間、燃えることなく溜まり続けた、オレの熱だ！」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			グエーッ接近戦攻撃できなくなった
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			融はこのまま脱落で、変調はー<br>
+			KWT<br>
+			ShinobiGami : 怪変調表(2) → マヒ:修得している特技の中からランダムに一つを選び、その特技が使用不能になる。この効果は、修得している特技の数だけ累積する。各サイクルの終了時に、《身体操術l》で行為判定を行い、成功するとこの変調はすべて無効化される。<br>
+			うわあ。<br>
+			1d6 上からダイス番目の特技に麻痺が入ります。<br>
+			ShinobiGami : (1D6) → 5<br>
+			キャラシで見ますね。潜伏術。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			５番目、死霊術では？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			薪の手番の処理が終了。融は脱落しますが、同時行動なので手番は残ります。<br>
+			ダメージが何も入ってない状況で動けますよ。さて手番の行動をどうぞ。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			どういう数え方なんですか？<br>
+			＜マヒ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			えーと、
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			キャラシの判定特技の欄ですよね。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			キャラシを開いて頂いて、右側に一覧並んでるじゃないですか<br>
+			その上から５番目で見てますね。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			習得特技か。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			なるほど。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			<u><a href="https://www.dropbox.com/s/44ski85qk100dnw/kokodayo.png?dl=0" target="_blank">https://www.dropbox.com/s/44ski85qk100dnw/kokodayo.png?dl=0</a></u><br>
+			<u><a href="http://character-sheets.appspot.com/shinobigami/edit.html?key=ahVzfmNoYXJhY3Rlci1zaGVldHMtbXByFwsSDUNoYXJhY3RlckRhdGEY79mIoQEM" target="_blank">http://character-sheets.appspot.com/shinobigami/edit.html?key=ahVzfmNoYXJhY3Rlci1zaGVldHMtbXByFwsSDUNoYXJhY3RlckRhdGEY79mIoQEM</a></u><br>
+			ご確認頂けたら。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			あ、潜伏術になってる！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			判定にするつもりで設定にチェックが入ってた場合、一回何かうっかり消しちゃってやり直したかもですね
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			私の方だと……あっそうか。これ判定値見るときに間違えて特技消しちゃってとりなおしたから……順番が……
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			そうそう。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			潜伏術了解しました！
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「ずっと待っていたんだ。アンタのことを。ずっと待っていた。この八年、この瞬間のために、己を磨きあげてきた」
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。でも現時点では潰れてないので全部自由に使えます！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			じゃあ、抜き手を<br>
+			腹部で受けます。<br>
+			熱い、熱を感じる……貫かれている。<br>
+			「そうか……そうか。だが僕の八年は違う。そして」<br>
+			「”我ら”の八年は、もっと違う」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			全身の血と細胞は活性化し、それによる発熱によって起きる対流が、身に纏うストールをなびかせる。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			血液が沸騰していく──<br>
+			奥義を使います。対象は八柱薪
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です。どうぞ。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			血液は温度を上げる。上げる。上げる。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……来いよ、受け止めてやる」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			己を貫く腕を包んだまま……”発火”に至るまで<br>
+			奥義　魔刃・殺火融解<br>
+			効果：クリティカル+くらまし+威力低下<br>
+			<br>
+			不知火の秘技である業の炎を、己自身の心を燃料として刀に纏わせた斬撃。<br>
+			<br>
+			こちらの殺意が折れぬ限りは燃え続けるが、相手の業を直接燃やす場合と比べ火力がやや下がる。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			威力低下が入ってるから３点ですね。RTTを３つどうぞ。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(1,10) → 『器術』拷問術<br>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(6,9) → 『妖術』瞳術<br>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(4,6) → 『謀術』詐術
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			薪の器術、妖術、謀術が潰れます。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			待った
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			あと揺音の効果で見切り判定入ります！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ですね、見敵術が、おっと。<br>
+			ひとまず浅木さんを待ちましょうか。それ終わってから揺音の判定入れます。<br>
+			あ、融さんは奥義の指定特技も宣言お願いします。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			あーでも見切り判定が先でした。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			おっと……殺火融解は不知火の火を「自分の心」を燃やして発生させるものなのでー
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			まあとりあえずアツいからいいですよ、最終的にやること変わらないんで多少前後しても（……）
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			指定特技は意気です。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。クリティカルヒットくらまし威力低下で指定特技は意気。くらましは奥義破り判定に-2が入り、代償に威力低下で攻撃力が１点下がって３点になってます。<br>
+			とりあえず浅木さんの宣言待って全部終わってから揺音周りの処理やります！　特に特技が潰れてどうとかもないので最終的な結末は変わらないはず。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			奥義　蝕呪<br>
+			効果：絶対防御+くらまし+防御低下　対象　八柱　薪<br>
+			指定特技　呪術<br>
+			呪いで相手を衰えさせ、攻撃の勢いを落とし防御となす
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			呪いと呪いが。<br>
+			威力低下と防御低下が入ってるので３点・３点で完全相殺ですね。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「そうはさせない」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			発火に至った融の血は、そのまま薪を燃やし尽くそうとする……が
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			その血が浅木の呪いにより、急激に冷却され、静められていく<br>
+			「8年前か、薪の血を冷やした時のことを思い出すな」とふと漏れる
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			では、改めて融さんの奥義に対する見切り判定の処理に入りましょう。<br>
+			それぞれ【見敵術】で判定どうぞ。この情報は感情による情報共有が起こります。<br>
+			判定に成功したら奥義情報が入ります。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			2D6&gt;=8 （判定：遊芸）<br>
+			ShinobiGami : (2D6&gt;=8) → 5[1,4] → 5 → 失敗
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			2D6&gt;=7 （判定：幻術）<br>
+			ShinobiGami : (2D6&gt;=7) → 6[1,5] → 6 → 失敗
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			（そっとまぶたをおさえる）
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6&gt;=6 （判定：九ノ一の術）<br>
+			ShinobiGami : (2D6&gt;=6) → 9[4,5] → 9 → 成功
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			感情修正……は合っても足りなかったから使わなくてもよかった（よくない！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			裕さんが成功したので、薪さんに情報共有が入ります。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			アニキ！！！！　ナイス！！！！！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			遁甲符。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			旱さんには入りませんね。<br>
+			お。どうぞ振り直しを。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6&gt;=6 （判定：九ノ一の術）<br>
+			ShinobiGami : (2D6&gt;=6) → 9[3,6] → 9 → 成功
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ナイスメガネ！！！！！！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			グエーッ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			堂々たる。<br>
+			ではやはり裕さんと、裕さんから薪さんに奥義情報。<br>
+			融さんは脱落ですね。何か、こう、RPを。こう。どうぞ。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			血が<br>
+			冷やされていく。熱が。燃え盛る炎が。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「不知火のことはよく分かってるんだ」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			不知火の一族の業火が！
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「融ッ」しかしその腕は愛弟子には届かない。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「馬鹿な、そう簡単に鎮まる筈が……いや、神鏡の効果が……！」<br>
+			血の塊が口から溢れる。傷ごと焼き切る炎が熱が熱を失えば、貫かれた傷跡があるだけだ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			腕を抜き去り、後ろへ下がる。まとわりついた炎を振り払う。<br>
+			「……似たもの同士だと思っていた。オレだって、悲劇的なケがあるのは認めるさ。だが、こんな苦しい炎は、初めてだ」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			そう、神鏡の効果……それは熱を失わせる力。正確には<br>
+			”情念を喰らい、熱を失わせる”力
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「これが……お前の炎なのか？　本当に？　お前の純粋な炎は、こんな……」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「……実態はこんなものです、所詮、呪いですよ」<br>
+			「貴方も似たような物でしょう？もっとも、僕の方が」<br>
+			「呪いは一つ多いようですが」<br>
+			不知火の業火と神鏡の呪いは、お互いにせめぎ合う事で均衡を保っていた。<br>
+			その業火が、今裕の力で抑えられて。<br>
+			ならば、余力を得てしまった神鏡の、その呪いが今──<br>
+			プライズの効果を発動します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。<br>
+			失わせる感情の指定を。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			一つは、浅葱裕から八柱薪への忠誠。<br>
+			もう一つは、氷上融から伍和　旱への共感で。<br>
+			浅木浅木。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ほう。了解しました。<br>
+			裕さん→薪さんの忠誠、融さん→旱さんの共感が消えます。<br>
+			代わりに、融を取り巻く不知火の業火による呪いが抑えられます。<br>
+			融の使命は『伍和 旱に恩を返す』へと変更されました。<br>
+			まま、脱落。ですかね。何かRPありましたら。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			表情が消える。<br>
+			熱が消えて<br>
+			何かが融けて<br>
+			心が凍りついた。<br>
+			「神鏡、を……」<br>
+			「遠ざけなければ。あの人から」<br>
+			とこぼして、這々の体で逃げ出そうと～します！<br>
+			脱落！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。では融が脱落して、ラウンド終末。<br>
+			このタイミングで何か判定する方いらっしゃいましたらねじ込むように打つべししてくださいね。<br>
+			1d6 １で全員に接近戦ダメージ１点です。<br>
+			ShinobiGami : (1D6) → 4<br>
+			まだセーフ。<br>
+			それでは第二ラウンドに移りましょう。<br>
+			あ、ラウンド終末なので<br>
+			このタイミングで脱落を選択することもできますが、いませんね？<br>
+			自主脱落する人は宣言を。しない人は次のプロットを。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			脱落しません（状況が状況なので）
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ラウンド終末ってのは？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			えーと、戦闘のラウンドの最後ですね。<br>
+			このタイミングで自主脱落の処理を受け付けたり、
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ああなるほど、ラウンド終わりってだけですね。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			使いたい忍法がある人は使ったり、ってタイミングってことですね。<br>
+			全員OKですか？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			OKです。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			OKです
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			OK!
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			伍和さんも大丈夫かな<br>
+			おし<br>
+			ではLet's Open Plot!<br>
+			開けてくださーい。
+		</p>
+		<p class="player p6">
+			<b>どどんとふ</b>
+			「伍和　旱」がダイスをオープンしました。出目は2(6面ダイス)です。<br>
+			「八柱　薪」がダイスをオープンしました。出目は5(6面ダイス)です。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			よし読み切った！！
+		</p>
+		<p class="player p6">
+			<b>どどんとふ</b>
+			「浅木　裕」がダイスをオープンしました。出目は4(6面ダイス)です。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			５：薪　４：裕　２：旱<br>
+			ではプロット５，薪の行動からどうぞ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			神槍を旱様に。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はい。判定を。<br>
+			場所が場所なので６以上ですね。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			場所って？
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			プロット？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			YES。薪のプロット５なので、５でファンブルです。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ああ、そうでした。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			あ、じゃあ感情修正意味ない？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			これは感情修正とかあっても素の出目です。<br>
+			イエス
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			おっけー。では素で。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			素の出目が６越えないとファンブル
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			2D6&gt;=5 （判定：手裏剣術）<br>
+			ShinobiGami : (2D6&gt;=5) → 3[1,2] → 3 → 失敗
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あっ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ちょいちょーい！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			見事に。<br>
+			では薪は逆凪。で。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			修正とか関係ないね！！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			これはもう流石になんとも。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			遁甲符ない？？？？？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			プロット４，裕さんの行動に移ります。<br>
+			ｗな<br>
+			なかったらそのまま裕さんこうどうどうぞ
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「ハッ　牽制でお主の投げの癖は見抜いたわいッ」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			残念ながら行動します。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「くっ！　速い！」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			旱さんの私への奥義破りって6で成功しますよね？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			くらましあるんで8ですね
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			木蓮の数え方の自信がなくて
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			くらまし抜きの６、くらましあって８です。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ありがとうございます。了解です。経済力からのカウントであってた<br>
+			必中を旱に使用します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			いや異形化から判定しての６にくらましの-2が入って８ですね<br>
+			はーい、必中の判定をどうぞ。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			感情修正お願いします。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			はいよ！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6+1&gt;=5 （判定：砲術）<br>
+			ShinobiGami : (2D6+1&gt;=5) → 8[2,6]+1 → 9 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			わ。９以上で回避ですね。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			プラス修正あると、回避しづらくもなるのが助かりますね。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			では先ほどの攻撃は実は囮で、それにより、焼けた梁が落ちてきます。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			では素で回避判定を。ダイスの達成値9に変更してふったほうがわかりやすいです？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			それと同時に浅木は投げメスを旱へ目掛けて投擲します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ですね、それでお願いします、何で特技で判定するかは一応入れてください
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			では火術で……弾きたい！<br>
+			2D6&gt;=9 （判定：火術）<br>
+			ShinobiGami : (2D6&gt;=9) → 9[3,6] → 9 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			弾いた！！
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「ッハ！」あざ笑います。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			獣の哄笑。<br>
+			ではプロット２、旱さんの手番へ。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			夜雀使えますっけ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			使えますよ。１ラウンド１回までなので。<br>
+			同名忍法は、ですね。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			では夜雀を痛打に適用して、血旋渦を薪さんへ。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です、判定を<br>
+			通ったら接近戦３点。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			2D6&gt;=5 （判定：異形化）<br>
+			ShinobiGami : (2D6&gt;=5) → 7[1,6] → 7 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			RTTを3つどうぞ
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(4,9) → 『謀術』九ノ一の術<br>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(6,11) → 『妖術』憑依術<br>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(6,4) → 『妖術』死霊術<br>
+			妖術かぶった。もう一回ですかね？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			右行くなあ。このままだと謀術、妖術、あと一つ自由な分野が潰れます<br>
+			いえ、かぶったら本人が選択します。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			奥義：蝕呪　絶対防御/くらまし/防御低下　を使用。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			では薪さん待ちで……ってまた奥義ｷﾀﾀｰ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ですよね。奥義破りは呪術から-2です。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			アニキかっこいい！！！！！！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			絶対防御は撃ち得だからなー<br>
+			破りますか？
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			破りたい！！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			がんばれ！！
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			2D6-2&gt;=6 （判定：異形化）<br>
+			ShinobiGami : (2D6-2&gt;=6) → 6[1,5]-2 → 4 → 失敗
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			さすがに。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			アーーーーーーーーーーーッ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			8はなー。<br>
+			ではラウンド終末です。自主脱落する人は宣言してください、で、<br>
+			1d6 ２以上で接近戦１点。<br>
+			ShinobiGami : (1D6) → 6<br>
+			間違った。２以下です。<br>
+			入りません。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……アニキに助けられてばっかりだな、オレ」
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			第３ラウンドに入りましょう。脱落しない方はプロットを。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「そんなこと、気にするなよ。薪はいつもの堂々とした戦い方をしていたらいい」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「浅木がいなければッ　いなければ――」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			OK
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			皆様OK？
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			OKでーす
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「浅木　裕」のダイスシンボルの値が変更されました。<br>
+			OK
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。それではプロットの開示をお願いします！
+		</p>
+		<p class="player p6">
+			<b>どどんとふ</b>
+			「八柱　薪」がダイスをオープンしました。出目は5(6面ダイス)です。<br>
+			「伍和　旱」がダイスをオープンしました。出目は3(6面ダイス)です。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			裕さんはいくつかな。
+		</p>
+		<p class="player p6">
+			<b>どどんとふ</b>
+			「浅木　裕」がダイスをオープンしました。出目は4(6面ダイス)です。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			わお。まるきり。<br>
+			５：薪　４：裕　３：旱
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			さて今度こそぶち込むぞ。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			旱さんが１コ上がったかな。どちらにせよプロット５、薪さんから。<br>
+			どうぞ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			神槍！<br>
+			2D6&gt;=5 （判定：手裏剣術）<br>
+			ShinobiGami : (2D6&gt;=5) → 4[1,3] → 4 → 失敗<br>
+			はい。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はい……。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ああ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			逆凪です。次は裕さん。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			きつ……
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			裕さんが吸ってない？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			んー　必中<br>
+			感情修正お願いします。<br>
+			医霊じゃ間に合わないよー
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			はい！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			間に合わないねー。判定どうぞ。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6+1&gt;=5 （判定：砲術）<br>
+			ShinobiGami : (2D6+1&gt;=5) → 6[1,5]+1 → 7 → 成功
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「あのキツネ……動きが読めない！」
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			７だから同じだな。旱さん回避判定を。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			火術は砲術のお隣だ！<br>
+			2D6&gt;=7 （判定：火術）<br>
+			ShinobiGami : (2D6&gt;=7) → 6[2,4] → 6 → 失敗
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「しぶといな。」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			グエーーーーーーーーーーッ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			まさかの。<br>
+			えーと、秘密が通ってないから１点ですね。射撃戦<br>
+			好きなところを潰して脱落になります。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			戦術潰します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です。では変調表のお時間です。<br>
+			KWT<br>
+			ShinobiGami : 怪変調表(1) → 故障:すべての忍具が使用不能になる。この効果は累積しない。各サイクルの終了時に、《絡繰術》で行為判定を行い、成功するとこの変調は無効化される。<br>
+			うわっ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			うわ
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			うわー。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			故障が入りました。<br>
+			旱が脱落したので、以降プロットの処理はなし。ラウンド終末の処理に入ります。<br>
+			1d6 3で１点。<br>
+			ShinobiGami : (1D6) → 4
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			脱落します
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			綺麗にまあ。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			おっとぉ？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。では裕さんにも変調表をくれてやるー。<br>
+			KWT<br>
+			ShinobiGami : 怪変調表(4) → 行方不明:メインフェイズ中、自分以外がシーンプレイヤーのシーンに登場することができなくなる。この効果は累積しない。各サイクルの終了時に、《経済力》で行為判定を行い、成功するとこの変調は無効化される。<br>
+			うそやん。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			いなくなった。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			うっふふｗｗｗｗｗｗ
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			アニキ行方不明
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			でもこれ、神鏡の効果鑑みると
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あれか。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			だいぶ、だいぶですよ
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			これはこれで辛いなー
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			かっこいい感じに
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			力を使い果たしたやつだ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			旱さんを打倒してそのまま行方不明RPでどうですか？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			そうします。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			素直に倒れよう
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。そんな感じでRPをどうぞ。終わったタイミングで薪さんに戦果の宣言をしてもらいますので戦果考えておいてください。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			はい。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			浅木は再度、暗器を投げ放つと、旱が体勢を崩したところを見て、追うように炎へ飛び込んでいく
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「アニキ！　無茶するな！」<br>
+			「アニキ！！」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			しかし、彼の声が返ってくることはなかった……・
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			薪の投擲は見切ったものの、浅木のそれにはまだ隠された技量が残っていた。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			追おうとしますが……。その足を止めて、振り返る。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			己が煙球の対処に間に合わなかったように、彼の暗器は黒い毛皮に突き刺さる。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			追うのは、融。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			傷口から呼応するように毛が紫色に煌めき、目を見開く。憎悪の目で。浅木を。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「オレは死ぬ。この戦いに勝っても負けても、今のオレは死ぬ。この日を待ち望んでいたオレは死んで、新たな私として生きていく」傷ついた融に向かって。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「やはりィ　お主とはァ　馬が合わないようだなァ??」<br>
+			長髪をしゅるしゅると動かして、腕のように傷口を抑えて。<br>
+			四つん這いで融へ近づく。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「アンタに恨みはない。覚えちゃいないだろうし、オレだって知らなかった。アンタが本当に王子様だったなんてね」<br>
+			「でもそれはもう、昔の話だ」<br>
+			神鏡・啼沢女を奪います。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。『神鏡・啼沢女』が、融から薪へと移ります。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			浅木も旱の目を見つめ返していた。「最初は気が合うと思ってたんですがね、どうやらそのようです。」吐き捨てるように言う＜旱に対して
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「八柱ァッ」息も絶え絶えに、呼びかける。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			多分、あるのは心臓のあたりですね。一体化してそう
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			奇しくも同じく。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			今ちょうど、取り出し口が付いてるので…<br>
+			そこからかな……
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			取り出し口。<br>
+			さっき開けたやつだ。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			なるほど。場所が割れた。<br>
+			こう、ぞぐりと奪い取られて。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「ぐ、あ」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			神鏡を奪う薪の手も、深手を追わせられた裕の手も、そして今一番助けなくてはならぬ愛弟子も。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「アァっ！ガ、グ……………」当然、痛みを伴う。身を捩る。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			全て追いかけ、対処するには力が足りなかった。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ぶちぶちと血管や筋繊維が切れる手触り。血のぬめり気。体温。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「融??」力を振りしぼる。融に振れる。獣化した影響で爪が獣のそれになっている。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			痛い……痛い……痛い！　<br>
+			けれど。<br>
+			取り出そうとするその手を掴んで。<br>
+			”引き抜く方向へと”押し出した。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			旱に邪魔はさせないとしがみつく
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「？」<br>
+			「くれてやるってことかよ」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			息も絶え絶えながら、答える<br>
+			「……その通りです」<br>
+			「別に、貴方に対してどうこうって訳じゃあありませんけどね。今更……おっしゃる通り、覚えてませんし」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			生暖かい血の香りが鼻をくすぐり本能に訴えかけるが、裕の腕を振りほどく力もなく、ただ組み伏せられる。神鏡を渡す融と薪のやり取りを見ている。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「なら、ありがたく頂戴するよ」<br>
+			最後に残った一際硬い筋を、手裏剣で断ち切り、懐へとしまう。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「……どうぞ。火は、当分は消えていそうですしね」<br>
+			「──おそらく一つだけ、貴女と僕とは同じで」<br>
+			「縛られたくないんでしょうね。昔の話に」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……8年間は、長いからな」<br>
+			消えていた浅木の方を追う。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			八柱薪に向ける視線には、もう以前ほどの苛烈な殺気は含まれていない。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			言葉に出さずとも、弟子が神鏡を差し出した真意は理解できている。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			ただ、どこか遠くの誰かを案じるような空虚な色が宿されていた。<br>
+			八柱薪が持ち去っていったのなら、それを確認してから──
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			いつの間にか組み解かれているのに気付くと、そのまま何も言わず瞼を閉じた。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「師匠、僕は……やっぱり、あの人を殺したい訳じゃなかったみたいです」<br>
+			「僕は今、自分の足で立てているんでしょうか」<br>
+			「これで、やっと──」<br>
+			そう呟いて、意識を手放しまし、た！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			　<br>
+			はい、ありがとうございました。どんどん伸びて14:45まで休憩にしましょう。１時間はほしい。<br>
+			残るは薪さんと旱さんの手番ですので、何をするか考えておいてくださいな。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			はーい！　ありがとうございました！！
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			ありがとうございました。ご飯タイムだ。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			はい！！！！<br>
+			何が起こるかな。ここから……楽しみですね
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			了解です。しっかり食べてきます。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			まだまだ続きますよ。見えていないこともある。最後までよろしくお願いします。<br>
+			ふしゃー。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			不死ヤー
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			ハンバーガーおいしかった
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			から……あげ！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			塩バターパンに卵とハムとレタスを詰め込んだものを食べました
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			この気温で油と向かい合うの、戦場表極地って感じでした
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			そして変調を……
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ハンバーガーでした
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			全体的に西洋めいている。<br>
+			えーと。次が薪さんか旱さんで、好きな方からどうぞなんですが、かぶったら2d6で高い方の希望が通ります。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			薪さんの動向を見たい（また後手もらってもいいですか）
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			薪さん次第で。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			もどりました！<br>
+			おまたせしましたすみません！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			おかえりなさーい<br>
+			ごぶじでよかった。暑いので水分摂取欠かさずに行きましょう。<br>
+			では再開しましょう、よろしくおねがいします！
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			よろしくおねがいします！
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			よろしくお願いしまーす！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			よろしくお願いします！
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			では先やらせてもらいましょうかね。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			はーい
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			おっ了解です。戦闘かな、ドラマかな。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ドラマシーンで、秘密を抜こうかな、旱さんの
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			そうくるよねー
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ひゅー。了解です、では
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			そりゃあねー
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			　
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			出ますでまーす
+		</p>
+		<p class="player p5">
+			<b>GM</b>
+			第三サイクル第三シーン：八柱 薪
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			会いに行って抜く感じですか？
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			そうします。出ていただけます？　旱様。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			もちろんです
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ではシーン表をころんとしてからそんな感じで。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			st<br>
+			ShinobiGami : シーン表(6) → 優しい時間が過ぎていく。影の世界のことを忘れてしまいそうだ。<br>
+			優しい時間。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ここに来て。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			融くんは、うーん、出たかったら出ても。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			……とりあえずは出ないでおきます。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			炎の中、浅木さんを追っていったけど、見つからなかった。探してもいなくて、行方をくらませてしまった。<br>
+			そしたら、浅木さんじゃなくて、先に旱様を見つけてしまう感じかな。<br>
+			優しい時間って、旱様、どこでどうしてたらそうなるんだろう。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			森の中で傷を癒そうとしていたとか。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			融くんを病院に運んでそこでお見舞いしてるとか……
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			意外と医療機関にも頼る。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			じゃあ、病院にしましょうか。多分比良坂の息がかかってないやつ。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			病院には意識失ったまま運ばれます。スロット開けちゃったから血が足りない……
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			スロット。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			それでは病院にこれまた妙に似つかわしくない和服美人がおりますね。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			じゃあ待合室みたいなところで待ってるのかな。そこに現れよう。<br>
+			「……容態はどうですか？」<br>
+			とはいえ、あれくらいで（胴体貫通してるけど）死ぬわけではないはずだとも確信している。<br>
+			病院の床を素足で歩くと、ひたひたと冷たい音がする。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「傷の有り様はお主が一番解っておろう」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「まあ、そうですね。あれくらいじゃ死なない。特に彼は、驚くくらい頑丈に鍛えられてた」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			八柱　薪。迦具土を宿し、啼沢女を受け取った女。<br>
+			しかし彼女は融と同じく、不知火の生き残りでもあった。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「ほんとは、もっと半殺しにするつもりだったのに」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「傷が癒えるのを待っているのによくそんなことが言えるな」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「オレは彼の力量を素直に認めてるだけですよ。……あなたが彼を育てたんですね」<br>
+			相手のギリギリの好意とかで場にいさせてもらっていると思っているので、大人しい態度。敬語。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「ああ。虚ろな瞳でわしを見ておった。今まで決して揺さぶられることのなかった、心の奥底が動き出した」<br>
+			「だからわしは息も絶え絶えな彼を匿い、育て上げた……」<br>
+			「戦い方にわしの影響が見え隠れしておるのは、はじめにに刃を交えたときにわかっておろう」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「そうですね。ただの不知火じゃない、もっと野性的な何かが、彼の戦い方の魅力だ」<br>
+			「今となってはわかる。殺意ばかりの炎よりずっと、それが彼らしさを作ってると……感じました」<br>
+			「……きっと、もうすこし回復したら、また取り返しにくるんですよね？」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「……さあ、どうだろうな。それは融にしかわからぬ」<br>
+			「わしはあいつの母代わりになってしまったが、その真意までは掴み取れぬ」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「オレも、アニキのこと、わかってるようでわかってないからな……」<br>
+			「まだ、オレとあなたたちは、敵同士だ。何もまだ終わっちゃいないって、わかっています」<br>
+			「それでも、すべてが終わる前に、オレは知りたい。この争いにある真実を……」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「融は融で、わしはわしだ。いつか離れたとても、それが融の選択であるならば尊重する」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「あなたの知っていることを、教えていただけませんか？」<br>
+			というかんじで、情報判定で秘密を抜きたいです。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ほうほう。指定特技は。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			結界術で。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			いつの間にかそういう結界を張り巡らしていたという感じかな。判定を
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			二人だけのおしゃべりなので。<br>
+			2D6&gt;=5 （判定：結界術）<br>
+			ShinobiGami : (2D6&gt;=5) → 3[1,2] → 3 → 失敗
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ガールズ結界。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			おい！！！！！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			わあ。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			うっっっ
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			心の壁を突破できなかった。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			本当に殴り合いで吐かせるしかなくなっていっていますね。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「結界術は得意でな」と、何事もなく口にすると指を鳴らし、薪の忍術を解きます。<br>
+			「だがこれだけは伝えておこう……わしから融に託したものが、今はお主に託されておる」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			胸に手を当てる。神鏡・啼沢女は心臓に重ねるように所持している。いつになく血は冷めて、むしろこの格好では寒いくらいだ。<br>
+			「……もしそんな道があるとするならば、オレは誰にも死んで欲しくはない。オレたちの知らないところで生まれた禍根に囚われて、呪われて、飲み込まれたくなどない」<br>
+			「ありがとうございます。……それでは、また」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「待て！」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			去ろうとしたところを立ち止まる。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「お主はこのままでは、火神になる」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……」<br>
+			「どうもありがとう。……なら、もう一度、会いにきてくれますね？」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「神産みの儀式は迦具土を宿した火神を殺すことで執り行われる」<br>
+			「不知火のためにお主が犠牲になる覚悟はできているのだな」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「出来てません」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「死が怖いか」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「死は……怖くない」<br>
+			「ただ、どうにか正解を探して、いまもなおもがき続けてるだけ、それだけです」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「そうか、ならば……」<br>
+			「お主のためにも、融のためにも」<br>
+			「切りたくはない札を、切らせてもらう」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			頭を下げて、病院を出る。<br>
+			他にアニキがいそうなところはどこかと、夜の街を駆ける……。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			　<br>
+			ありがとうございました。<br>
+			ではメインフェイズの最終シーンですね。
+		</p>
+		<p class="player p5">
+			<b>GM</b>
+			第三サイクル第四シーン：伍和 旱
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			戦場表振るならBT。振れば自動でそこが適用、振らなければ平地です。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			薪さんの居所を知っているので戦闘を仕掛けます☆
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			イエーイ。乱入は？
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			あっこれ融くんも出れないのか<br>
+			いや、薪に持ってるから出れるね
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			出られ……ますね。<br>
+			だけどそれはつまり<br>
+			戦場への参加理由は旱さんへのそれではなく、薪さんとの絆を縁にすることになり。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			なるんですね。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			……乱入はこのタイミングで宣言しないとダメですよね？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はい。<br>
+			彷徨とか持ってませんからね。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			乱入…………します。<br>
+			することにします。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			薪の居所、となると、そうですね、比良坂の病院にしましょうか。足しげく通っていた。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。参加人数が３人なので３ラウンドで。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			戦場表は振らず、平地でお願いします
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。シノビがそれぞれ万全の戦いができる環境。<br>
+			病院にいる薪を襲撃する形？
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			ですねー
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			殺気を感じて、屋上で待ち受けましょう
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			融くんのお見舞いに行ったおかげで病院というものの構造が知れました
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			旱様の社会科見学ツアー
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			というわけで隣接する建物の壁を蹴り、三角跳びで屋上に降り立つ黒い影。旱。<br>
+			あ、高速移動したのでキツネ体です。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			屋上にあるヘリポートのど真ん中で、それを出迎えます。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			RPしつつほどほどにプロットして頂けましたら。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「八柱、申し訳ないがこれがわしの強行手段だ」<br>
+			「覚悟が出来ていない。なら、そうする覚悟を起こさないためにわしは刃を向ける」<br>
+			「良いな？」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……はい。ただし、オレも最大限に抗います。この８年、戦う者として育ってきた」<br>
+			「何が正しいかわからなくとも、ただ負けるわけにはいかない。それがオレの有り様なんです」<br>
+			プロットはOKです。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			同じくー
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			あ、まって乱入乱入
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			感情で乱入できるので判定はいらないですね、RPと同時にプロットどうぞ<br>
+			できたら言ってくださいな。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			と……すいません、乱入って毎ラウンドできるんでしたっけ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			えーと、彷徨がないので無理とします
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			各ラウンドのプロット前とあったので……あ、だめか
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			バージョンによってはできたみたいなんですけど。今回のレギュでは無理で。最初に参加するか否かで。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			では、乱入します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あ<br>
+			いや、できるのか、すみません、ラウンドのプロット値までなら。<br>
+			ただその場合は２ラウンドで終わります。最初に乱入したら３ラウンド。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			大丈夫です！では様子見します！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			つまり63ページの図は概略で厳密には間違ってる？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			そっちは後で裏で答えますねー<br>
+			では戦闘参加はまず薪と旱。<br>
+			プロットの開示をお願いします！
+		</p>
+		<p class="player p6">
+			<b>どどんとふ</b>
+			「八柱　薪」がダイスをオープンしました。出目は3(6面ダイス)です。<br>
+			「伍和　旱」がダイスをオープンしました。出目は3(6面ダイス)です。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			同時行動だッ<br>
+			それぞれ2d6を。出目の高い方からの行動になります。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 7[1,6] → 7
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 3[1,2] → 3
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			先手はもらった！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			では旱さんから。同時行動です。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			夜雀！からの痛打！からの接近戦攻撃！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			全力だ。ダイスを
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			接近戦攻撃の指定は幻術です。<br>
+			2D6&gt;=5 （判定：幻術）<br>
+			ShinobiGami : (2D6&gt;=5) → 5[2,3] → 5 → 成功<br>
+			あぶないあぶない
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ぴったり。薪さんも回避ですね、修正入れますか？<br>
+			幻術からの回避になります。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			はい、回避が大事なので入れます。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。どんな感じかな、まず旱さんがどういう攻撃するかってとこからでしょうか。<br>
+			幻術でどんな感じに接近戦します？
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			薪さんに向かって突進するんですけど、薪さんを追い越した瞬間に後ろに駆ける影と、目の前で止まる影の2つに分かれます
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			[<br>
+			「影が……2つ！」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			背後からの攻撃を狙おうとした方が幻だったわけですね。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			なるほど。それに対してこう、薪さんが回避できそうな演出修正を入れてもらえれば。＞裕さん
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「わしにも誇りというものはあるのでな！」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			薪は浅木との比良坂の病院での訓練を思い出します、鞍馬に取っての仇敵、<br>
+			隠鬼たちが得意とする妖術に対抗する訓練を。<br>
+			漢字ミスですね。<br>
+			隠忍
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			なるほど。ではそれを思い出しながらプラス１。薪さん回避判定どうぞ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			2D6+1&gt;=8 （判定：結界術）<br>
+			ShinobiGami : (2D6+1&gt;=8) → 8[3,5]+1 → 9 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			わお。回避ですね。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			わーいやったぞアニキ！　アニキゼミのおかげだ！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			セミ
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			ぐぬぬぬ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			では次は薪さんの手番で。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			では接近戦攻撃を。結界術ですね。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あ、そっちなんですね。どうぞ
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			同じように格闘で合わせたかった。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			よければオッケーです。判定をどうぞ
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			2D6&gt;=5 （判定：結界術）<br>
+			ShinobiGami : (2D6&gt;=5) → 3[1,2] → 3 → 失敗
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			わあ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ちょっｔ？？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			う、うｎ
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			さっきから1と２sika
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			ググググ
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			でない
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			やっぱりダイス振らないのが一番強いとわかる図だな。<br>
+			奥義はダイス振らなくていいからサイコー。ラウンド終末です。<br>
+			自主脱落が出るなら許可します。しないなら継続してプロットを。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「結界術は得意と伝えたはずだ」
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			乱入するならプロット開けてくださいする前に宣言を頂ければ許可します。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ゼミでやったやつなんですが、やっぱり本物の動きはすごくて、対応するので手一杯だった。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			改めて、ここで乱入します。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			キター！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			──炎が降ってくる
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ひゅー。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「伍和　旱」のダイスシンボルの値が変更されました。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			人程の大きさの火の玉が夜闇を切り裂いて。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			その炎の熱さに、何故だか無性に嬉しくなる。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			走りながら、上空を見上げる！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			流れ星は寸暇を与えず着弾。同時に燃え広がる炎。中心に見える人影は小さい。<br>
+			「……申し訳ありませんが」<br>
+			「邪魔をしに来ました」　自分の足で、立ち上がった。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「ずいぶんとマシな炎になったじゃねーか、融！」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			影分身使います！！！！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			どうぞ判定を。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			めーーーーーーーーっちゃ口角が釣り上がります！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			2D6&gt;=5 （判定：分身の術）<br>
+			ShinobiGami : (2D6&gt;=5) → 10[5,5] → 10 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			高い。<br>
+			皆様プロットのご準備は？
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			２つ置きました！OKです！
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ok!
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			OKです。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はあい、ではプロットオープンを！
+		</p>
+		<p class="player p6">
+			<b>どどんとふ</b>
+			「八柱　薪」がダイスをオープンしました。出目は4(6面ダイス)です。<br>
+			「氷上 融」がダイスをオープンしました。出目は2(6面ダイス)です。<br>
+			「氷上 融」がダイスをオープンしました。出目は6(6面ダイス)です。<br>
+			「伍和　旱」がダイスをオープンしました。出目は4(6面ダイス)です。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			融くんはどちらへ？
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			６！！！！！！！！！１
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ヒュー。<br>
+			６：融　４：薪、旱<br>
+			では融くんの手番からどうぞ。最終ラウンドです。<br>
+			とはいえ。普通に見たら届かないか。パス？
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			んむ。格好良く出ておいてなんもできないんですよね。<br>
+			（２でも６でも４だけ届かない）
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			まあ立っているだけで価値があるというものもありますからね。<br>
+			奥義破り判定とかできるし。パスでよろしいでしょうか。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			演出的に攻撃とかしよう
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			まぁやりたいことは実はあるので……パスです。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ほうほう。了解です。ではプロット４。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			まずはダイスロールですね。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			さっきと同じで2d6をふたりともどうぞ、上の方から行動を。同時行動ですけど。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			真っ先に動き出せる身ではあったものの、仕掛けには行かない。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 8[3,5] → 8
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 7[3,4] → 7
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			待ちの姿勢。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ここで薪さんが上回った。薪さんどうぞ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			では……百燐を。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			お。了解です。判定を。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			2D6&gt;=5 （判定：火術）<br>
+			ShinobiGami : (2D6&gt;=5) → 11[5,6] → 11 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			イチタリナイ。いや足りてんだけど！　旱さんは回避判定をどうぞ
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			融くん回避修正入れられます？
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			狭霧もあるよ～
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あ
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			こっちからはもう入れられないです！<br>
+			感情がない
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			無理ですね、感情がそう。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			ふーんでは狭霧修正で-1入れて判定かな
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ですね。判定どうぞ
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			2D6-1&gt;=5 （判定：火術）<br>
+			ShinobiGami : (2D6-1&gt;=5) → 9[4,5]-1 → 8 → 成功
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			こちらも入れません、薪の回避のためにとっておきたい
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			高い。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			だって火術も得意だし～！（ドヤ）
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			で、間合２なのでこちらも回避ですね。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			では燐火を振り払い、旱さんの手番。<br>
+			あ
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			融くんにも届きますよ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			そっちもか、どうぞ。<br>
+			７以上ですね。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			2D6-1&gt;=7 （判定：火術）<br>
+			ShinobiGami : (2D6-1&gt;=7) → 4[1,3]-1 → 3 → 失敗
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			わーーーい！！！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			任意の分野を潰して脱落を。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			こいつ出てくるだけ出てきておいて！！！！！！！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			薪さんは戦場を変えますか？<br>
+			ソンナヒモアルヨネ……。<br>
+			極地に変更できます。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			しかも後の先ものるよ。<br>
+			変更しません。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ホントだ。２点ですね。<br>
+			はーい。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			血断も乗せちゃおうかな。<br>
+			乗せます。３点にします。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			わあ。潰す分野の宣言をお願いします＞薪さん<br>
+			あとRTTですね。<br>
+			ん？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			射撃戦かと
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			違うわ、RTTはなしか
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			潰すのは忍術で。任意のだよね？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ですね。蛮族なのでいつも接近戦に載せてて勘違いした。理由がクソ。<br>
+			ですです。薪さんは任意の分野ひとつ、融さんは任意の分野２つです。<br>
+			宣言しつつ、脱落なRPをば。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			選択肢が実質無い……
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			うわ。ほんとだ。<br>
+			後の先も乗って３点だ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「封じ続けてきた不知火の炎……受けてみよ！」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			体術と器術と戦術を潰します！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です！！！！！！
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			全身から火が立ち上り、ストールが燃えさかる。巻き起こる風に火が辺り一面に燃え広がる。<br>
+			「これがオレの血！　オレの炎！　オレ自身だ！」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			燃え盛る、燃え盛る。炎が塗りつぶされていく。<br>
+			己の心を焦がしていた不知火の炎が、こんどは外側から己を燃していく。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「融！　耐えろ！　地に足を着け続けろ！」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			わかってはいた。己は未だ手負いだ。更には自分の力の一部であった神鏡も失っていた。駆けつけたところで何かができるはずでないことも。<br>
+			それでも。<br>
+			「僕は」<br>
+			「己の意思で、ここに……立ちたかった」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「ああ、確かにお前はオレの炎を受けた！」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			炎に包まれておきます！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			されどそれは一族の業火ほどには。<br>
+			では、同時行動、プロット４の旱さんの手番を。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			そんなことされちゃったらフルブーストするしかないよな～！<br>
+			夜雀を獣化に、で、血旋渦！　目標は薪さん！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			フルブだ！　判定をどうぞ
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			こい！
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			2D6&gt;=5 （判定：異形化）<br>
+			ShinobiGami : (2D6&gt;=5) → 9[3,6] → 9 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			安定している。回避に修正を？
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			今はキツネ体なので、大人一人乗れる大きさから大人二人乗れる大きさに成長しました。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			はい入れます<br>
+			狐体でどんな攻撃ですか？
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			正面からガブーって噛みつきます。<br>
+			中の肉を抉り出すが如く、深く深く噛みつきたい。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			旱さんは辺りが燃え盛っている中に、浅木の姿を幻視してしまいますってことで。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ああ～薪の炎だからね！！！
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			（??！　浅木ィ！　お主も融の登場の陰で出てくるとはなァ！）
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			先程の戦闘のことを思い出して、真っ直ぐ食いつくはずが一瞬、気がそれてしまう。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			では判定しますー
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			どうぞー
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			2D6+1&gt;=8 （判定：結界術）<br>
+			ShinobiGami : (2D6+1&gt;=8) → 6[3,3]+1 → 7 → 失敗
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			イチタリナイ。<br>
+			２点ですね。旱さんはRTTを二回。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			しかし今の狙いは浅木ではない。八柱　薪、彼女だ！<br>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(2,8) → 『体術』走法<br>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(6,7) → 『妖術』言霊術
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			むしろ殺意でブーストされたまである。<br>
+			うわっ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			うわっ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			体術と妖術が潰れました。<br>
+			本当に殺意でブーストされている。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			いいとこもってかれましたね。<br>
+			融がやったように、爆炎による加速でそれを回避しようとします。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			妖術つぶせたのおいしい～
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			脱落ですね。RP入れて頂きつつ、ほどよいところで伍和さんには戦果の宣言を。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			薪の回避行動を鼻で笑って、忍者の技術と獣の脚力の合わせ技で直角かつ超高速で曲がる。<br>
+			「今更融の真似事か！」<br>
+			大きな口を開き、胸元に向かってかぶりつきます。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			食らいつかれます。口の中に、火のように熱い血がどっと流れ込む。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「やはりお主も不知火よのう」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「やっぱり、迷ったままじゃ……ダメですね……」加えられてぶらんとしたまま。<br>
+			咥え。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			温かさ、いや熱さに嬉しくなりながらも、極めて冷静に。体の中から、熱の源を抜き取る。<br>
+			??宝珠・迦具土を奪います。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。迦具土が、薪から旱へ。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			薪をそっと降ろし、宝珠を傷つけぬように加えます。<br>
+			「融の怪我の心配をしておったのに、今度はお主の怪我の心配もしなくてはならぬ」<br>
+			「だが、お主が火神になるより良い」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「不知火のためにも……」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「すみません。……どうもありがとうございます」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「融と同様に、お主にも不知火を再興させたいという気持ちがあるのなら、乗り越えるべき壁はすぐそこにある」<br>
+			「楽しみにしておるぞ」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			呼吸を整えて、なんとか立ち上がり。<br>
+			「はい」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「では、その時まで。頼むぞ、薪」<br>
+			初めて彼女を下の名前で呼んで。薪の元から去っていきます。<br>
+			途中人間に化けてスマホで救急に連絡することも忘れずに。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			アフターフォロー。<br>
+			　<br>
+			ありがとうございました。第三サイクルが終了。<br>
+			したので、回復判定ですね。<br>
+			融くんは身体操術で麻痺を、<br>
+			旱さんは絡繰術で故障を、<br>
+			融さんは経済力で行方不明を回復する判定を行えます。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6&gt;=8 （判定：呪術）<br>
+			ShinobiGami : (2D6&gt;=8) → 7[3,4] → 7 → 失敗
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			2D6&gt;=6 （判定：火術）<br>
+			ShinobiGami : (2D6&gt;=6) → 7[2,5] → 7 → 成功
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			経済力が及ばなかった。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			呪いじゃなあ。<br>
+			融さんじゃなくて裕さんだよ。行方不明は。すみません。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			病院が燃やされてしまったからか、捜索下忍部隊が足りなかったか<br>
+			いえいえ。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			まあクライマックスはなんか出られるので。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			はい、あとのことは問題なし。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			融さんも麻痺治すならどうぞー。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			あ、そうだ治せるんでした
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ですです。
+		</p>
+		<p class="player p6">
+			<b>どどんとふ</b>
+			「GM」がダイスをオープンしました。出目は2(6面ダイス)です。<br>
+			「GM」がダイスをオープンしました。出目は2(6面ダイス)です。<br>
+			「GM」がダイスをオープンしました。出目は2(6面ダイス)です。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			体術埋まってるからできないものだと思ってたけど<br>
+			隠形術代用だからな……<br>
+			2D6&gt;=7 （判定：隠形術）<br>
+			ShinobiGami : (2D6&gt;=7) → 8[3,5] → 8 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			おめでとうございます。潜伏術が復活。<br>
+			<u><a href='https://docs.google.com/spreadsheets/d/1x46S7xi7sevWqmx1-Sat3T8wxPluPV2_NeDPDbyqo-c/edit#gid=0' target='_blank'>https://docs.google.com/spreadsheets/d/1x46S7xi7sevWqmx1-Sat3T8wxPluPV2_NeDPDbyqo-c/edit#gid=0</a></u><br>
+			こんな感じ。では17時からクライマックスフェイズに入ります。なんかもうちょっと待ってほしい人いたら待ったかけてください。待ちます。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			承知しました！　ドキドキ。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			まだやりとりしてます。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。では5分延長するかな。<br>
+			まだかかりそうならお気軽にじっくりどうぞ。<br>
+			さて<br>
+			再開できそうでしょうか。<br>
+			点呼開始！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			準備完了！（1/4）
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			準備完了！（2/4）
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			準備完了！（3/4）
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			準備完了！（4/4）<br>
+			全員準備完了しましたっ！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			初めて使った。<br>
+			行けそうですかね。シーンは。<br>
+			CST<br>
+			ShinobiGami : 都市シーン表(11) → 見知らぬ天井。いつの間にか眠っていたのだろうか？それにしてもここはどこだ？<br>
+			ちょっとずれたな。まあいいや。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			病院？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			あれ<br>
+			決戦シーン表は？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			天井のなくなった病院。<br>
+			決戦でもいいんですけど。決戦にしよっか。<br>
+			2d6<br>
+			ShinobiGami : (2D6) → 8[2,6] → 8<br>
+			 &gt;8:夜の公園。皎々と照る月の光を浴びて、奴は立っている。決着の時を待っていたのか、それとも……？<br>
+			いいですね。カッコイイ。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			炎が映える！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			待ち受けるのこの流れだと旱さん？
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			かな。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			そうですね<br>
+			どういう体で待てば良いのかわからないので、情景RPがあればそれに則って動きます
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			月の光を浴びるおきつねさま。のもとに、各々集まってくる。という感じですね。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			良ければ、後入りしたいです。皆の炎の波動を感じ取りたい
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			月光を浴びて、傷を癒やすかのようにキツネ姿の旱が立っています。大きさは薪さんから迦具土を奪ったときと同じサイズ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			とはいえ、薪は以前のような体温ではありません。服は着てませんが。<br>
+			「寒い」<br>
+			公園を進む。肌でひりついた空気を感じる。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「薪か。寒いなら近う寄れ」穏やかだけど、覚悟を決めた瞳。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			じゃあ、近づきましょう。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			旱が軽く首を動かしたり、足を動かしたりするたびに火の粉が舞うような、そうでないような。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			荘厳な気配が漂っていますね
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……温かい」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「お主の中にあったものだろうに。己の体温を忘れたか？」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「まだ、慣れないです」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「浅木も同じだ」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……そうですね」頷く。以前のように多くはしゃべらない。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			月明かりの中、公園に、薪の炎の波動を感じてフラフラとしながらも、旱と薪の元へ、浅木　裕は辿り着く。
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			薪に情が移ってしまいそうな気持ちをぐっと堪えつつ、裕の姿を見つける。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「どういうことだ。あの火は薪からではなく、伍和　旱から感じられる。」近づきながら彼はつぶやく<br>
+			「薪、何があった！」<br>
+			「伍和ッ、薪に何をした！」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「ハートを盗まれちゃった。お狐様に」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「伍和は人を騙るときの名字だ。今は旱と呼べ」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ふんと軽く二人に笑みを返し「そっ、そうか。旱ッ、いや旱さん、薪を逃れられない運命から救うに足ることをしてくれたのには感謝する。」<br>
+			救いにつながること　に修正。<br>
+			「しかし、貴女のことを信じている訳ではないッ！　何を考えているかはすべて分からないが、薪を自由にするために立ちはだかるなら容赦はしないッ！」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			ではその敵意が向けられた時に<br>
+			──熱が漂う──<br>
+			手裏剣が一枚、浅木裕に向かいます。速度もなく、勢いもない。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			素手で叩き落とします。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			叩き落とされた手裏剣が飛んできた方向から、ずり……と何かを引きずるような音。<br>
+			もはや、満足に走れない。火も燃やせない。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「氷上　融か、戦う気持ちにも迷いがあるんだろう？　その身体じゃ、まともな戦闘も無理だ」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			死霊の声は聞こえず、意気も折られた。それでも<br>
+			「──忍の矜持は、ここにある」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「一族の悲願のためにこちらにつけとは言わないが、邪魔だ、そこで見ていろ。」↑↑
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「悪いが、邪魔しに来たんだ」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「浅木、わしは薪を火神に変えたくはない」<br>
+			「この姿で言って信じてもらえぬと思うが、彼女は不知火のために犠牲になる覚悟が出来ていないと話した」<br>
+			「神となって自由になる。なんて残酷なことか？」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「矜持か、なら好きにしろ」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「そして融よ。我が愛弟子よ」<br>
+			「とうとう今日が答えを聞く日だ。獣に限らず、子はいつか親元を離れるものだ」<br>
+			「わしという添え木がなくとも十分生きていけるだろうに」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「火神に変えたくない？　では貴女が火神になろうというのか？　これだけ慕ってくれる愛弟子を残して。」↑↑↑
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			薪にそろそろ離れるよう合図しながら、融を見つめています。今この瞬間、一番辛いのは彼だ。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「不知火の業火は、まだ消えたままです」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			離れましょう。<br>
+			浅木の横に立ちます。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「だから。俺は今、ここに自分の意思で、自分の足で立っている」<br>
+			「師匠」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「なんだ？」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「迦具土を渡して下さい」<br>
+			「俺にはやるべき事がある」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			「ならば、奪ってみせろ！」<br>
+			そう叫ぶと共に、旱の体から炎がほとばしり、黒い毛の中から赤・橙・黄が顔を覗かせる。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			火傷痕の残る顔で、にかっと笑った。<br>
+			「そう言うと思っていました」
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			呼吸をすれば口から火が漏れ、一歩歩けば足跡から火柱が上がる。<br>
+			それは、まるで??
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			地に手を付けた──４足の構え。<br>
+			それは、まるで──
+		</p>
+		<p class="player p1">
+			<b>伍和　旱</b>
+			面白い。口角が釣り上がる。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			「これより『神産みの儀式』を行う！　不知火のため、己のために、わしを殺せ！」
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			夜闇に揺蕩う燐火が弾けて、<br>
+			忍たちの、戦端が上がる。<br>
+			　<br>
+			クライマックスフェイズを開始します。<br>
+			さて火神被殺のクライマックスフェイズ。特殊ルールに関してもう一度アナウンスを。<br>
+			<br>
+			<br>
+			■クライマックスフェイズ<br>
+			クライマックスフェイズは６ラウンド制限とする。<br>
+			クライマックスフェイズの勝者は、脱落した者の生殺与奪の権利を得る。<br>
+			以上です。改めてご確認のほどを。<br>
+			では第一ラウンドのプロットを。皆様お願いします。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			浅木は妖魔化を宣言
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			MTをどうぞ。穢れによって潰す分野の宣言も合わしまして。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			器術に汚れを1点取得
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			影分身を使用。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			MT<br>
+			ShinobiGami : 異形表(6) → 妖魔化している間、このキャラクターの攻撃に対する回避判定と、このキャラクターの奥義に対する奥義破り判定にマイナス1の修正がつく。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			渋いとこ入った。<br>
+			判定を＞影分身
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			地味だけど役に立つ
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			奥義破り-１死ぬほど辛いんですけど<br>
+			2D6&gt;=5 （判定：分身の術）<br>
+			ShinobiGami : (2D6&gt;=5) → 5[1,4] → 5 → 成功<br>
+			危なっ……
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「八柱　薪」のダイスシンボルの値が変更されました。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			皆様プロットのご準備は？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			OK
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ok
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			OK！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			姿が割れる──同じような影分身、しかし、それはただの高速移動ではなく、幻術も交えたもの。<br>
+			かつて模倣し、妖力制御の難しさから諦めた手法。<br>
+			それを満足に走れぬ今、この場で完成させた。<br>
+			Ok！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はい。ではプロットの開示を！
+		</p>
+		<p class="player p6">
+			<b>どどんとふ</b>
+			「浅木　裕」がダイスをオープンしました。出目は4(6面ダイス)です。<br>
+			「八柱　薪」がダイスをオープンしました。出目は1(6面ダイス)です。<br>
+			「伍和　旱」がダイスをオープンしました。出目は1(6面ダイス)です。<br>
+			「氷上 融」がダイスをオープンしました。出目は5(6面ダイス)です。<br>
+			「氷上 融」がダイスをオープンしました。出目は2(6面ダイス)です。<br>
+			「伍和　旱」がダイスをオープンしました。出目は5(6面ダイス)です。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			んっ
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			あっごめんなさい薪さんのダイスオープンしちゃった……
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あーなるほ、うん？　一番下のが間違いかな。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			旱は5を選択していました
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			あっほんとだ！　１です。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ええと５旱さん、４裕さん、１薪さんですね。<br>
+			その上で融くんはどうします？
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			５で。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。<br>
+			５：融、旱　４：裕　１：薪
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			むーんミスったな。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			プロット５から、融さんと旱さん2d6を<br>
+			高い方から処理します。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 11[5,6] → 11
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 10[4,6] → 10
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			仲良く高い。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			にくはく
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			旱さんからどうぞ。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			惜しい……
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			こっちきたかあ。ううむどうなるやら。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			「融、成長したな！」幻術影分身をみてうきうき。<br>
+			夜雀を異形化に適用します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です。獣化。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			そこに炎刃。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			おおっと。<br>
+			判定を。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			やったーーーーーーーー
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			火術使えないので、潜伏術で代用になります<br>
+			2D6&gt;=8 （判定：潜伏術）<br>
+			ShinobiGami : (2D6&gt;=8) → 6[2,4] → 6 → 失敗
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ファンブルになります。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			……オォン……悲しい
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			高い……から……<br>
+			振り直しがなければそのまま旱さんの行動の続きを。<br>
+			あ、ファンブルしたけど、同時行動の融くんの行動はできます。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			「此方に構うな！　お主の為すべきことを為せ！」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			あれ、プロット値＝ファンブル値では
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あ、そっか。<br>
+			５ですね。ファンブルではない！　失礼しました
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			ギリセーフ！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			いちたりてた！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			炎刃を飛ばし……しかしやはり、火がまともに出ない。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			ではそのまま攻撃宣言でいいのかな。血旋渦を裕さんに向けて使用します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			どうぞ。判定を
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「不知火の業火もまともに使えない……か」<br>
+			「為すべき事は、見えています」
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			振りまーす<br>
+			2D6&gt;=5 （判定：異形化）<br>
+			ShinobiGami : (2D6&gt;=5) → 10[4,6] → 10 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ほんとに高いな！　裕さんは回避判定を。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			回避に感情修正欲しいです。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			まかせろ！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			頼もしい
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			どうぞー
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6&gt;=6 （判定：召喚術）<br>
+			ShinobiGami : (2D6&gt;=6) → 5[1,4] → 5 → 失敗
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ファンブルではない。<br>
+			ん？いや
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			プラス1書き忘れで成功ですよね？<br>
+			失礼
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			感情修正入ってんですよね<br>
+			ですね、成功です。<br>
+			オーケーオーケー。ファンブルではないし避けた。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			獣化で+1点だから接近戦ダメージ2点ですね
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			では裕さんはかわして、今度こそ融くんの手番を。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ストールをくくりつけた手裏剣をいくつも投じて、サポートしました。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あ、避けてます、召喚術に＋１の感情修正が入ってるので
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			では尾を複数生やし、その一本を刀のように振るって切り裂こうとしたが……肝心なところで薪の妨害が入る！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			ではそれに足を止めた所に<br>
+			奥義を使います。<br>
+			師匠にクリティカル。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			殺る気ですね！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			破りません。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			だって基本攻撃できないんだもん！
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			もちろん破りませんよ。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			私は奥義情報を知らないので、そのままきれ～いに受けるのかな。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「火が出せない。身体に巣食う炎は、神鏡に沈められてしまった。なら」
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			誰も破らないならそのまま通りますね
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「己の心を燃やす、この火なら……！」
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			RTTが4回。融さんどうぞ。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			魔刃・殺火融解。いきます<br>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(4,5) → 『謀術』調査術<br>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(3,9) → 『忍術』香術<br>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(3,7) → 『忍術』隠形術<br>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(6,6) → 『妖術』封術
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			うわ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			妖術飛んだ！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			謀術、忍術、妖術と、一つ任意の分野を。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			威力低下だから3点ダメージじゃなくて？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			旱さんは見切り判定を行えます。潰れる前の特技で可能です。<br>
+			あ、そっか<br>
+			じゃあ上３つにしますね。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			と、そうだった
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			謀術、忍術とあと１つ任意。失礼しました。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			妖術がセーフに
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			任意は器術で。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。何かやり取りなどありましょうか。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			見切り判定は、殺せって言っちゃったのに見切るのもな～ということで。パス。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			炎を纏った体が、弟子の刃で貫かれる。<br>
+			愛弟子は師匠の身でも把握できない隠し玉を持っていた。それはとても喜ばしいことだった。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			その炎は相手の業、相手の精神修養に関わらず燃え続ける。<br>
+			己の意気の続く限り。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			だからこうして、防ぎようのない技で貫かれるのは嬉しかった。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「貴方が奪えと言うのなら。奪ってみせます」
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			さて。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「自分の足で。貴方を飛び越えてでも」<br>
+			尾張
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			己の業??それはまだ融に隠しているものがあることだろうか。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			プロット４どうぞ。行動を。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			傷口から炎のように煮えたぎる血が吹き出してRPおわり。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			旱に医霊を使用します。<br>
+			2D6&gt;=6 （判定：毒術）<br>
+			ShinobiGami : (2D6&gt;=6) → 2[1,1] → 2 → ファンブル<br>
+			・・・
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			う、うん。<br>
+			あ、ファンブル表は大丈夫です。<br>
+			ただの逆凪です。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			はい、次、次。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			炎に気圧されましたかね。<br>
+			プロット１，薪さんの手番でーす！
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			薪はできることがないですね！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			でしたね！　では極地……ではないんだよ。<br>
+			次のラウンドのプロットに移りましょうか、ええと
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			かつては自分の内側に渦巻いていたはずの熱に、気圧され、近づけない。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			次のプロットをどうぞ。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			影分身を再度使用。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			どうぞ
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			2D6&gt;=5 （判定：分身の術）<br>
+			ShinobiGami : (2D6&gt;=5) → 8[3,5] → 8 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			成功ですね
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			プロットOK
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			OK
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			OKでござる。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ok
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ありがとうございます、では開示をどうぞ！
+		</p>
+		<p class="player p6">
+			<b>どどんとふ</b>
+			「浅木　裕」がダイスをオープンしました。出目は4(6面ダイス)です。<br>
+			「氷上 融」がダイスをオープンしました。出目は2(6面ダイス)です。<br>
+			「氷上 融」がダイスをオープンしました。出目は5(6面ダイス)です。<br>
+			「伍和　旱」がダイスをオープンしました。出目は5(6面ダイス)です。<br>
+			「八柱　薪」がダイスをオープンしました。出目は2(6面ダイス)です。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			融さんはどちらへ？
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			５！！！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ッス！！！！<br>
+			５：融、旱　４：裕　２：薪<br>
+			安定し始めてる。ではプロット５から、ダイス2d6お願いします、高い方から。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			ん、ん……あ、いやすいません。やっぱ２でいいですか
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 7[1,6] → 7
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			お。了解です<br>
+			では旱さんから
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			おっと遅延で振っちゃった
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			旱さんがなんだか……回想しそうな雰囲気があったから
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			スペシャルとかじゃなくてよかった気がします。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			間合を確認します　お待ちを…
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ｗ
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			それを……みたいなって……いえこちらこそ後で取り消して申し訳ない
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			まあギリギリセーフ。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			えーそれでは。奥義！使っちゃうぜ！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			GO！GO！
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			これって回想シーン乗ります…？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			乗らないんですね。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			じゃあ普通に出します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			どうぞ
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			■奥義<br>
+			《瞬目袋叩き》<br>
+			指定特技　：結界術<br>
+			エフェクト：範囲攻撃／くらまし／人数限定<br>
+			効果・演出：【くらまし】により奥義破り判定マイナス2、【人数限定】により2体のキャラクターまでしか対象に選べない。<br>
+			<br>
+			髪あるいは体毛を攻撃対象を包み込むように伸ばし、自身を含めた特殊な空間を作り出す。<br>
+			そこで他者からは何が起こっているのか一切見せず、一気に袋叩きにする。<br>
+			対象は裕と薪！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です。二人は任意の分野を２つ潰してください。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			謀術と戦術で。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			戦術と忍術を潰します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			んー
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あ<br>
+			いや穢れで戦術潰してません？<br>
+			まあどこでもいいんですけど妖魔化してるから
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			汚れは器術<br>
+			これで薪って残り何点になります？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			おっと。失礼しました。直しとこう。<br>
+			薪さん残り１点です。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			通ったとしたら
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			1すな！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			もしもの時でも同じですね。今使います。<br>
+			奥義を使用薪対象
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です。呪術くらましですね。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			蝕呪　絶対防御/くらまし/防御低下<br>
+			はい
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			破る方はどうぞ。<br>
+			くらましにさらに-1がつくぞお。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			奥義破りします。スペシャルのみですが
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「アニキ……ッ！」
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			スペシャル出たら回復するし振るのは有意義。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			2D6&gt;=12 （判定：分身の術）<br>
+			ShinobiGami : (2D6&gt;=12) → 10[4,6] → 10 → 失敗<br>
+			ならず……
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			高いんだけどなー<br>
+			伍和さんはいかがしましょう。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			弟子の失敗を見た！破りてえ！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			カッコイイ。くらましと妖魔化効果で-3ですね
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			2D6-3&gt;=6 （判定：異形化）<br>
+			ShinobiGami : (2D6-3&gt;=6) → 10[4,6]-3 → 7 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			素だよ。通りました。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			まじかーーーー
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			マジかよ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			まじだー。<br>
+			では裕さんの手番に。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			わはは<br>
+			あ、演出したいです！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			どうぞどうぞ
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			では旱の尻尾が急激に意思を持ったかのようにしゅるしゅると動き出します。<br>
+			二本の尻尾が別々に動き、腕のように、あるいはワームのように動き……<br>
+			二人を飲み込みます。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			（見たことのない忍法！？）と瞠目
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			その空間は暗黒。しかし迦具土のせいか入って一秒で汗だくになるほどの暑さ。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			呆然として対応できない。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			炎天下ような暗闇の中から、黒い腕が何本も、何本も何本も何本も何本も何本も何本も何本も……<br>
+			ひっかき、貫き、締め上げ、痛みつけます。<br>
+			そして急激に暑さと暗闇から解放されたと思ったら、そこは空中でした。<br>
+			RPおしまい。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			全身ずたずたにされて解放されて、次。<br>
+			プロット４ですね。裕さんの手番。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			旱に医霊を使用します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です、判定を
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			感情修正をお願いします。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ほいさ！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			＋１ですね
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6+1&gt;=6 （判定：毒術）<br>
+			ShinobiGami : (2D6+1&gt;=6) → 8[3,5]+1 → 9 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ついに。いや言うほど失敗してないんだよな。失敗が毎度印象に残りすぎるだけで。<br>
+			旱さんに重傷が入ります。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			痛いよぉ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			奥義を受けながら一矢報いた感じでしょうか。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			「儀式に姑息な手は必要か浅木！」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			はい、ボロボロになりながらも旱の身体に毒液を撒き散らしました。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「そこがアニキのいいところなんだよ！」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「この狐めがっ」ぜいぜいと息をつきながらも。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			いいらしい。ではプロット２の処理を、それぞれダイスをお願いします、高い方から。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 8[4,4] → 8
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 6[2,4] → 6
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			では融さんから処理しましょう、行動の宣言をお願いします。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			……事ここに至れば是非もなし<br>
+			誰を落とすにしても、師匠の回想の後にするつもりではありましたが、まず目の前から。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			来るか。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			薪に奥義を使用します<br>
+			リベンジだ！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			二人で破りましょう
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			意気ですね。くらましで-2。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			お互い残り体力１！明らかにオーバーキルだけど死霊術使えないから仕方なし！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			薪さんが器術しか残ってないんだよな。<br>
+			回想シーンとか、入れます？
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			でも頑張るよ。<br>
+			うーん、使いどきかな。アニキは距離どれくらい？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			同時振りなら回想シーン使うこと考えるんですけど、<br>
+			こっちは11の出目が必要
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			回想シーン入れて8ですね
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			こっちはどっちにしろスペシャルのみだ。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			薪のを見てからでいいならまだ温存したいかな。<br>
+			ならこちらで使った方がよさそうですね。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			見てからでいいですよ
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ではお先にお願いします。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あ、見てからって行動？<br>
+			破りなら見てからでいいです
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			回想シーンを切るかどうかっていうだけの。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			じゃあ振りまーす。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			破りに対して回想シーンを。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			2D6&gt;=16 （判定：火術）<br>
+			ShinobiGami : (2D6&gt;=16) → 2[1,1] → 2 → ファンブル<br>
+			ｗ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			徹底的だ……。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			ファンブルｗｗｗｗｗ<br>
+			まぁでも同時攻撃だから、逆凪はセーフ……
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			心臓がないからな！！
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			つら・・・
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			まあどうせ下に誰もいないから……うん……
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			ぼくもないです！！！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			では裕さんかな。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			魔刃・殺火融解。あの時と同じ技。しかし今、燃やしている意気は殺意ではない<br>
+			今は己の信念を。燃やしている
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			はい、回想シーンで奥義破りに+3　先に判定
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			頼むアニキ！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			その消えぬ炎の刃を突き入れ……ようとして……
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6+3&gt;=11 （判定：毒術）<br>
+			ShinobiGami : (2D6+3&gt;=11) → 5[1,4]+3 → 8 → 失敗
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あ、<br>
+			回想シーンしてから振ってほしかっ、まあ、うん。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ダメだったね！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			振り直しはしますか。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			確かにその方がいいですかもね。いや流石に振り直しはなしでいいです。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です。まあ回想シーンお願いします。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			神通丸ってことね。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			それだわ。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			そうそう。＞神通丸<br>
+			それだよ！？<br>
+			まああれか
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			えっまだ持ってたの？？？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			+3維持されるんでしたっけ？<br>
+			持ってるよ。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			されますよー。<br>
+			ただ使うなら
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			やったー
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			回想シーンしてからお願いします、せっかくなので
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			まずは回想。<br>
+			はい
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			自前で秘密ぺたっと張っていただいてから。どうぞ。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			【秘密：浅木 裕】八柱 薪は不知火の生き残りであり、『宝珠・迦具土』の器である。クライマックスフェイズ開始時に八柱 薪が『宝珠・迦具土』を持っていた場合、八柱 薪は火神となる。あなたの本当の使命は【火神を殺す】ことだ。「君を自由にする」八柱 薪にそんな約束をしたのは氷上 融である。あなたはその約束の相手が自分であると八柱 薪に思い込ませ、あなたの傍にいるように縛りつけた。しかし、ずっと共に過ごしてきた八柱 薪をあなたは失いたくない。八柱 薪があなたにプラスの感情を抱いてくれるのであれば使命を【八柱 薪を自由にする】に変更してもよい。<br>
+			氷上 融の魔刃・殺火融解、その不知火の炎から思い起こされるのは、浅木　裕にとっては、<br>
+			やはり、八柱　薪の持つ元気で温かな熱だ。<br>
+			忍務として、最初、火神となる運命は避けられず殺してでも自由にするしかないことから長く思い悩んできた。<br>
+			彼女と過ごす内に、彼女にかけられた"約束"に気づいた裕はこれほど、長く接してきたのだから、彼女を自由にするのは自分だということにしたかった。ついその思いのままに縛り付けてしまっていたのだった。忍務に忠実たる忍びとしては似つかわしくない個人的な思いから。<br>
+			二度した約束を思い出す、ここで彼女を失うわけにはいかない、【八柱 薪を自由にする】のはこの浅木　裕だと、強く思いで<br>
+			炎の刃を押し止めようとする。<br>
+			神通丸を使用
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です。振り直しどうぞ
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「自分の為じゃない、この時の為に取っておいたんだ。」<br>
+			2D6+3&gt;=11 （判定：毒術）<br>
+			ShinobiGami : (2D6+3&gt;=11) → 10[4,6]+3 → 13 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			通っ　た！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			再び、炎の刃が冷却されて勢いを失います。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			このまま融さんと薪さんでちょっと昔の話しながら薪さんの手番に移りましょうか。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			炎は冷やされ、相手を傷つけうる熱は失われた。<br>
+			ただ……消えはしない。この炎は。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			薪さんは手番の行動どうぞ。しつつ。色々話しつつ。どうぞ。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「それがあんたの意気か、麝香会」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「そうさ、君がした約束を消し去ってでもした約束だからな。」<br>
+			「君のためにも、代わりに守らなくては。」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……ありがとう。ずっとアニキがいたから、ここまで生きてこれた」<br>
+			「きっと、アニキに出会う前は……融に、守ってもらっていたんだろうな」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「きみのため、とは。一等信用できない台詞を使う……」<br>
+			「……どうでしょうね。貴女も言った事でしょう、昔の話だと」<br>
+			「ならば消し去った事も、忘れたことも、何もかも。考える必要もない」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「オレも心に火を灯そう。この戦いのなかで、完全に燃え尽きよう」<br>
+			「この戦いをもってオレは死ぬ。オレが生きてきたことを見てほしい。この戦いがどんな結末を迎えようとも、そのときのオレは、もうオレじゃない」<br>
+			融の放った消えない炎が、ストールに引火する。<br>
+			再び、全身を炎に身に纏う。慣れ親しんだ熱を纏う。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			薪の決意を見届けています。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「オレは、お前に殺されるために生まれ……殺されぬよう育った……だから、行くよ」<br>
+			<br>
+			《逆気瞬燃/バックドラフト》<br>
+			指定特技　：身体操術<br>
+			エフェクト：クリティカルヒット<br>
+			効果・演出：全身の酸素消費を一時的に遮断してから解放することで、驚異的な瞬発力を発揮する。これによって放たれる神速の攻撃は決して避けることのできない間合い１、ダメージ４点の攻撃として作用する。<br>
+			 
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「……ええ、いいでしょう」<br>
+			「不知火同士。相応しい在り方だ。互いに燃え尽きるまで、己の信念を通すのみ！」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			深く身体を沈めて、息を吸い込む。止める。その抑揚。<br>
+			全身に纏う炎が消えたかと、それはまばゆいばかりに燃え上がり??
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			奥義破りは身体操術から、どなたからされましょう。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			奥義破りします。<br>
+			回想入れます。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			破りたいです　けど修正入れなきゃむずいな……
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です。先程と同じように。<br>
+			まず融さんからかな？
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			自分には何もないと思っていた。<br>
+			記憶と共に、まず過去を失った。<br>
+			業火に心を灼かれ、自分の意思を失った。<br>
+			師匠に拾われ、育てられて……家族のように思っていたその心も。神鏡に貪り喰われた。<br>
+			今はもう、あの人の事を以前のようには想えない。どこか他人のような。隣に居られない人のような。<br>
+			最後に残ると思っていたその絆&lt;殺意&gt;も、炎が消えれば鳴りを潜めて<br>
+			かつての約束は、もう果たす必要もなさそうだった。<br>
+			けれど。自分は今ここに立っている。<br>
+			それは何の声にも従っていない。何の約束にも縛られていない。何の必要性もなく。<br>
+			ただ、『あの人に手を汚させたくない』と<br>
+			『あの人を死なせたくない』と<br>
+			そんな使命を、自ら決めて戦っているのだ。<br>
+			・秘密：<br>
+			あなたの命を繋いでいるのはPC3に与えられた『神鏡・啼沢女』の力によるものだ。<br>
+			PC3に助けられるまでの記憶を失っているあなたにとって、PC3は何者にも代えがたい存在だ。<br>
+			あなたの本当の使命は『PC3に恩を返す』ことである。<br>
+			<br>
+			しかし、あなたの肉体は死した不知火の一族の業火によって支配されている。<br>
+			この支配を脱するまで、あなたの使命は『PC2を殺す』となる。<br>
+			支配されている間、戦闘での戦果はGMが決定する。<br>
+			破り判定します！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			どうぞ、＋３です！
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			破ってみせよ！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			2D6+3&gt;=7 （判定：隠形術）<br>
+			ShinobiGami : (2D6+3&gt;=7) → 6[2,4]+3 → 9 → 成功<br>
+			回想なかったら失敗してたな……！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			甲斐がありましたね。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			その驚異的な瞬発に反応できたのは、研ぎ澄ませた殺意でもなければ、不知火の技でもない。<br>
+			ただ己の身体に染み付いた、「獣の本能」が<br>
+			その身に噛み付いて、動きを止めた。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「なん、だと??ッ！」<br>
+			勢いが余って、公園の地面にもみくちゃにながら転がる。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「グル…………」<br>
+			押し倒す。獣に言葉はない。ただ鋭い眼光が全てを語っていた。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			２ラウンド目が終了。３ラウンド目に入ります。<br>
+			次のプロットを。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			かげ！ぶん！しん！<br>
+			2D6&gt;=5 （判定：分身の術）<br>
+			ShinobiGami : (2D6&gt;=5) → 2[1,1] → 2 → ファンブル
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			まじか。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			ゲェーーーーーッ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			KFTをどうぞ。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			KFT<br>
+			ShinobiGami : 怪ファンブル表(6) → ふう。危ないところだった。特に何も起こらない。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			セーフ！
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ふう。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			まさにふう。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			び、びびらせやがって・・・・・・・・
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ほんとにふう。<br>
+			何事もなくプロットの続きです。GOGO。<br>
+			皆様よろしいか。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			OK!
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			OKィ
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			ok!
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			OK!
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ではプロット開示どうぞ！
+		</p>
+		<p class="player p6">
+			<b>どどんとふ</b>
+			「浅木　裕」がダイスをオープンしました。出目は3(6面ダイス)です。<br>
+			「伍和　旱」がダイスをオープンしました。出目は6(6面ダイス)です。<br>
+			「八柱　薪」がダイスをオープンしました。出目は2(6面ダイス)です。<br>
+			「氷上 融」がダイスをオープンしました。出目は3(6面ダイス)です。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			6かー！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			届かねえ
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			一方的に攻撃できる良いポジション
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			６：旱　３：融、裕　２：薪<br>
+			ではプロット６、旱から。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			獣化の効果は続いていると思うので、夜雀を痛打に適用します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です。＋１。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			そして裕に血旋渦！　なのですが、回想はさみます<br>
+			達成値上昇！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あ<br>
+			えーと達成値上昇は<br>
+			それでも７以上素の出目で出さないと駄目なんですが<br>
+			（ファンブルは素の出目で判定）<br>
+			それでも入れます？
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			6速のこわいところよ……
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ダメージ上昇もありますからね。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			そうそう。当ててからダメージ上昇でもアリ。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			うーんでもなー裕さん妖術残ってるしなー
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			それでも使うぜ！　ならGOです。GOGOGO。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			では達成値上昇は使いません。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です。では命中判定をどうぞ
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			2D6&gt;=5 （判定：異形化）<br>
+			ShinobiGami : (2D6&gt;=5) → 5[2,3] → 5 → 成功<br>
+			上昇使ってたらだめだったね！？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			さ、逆凪。<br>
+			使ってても逆凪は逆凪ですからね……。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			うむ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			よかった。<br>
+			セーフ。ではプロット３の処理に移りつつ。<br>
+			融さんと裕さんはそれぞれ2d6をば
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 12[6,6] → 12
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 8[3,5] → 8
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			こ、こんな、こんな……
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			うわスペ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			回復はしないんですよね、関係ないから……判定じゃないから……
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			後に回るのを選んでもいいですか？<br>
+			先確定でしたっけ？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			融さんがよければにしようかな。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ではお任せします。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			まぁ手の内見て動きかえるだけで処理は同時ですし、別に構いません。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。では融さんの行動から。<br>
+			お願いします。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			やることも決まってますしね……裕さんに奥義使います
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			そんな気がしてました。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です。奥義破りは意気に-2をつけて。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			奥義破りします。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			絶対防御持ってる人がいるならそりゃそこから落とす！
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			いけいけー！（ふっとばされながら）
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ころころ
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			おっと<br>
+			薪に先に判定お願いしてから、<br>
+			成否見てから、感情修正をもらいたいです。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。では薪さん奥義破り判定どうぞ
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			おっけー。<br>
+			2D6&gt;=15 （判定：火術）<br>
+			ShinobiGami : (2D6&gt;=15) → 10[5,5] → 10 → 失敗
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			出目は高いんだけど。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			やるしかないな。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			覚悟を決めた男の顔。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6+1&gt;=11 （判定：毒術）<br>
+			ShinobiGami : (2D6+1&gt;=11) → 9[4,5]+1 → 10 → 失敗<br>
+			ああ、イチタリナイ
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			届かなかった！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			流石に要求が高いですね。<br>
+			奥義はどうしますか？
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			とおせー！とおせー！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			もっててよかたくらまし！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			使います。<br>
+			自分に
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ですよね。えーと、呪術から、-3。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			呪術くらましで
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			まぁ結局ここを破れないとダメージは通らない訳だが……！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			はいあってます。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			破ります！
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			逆凪奥義破り判定できましたっけ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			駄目ですね
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			逆凪は……
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			はい(´・ω・`)
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			完全成功持ってたら使えば通しますが。<br>
+			完全成功は逆凪中でもオッケーってことにしてます。今回誰も持ってないけど。難しいからねあれ……。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			うん……
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			というわけで、どうぞ。ダイスぶんしゃか。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			感情修正は
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			呪術は目標１２の-３なので、まぁスペのみです<br>
+			2D6&gt;=12 （判定：分身の術）<br>
+			ShinobiGami : (2D6&gt;=12) → 2[1,1] → 2 → ファンブル
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			旱さんから送れるはずああそっか。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			ちょっと！？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			て、徹底的。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			この卓のダイス極端だね？
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			師弟仲良く逆凪！！！！！！！！！！！！！！！！！！
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			震えております
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			逆凪ですけど、逆凪が適応されるのはプロット２の処理に移ってからです。はい。<br>
+			こんなことが……。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			大丈夫です。薪に任せますから。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			では絶対防御は通りまして、裕さんのてば、あ。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			あって？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			いやいいや<br>
+			オッケーです。裕さんの手番。<br>
+			いや、旱さんの重傷忘れてたんですけど、巻き戻りません。すみません。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			消えぬ炎の魔刃も、炎に触れさせなければ意味がない<br>
+			歯を食いしばって突き通そうとして……体勢を崩した。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			遡及はなしで進めていきます。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			使ったなら覚えとくのだった。了解。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			了解！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			禁術を使用します。<br>
+			痛打に。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はーい。どうぞ。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6&gt;=6 （判定：毒術）<br>
+			ShinobiGami : (2D6&gt;=6) → 8[3,5] → 8 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			通りましたね。痛打に禁術。覚えておきます。書いておこう情報シートに。<br>
+			で、そのまま行動もできますが。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			任せるとはいいましたけど、スペシャルの目があるのでやっぱり接近戦攻撃<br>
+			いやどうなんだろう。<br>
+			接近戦攻撃
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解です、どうぞ
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			体内で燻る炎が少し弱くなったような、そんな感覚を覚えました。勿論そんな事するのは浅木しかいないでしょという確信。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			融君に。対して<br>
+			2D6&gt;=5 （判定：呪術）<br>
+			ShinobiGami : (2D6&gt;=5) → 6[1,5] → 6 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			回避に-1ですね
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			はい
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			融くんは回避判定を。まだいけます。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			あ、そうか炎刃も使えたのか今<br>
+			仕方なし。回避……<br>
+			！
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			感情修正いれ……な……だめよね……
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			いえ、ください。<br>
+			兵糧丸。妖術を回復します
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			入れます！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			死霊術で回避判定して……目標１１！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			どうぞ！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			ん、いや兵糧丸意味はな……くはな……くないな<br>
+			分身の術の方が近かった……
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			どっちにしろ分身11に+1の感情修正ですね………
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			まぁどのみちここで死ぬ定めならば全てを使うまで……
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			いけー！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			2D6+1&gt;=12 （判定：分身の術）<br>
+			ShinobiGami : (2D6+1&gt;=12) → 9[3,6]+1 → 10 → 失敗
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			くあー。<br>
+			２点入ります。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			ダ……目！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			融は脱落。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			「融……！！！」
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			死亡を選びますか？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			[]
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			さっきギリギリでお薬使ってなかったかな
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			おくすり使って１点回復で残り２のところに揺らしの乗った接近戦攻撃なので
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			そうか、揺らしか。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			２点入ってプラマイゼロなんですね<br>
+			比良坂はそういうことする。<br>
+			死亡ルールに関しましてはp70。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「大人しくしてな。」奥義を止めた流れで、そのまま融の身体の動きを止めきってしまう。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			最後の一撃……が、強くないんですよね奥義ビルドだから！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			攻撃忍法とそれに伴うサポート忍法だけですね。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			「融！　しっかりせい！　儀式は……儀式はどうなる！」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			そして、裕は融を蹴飛ばそうとした
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			……旱さんの範囲攻撃って<br>
+			2点でしたよね
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			２点ですね
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			はい。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			裕さんの残り体力が３ですよね
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ですねえ。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			そうです。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			……………………
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			痛打は禁術が効いている
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			死亡を選びます。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			獣化で接近戦+1、ダメージ上昇いけば+1で3点……
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。最後の一撃かもしくは遺言か。どちらか好きな方を選べます。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			最後の一撃。<br>
+			浅木裕に接近戦攻撃……！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はい。どうぞ、想いのままに。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			アニキ耐えてくれ！！
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			裕が融を蹴り飛ばそうとした、その脚に<br>
+			小さな……小さな火を灯す。<br>
+			それは不知火の最期の炎。けしてと灯してはいけないと言われている炎。<br>
+			生者の命を代償にする、死霊の炎。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			「やめろ」声が震えています。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			「この身に代えても」<br>
+			「この生命に代えても」<br>
+			「……死なせはしない」<br>
+			死霊術で、判定をします。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はい。判定を。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			「代えるな！　わしもお主を死なせとうない！」
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			2D6&gt;=5 （判定：死霊術）<br>
+			ShinobiGami : (2D6&gt;=5) → 8[2,6] → 8 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			裕さんは死霊術から回避判定を。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6&gt;=6 （判定：召喚術）<br>
+			ShinobiGami : (2D6&gt;=6) → 3[1,2] → 3 → 失敗
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			届いた。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			そうか。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			灯っ…………た！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			融さんはRTTを
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(4,4) → 『謀術』罠術
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			謀術ですね。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			[]
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			では演出を続けてどうぞ
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			その火は爆発的な勢いもなく、尋常鳴らざる熱もない。ただ一つの効果しか持たない。<br>
+			『消えない』<br>
+			ただそれだけだ。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「ああっ、こいつ、最期に誰も望んじゃいないことを……」　痛みに悶ながら火を消そうとしますが、<br>
+			この火はしばらくの間、燃え続けたままだ。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			消したければ水や術でなく、除霊でもする事ですね！（戦闘終わった頃に消えると思います）
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			最後の燈火が、<br>
+			華と散る。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			「融……」
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			といったところでプロット２，薪さんの手番ですが、届かないですね。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			そうですね。目標がいなくなった。<br>
+			「確かに、見届けた」
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			「しんみりするでない。儀式はまだ終わっておらぬ」うつむきながら、厳かに。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			では一旦休憩いれて21時から再開、次はクライマックスフェイズラウンド４からです。
+		</p>
+		<p class="player p6">
+			<b>どどんとふ</b>
+			「GM」がダイスをオープンしました。出目は2(6面ダイス)です。<br>
+			「GM」がダイスをオープンしました。出目は2(6面ダイス)です。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			さて<br>
+			点呼開始！
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			準備完了！（1/4）
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			準備完了！（2/4）
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			準備完了！（3/4）
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			準備完了！（4/4）<br>
+			全員準備完了しましたっ！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			よし。ありがとうございます。これ便利だな。<br>
+			再開していきましょう。よろしくお願いします！
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			よろしくお願いします～。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			よろしくお願いします。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			よろしくお願いします
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			よろ死くおねいがいます！！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			死。<br>
+			融さんが最後の埋み火を残して脱落しまして。<br>
+			折返し、クライマックスフェイズ第４ラウンドです。プロットをお願いします！<br>
+			揃いましたかな。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			はい。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			OKです
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			OK
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			では開示を！　お願いしまーす。
+		</p>
+		<p class="player p6">
+			<b>どどんとふ</b>
+			「八柱　薪」がダイスをオープンしました。出目は3(6面ダイス)です。<br>
+			「浅木　裕」がダイスをオープンしました。出目は4(6面ダイス)です。<br>
+			「伍和　旱」がダイスをオープンしました。出目は5(6面ダイス)です。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			高め高めに。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			よし。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ううむ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			５：旱　４：裕　３：薪<br>
+			ではプロット５、旱さんから。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			兵糧丸の複数使用は可能ですか？
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			可能です
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			故障がしかし
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			治ってますから大丈夫<br>
+			回復判定成功してる。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ああそうでした。すみません
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			はーい。重傷を治して、忍術を回復させます。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。回復。<br>
+			これで使い切りですね。<br>
+			判定をどうぞ<br>
+			判定てか。行動か。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			そりゃ裕さんに接近戦攻撃するしかないです。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			やっぱりか・・
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			決意だ。はーいでは改めて判定を。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			もう旱は裕さんしか見ていません。憎悪だけが感じられる瞳。愛弟子を失った怒り。<br>
+			2D6&gt;=5 （判定：幻術）<br>
+			ShinobiGami : (2D6&gt;=5) → 8[3,5] → 8 → 成功
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			感情修正をお願いします。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			もちろん。<br>
+			炎を纏った身体で、立ちはだかります。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			2D6+1&gt;=9 （判定：呪術）<br>
+			ShinobiGami : (2D6+1&gt;=9) → 6[2,4]+1 → 7 → 失敗<br>
+			奥義を使用します<br>
+			自分に　呪術-3
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			破るに決まっている！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ですよねえ。<br>
+			回想とか使います？
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			達成値上昇使えるんでしたっけ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			使えますよー。前は全然意味なかったですけど、今回は意味ありますので。<br>
+			-3入ってるのでそれを打ち消して６で成功になります。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			じゃあ使います！レッツ回想！レッツ秘密オープン！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			では。<br>
+			旱さんの手でその秘密を詳らかにしまして、どうぞ回想シーンを。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			刮目せよ。<br>
+			■秘密<br>
+			あなたは火神と称される不死の命を持つ存在だ。<br>
+			だが、己のうちにあった力『宝珠・迦具土』を奪われた上、<br>
+			瀕死の氷上 融を助けるために不死の命の源である『神鏡・啼沢女』を与えた今、<br>
+			あなたは定められた命を持つただの怪物となってしまった。<br>
+			背景『劣性因子』を修得し、好きな妖魔忍法を１つ修得すること。<br>
+			<br>
+			神であった頃の記憶も薄れた今、<br>
+			胸に募るは共に生きてきた氷上 融への想いのみ。<br>
+			PC1と互いにプラスの感情を結んでいる場合、<br>
+			あなたは自分のドラマシーンで氷上 融と何かを約束し、<br>
+			それを使命とすることもできる。<br>
+			「もうこの姿を晒してしまった以上、語らなくとも理解しておると思うが??」<br>
+			そう。己は火神である。迦具土を宿し、火を統べる者。<br>
+			永久の時を生きていた代償かも知れぬが、迦具土は薪の手に渡った。<br>
+			そして啼沢女は融を助けるために、彼に渡した。<br>
+			迦具土も啼沢女も無き今、わしは一体何が出来る？<br>
+			悩んだ結果、切り札を切った。薪から迦具土を奪い、己が神となる。<br>
+			そして融に殺されることによって、不知火の一族を復興させる。<br>
+			わしは不知火の乗り越えるべき壁となった。<br>
+			……なりたかった！　死ぬなら後腐れもなく、気高く！　そして師として命を落とすべきだ！<br>
+			なのにわしの命を奪ってくると！　信じていた融はもう……もう！<br>
+			「妖魔の力を易易と使うな！」<br>
+			「どうして不知火から一番遠いお主が！　融を！　融を……！」<br>
+			「この憎悪、地獄の果まで味わえ！　浅木ィィィィィィィィィィッ！！！」」<br>
+			RP終了！　絶対防御を……奥義破り判定！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			文句なしです。＋３をどうぞ。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			2D6&gt;=6 （判定：異形化）<br>
+			ShinobiGami : (2D6&gt;=6) → 7[1,6] → 7 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			見事。<br>
+			接近戦２点ですね。RTTを２個。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(1,4) → 『器術』水術<br>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(1,6) → 『器術』仕込み
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			兵糧丸を使用します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			どこを回復しますか？
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			妖術を残す形で回復。残り1
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			あ、まあ、いいか。今はそれで。<br>
+			次、裕さんの手番です。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			重傷！<br>
+			は直ってた
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			治ってたのだ。直して使い切って忍具は全部出ましたね。完全に。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「バカな、妖魔の力によって強化した俺の奥義が……」
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			「想い人を殺されたのだ」<br>
+			「わかるか？」<br>
+			「お主は大事なものを奪われたことがあるか？」<br>
+			「それしか考えられなくなるほどの！　かけがえのないものを！　蹴り飛ばすとはなァ！」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「フンッ……分かりたくもない。経験したくもない。」
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			「今の矛先が薪に向けられていたとしてもか？」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「そうならないために、大事な人を守るために、この力に手を染めたんだ。」↑<br>
+			「っ、それは……」<br>
+			「……薪なら同じことを……」
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			「出来るのか？　出来ないのか？」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「出来る、全てを捨てて神になる覚悟は遠についてる。」<br>
+			出来るに！プラス
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			薪の方をちらと見て。覚悟を決めます。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「ここでお前を倒して、儀式を完成させる！　くたばるのは今じゃない！」<br>
+			妖魔化した身体に埋め込まれた兵糧丸が溶け、致命の一撃にギリギリで踏みとどまる。<br>
+			必中を旱に使用します。<br>
+			2D6&gt;=5 （判定：砲術）<br>
+			ShinobiGami : (2D6&gt;=5) → 9[3,6] → 9 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			旱さんは回避判定をどうぞ
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			9以上で成功ですね
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ですね。ただ腹話術なので
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			妖魔効果で10かな
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			どちらにせよ10以上<br>
+			ああ。じゃあそこにマイナス１だ。<br>
+			11以上。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			きついけど……受ける！<br>
+			2D6-1&gt;=10 （判定：腹話術）<br>
+			ShinobiGami : (2D6-1&gt;=10) → 10[4,6]-1 → 9 → 失敗
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			さすがに高い。揺らしが乗って２点ですね。旱さんの任意で分野２つ潰してください。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			体術と忍術で。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。ではプロット３，薪さんの手番へと。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			はい。<br>
+			では、神槍を、旱様に。<br>
+			回想シーンで、修正をかけます。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。<br>
+			同じように秘密を提示して、回想シーンをどうぞ。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			【秘密：八柱 薪】<br>
+			心臓である『宝珠・迦具土』を一度でも失った場合、あなたはエンディングフェイズで死亡する。『宝珠・迦具土』と一体化しているため、あなたは『百燐』か『炎刃』を使用することが出来る。鞍馬神流はあなたを餌に火神をおびき出そうとしている。<br>
+			<br>
+			　だが、『宝珠・迦具土』を使うことは危険な賭けでもある。クライマックスフェイズ終了時に火神が死亡していなかった場合、鞍馬神流の手によってあなたは『宝珠・迦具土』ごと封印される。<br>
+			<br>
+			「君を自由にする」<br>
+			<br>
+			浅木 裕はあなたにそう約束してくれた。相手が約束を守ってくれるならば、あなたは自らの使命を「自由になる」に変更しても構わない。<br>
+			８年間。長かった。<br>
+			初めてアニキと知り合ってから、カグツチが強い熱を放出して、運命を告げたあの日からずっと、この日を待っていた。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			逃げ場を封じるように、ただの忍びではありえない程の量の冷却弾頭を突き刺した。「これが火神対策に秘めていたこれがようやく使える」↑↑↑挟まってしまうけど。揺らしとしてこれで。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			生まれてからずっと共にしてきた宝珠・迦具土は、今や、旱様のもの。<br>
+			与えられた宿業を、彼女が引き受けた。オレの、弱さを見抜いて。<br>
+			……オレだなんて、強がったしゃべり方をしたって無意味だ。私は弱い。今に至っても、裕の助けなしには、ここで断っていることさえ出来なかった。<br>
+			死ぬことを受け入れることは簡単だった。燃え尽きていくことは簡単だった。瞬間のために生きていくことは、慣れっこだった。<br>
+			けれど、私を自由にすると約束されては。<br>
+			生きていくのは難しい。一瞬に燃え尽きるよりも、ずっと。<br>
+			「旱様。……どうもありがとうございます。私が、この儀式を完成させます」<br>
+			「だから、受け止めてください」<br>
+			2D6+3&gt;=7 （判定：火術）<br>
+			ShinobiGami : (2D6+3&gt;=7) → 4[1,3]+3 → 7 → 成功
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ぴったり。<br>
+			回避判定は手裏剣術からです。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			回避したいところなんですが、達成値が13なので
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			身体は上手く動かない。ただ、熱が。炎が身体を包んでいる。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			どうあがいても、回避できません。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			炎を操ることで、自らの傷ついた身体を動かす。<br>
+			燃えさかるストールをしならせ、遠く届く槍のように放つ。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			回避判定、します。<br>
+			2D6&gt;=13 （判定：結界術）<br>
+			ShinobiGami : (2D6&gt;=13) → 11[5,6] → 11 → 失敗
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			うわーっ。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			ストールが深々と突き刺さりました。<br>
+			「薪」<br>
+			「信じていたぞ……」
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			脱落になります<br>
+			死亡を選択するなら、今ですが。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			深々と頭を下げる。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			生殺与奪の権を握らせます。脱落で。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。旱さんは、脱落。<br>
+			第４ラウンド終末ですが、どちらか自主脱落しますか？
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			降りてくれませんか？
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			力が抜けた大きなキツネの体が地面にドサリと落ち、融の火の近くに落ちました。<br>
+			「融……こんなに小さくなってしまってのう……」ストールが目に突き刺さったので、もう何も見えません・<br>
+			感じるのは火と熱だけ。姿が見えなくても、火の勢いで誰かいるのがわかる。
+		</p>
+		<p class="player p4">
+			<b>氷上 融</b>
+			消えない火が、ただゆらゆらと燃えている。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			「わしはここにいるぞ」鼻先を伸ばそうとする力もない。熱に身を任せるしかできなかった。それでも、不思議と満足していた。
+		</p>
+		<p class="player p8">
+			<b>氷上　融</b>
+			灯る火にはもう燃やし尽くすような勢いもなく、しがみ付く執念深さももうない。<br>
+			その火が燃え続ける理由は、今消えようとしている。<br>
+			ただ、暖かな熱だけが。名残惜しむように。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「終わったな。」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「裕……、あとは私に任せてほしい」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「おい、さっき言っていた俺の覚悟は聞いてたのか？」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「でも、あれは元々私のものだよ」<br>
+			「たぶん」<br>
+			「今も妖魔化とかしちゃってさ、無理しすぎなんだよ。さっきもなんかいなくなっちゃったし」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「ハハッ、これは痛いところを突かれた。」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「まだ燃えてるし」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「まあ、これについてはいいんだ。言いたいのはそういうことじゃないのは分かってるけど、融は弔ってやるから。」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「それは当たり前でしょ！　……どうしてもって言うんなら、約束して」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「いや、いいよ、薪に任せる」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……じゃあそれはそれとして約束して」<br>
+			「勝手にいなくならないこと。なにかやるときはちゃんと相談すること」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「不知火の宿命、俺からすると、理解したくないことばかりだったけど、元はといえばその通りだし、自由にするって約束だったからな。俺がお前の自由を最後の最後で奪うことはできない。」<br>
+			「はい、はい、誓うよ。」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「……ありがとう」<br>
+			では薪は継続して残ります。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はい。裕さんはどういたしましょう。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「そんな約束をしてくれる薪なら無茶はしないんだろうし、信じるよ。」<br>
+			脱落します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。裕さんが脱落。<br>
+			最後に一人残った薪さんが勝者となります。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			やっぱり待って
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			おっと。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			脱落はいいんですけど、
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はい
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「どんな願いを叶えるつもりなのかは教えてくれ・」<br>
+			。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			なるほど。薪さんの答えはいかに。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「信じてるんだけど、今しかできないことは今のうちにしておきたくて」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「安心して。融を生き返らせようかとも願ったけど……彼らに必要なのは、そんなことじゃない」<br>
+			「私が生きていくことを願うだけ」<br>
+			信じてるんだけど、っていいながら聞くところにアニキらしさを感じる。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「思った通りだ安心したでも、少し変わることもあるんだろ、これから」
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「まあ、変わるよ。……明日から服も着る」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「ハハハ、そのくらいなら大したことじゃないな。それでも」<br>
+			「約束してくれた時と同じようにさ……俺には言えないなあ」<br>
+			迦具土から自由になった薪を無言で抱きしめます。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			胸のあたりに、顔を埋めて。<br>
+			「……温かい」
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			「……温かい」<br>
+			……暫し、抱きしめあった後、薪を信頼し、儀式を見守るために脱落します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			了解しました。それでは勝者は薪。<br>
+			生殺与奪と戦果の宣言を。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			では、旱様を殺します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			はい。火神被殺は、ここに為された。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			薪の一撃を何の抵抗もなく受け入れます。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			『神産みの儀式』を完成させたあなたは忍神として、願いを一つ叶える力を得ます。<br>
+			何を願いますか。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			そして、宝珠・迦具土を失ったことで、滅びるのを待つばかりの肉体を、治します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			叶いましょう。今のあなたの力なら。<br>
+			肉体の綻びが止まる。身を蝕む火とはまた違う、温かな熱が、身体を再びに巡りゆく。<br>
+			最後になにか演出を頂きましてクライマックスフェイズを閉幕としましょう。
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			「この命は、旱様に授かったもの。裕が守ってくれたもの。融が心に火をつけてくれたからこそのもの」<br>
+			「ここに『神産みの儀式』はなされた。全ての宿業は断ち切れた」<br>
+			「私は、失われたもの全てを背負って、ただ、当たり前のように生きます」<br>
+			『百燐』を放ち、二人の亡骸を荼毘に付します。
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			月の光の冴える夜に、ふわり、ふわり、燐火が舞う。<br>
+			もつれ合い舞い上がるそれらは無邪気に踊る蛍のように、<br>
+			再会を喜ぶ想い人のように絡み合って、<br>
+			煌めき、空へと散っていった。<br>
+			　<br>
+			これにてクライマックスフェイズを終了します。<br>
+			ありがとうございました！
+		</p>
+		<p class="player p8">
+			<b>氷上　融</b>
+			裕の身体に灯っていた灯火は、いつの間にか消えていました。
+		</p>
+		<p class="player p7">
+			<b>伍和　旱</b>
+			ありがとうございました。
+		</p>
+		<p class="player p2">
+			<b>浅木　裕</b>
+			ありがとうございました！
+		</p>
+		<p class="player p3">
+			<b>八柱　薪</b>
+			わーーありがとうございました！
+		</p>
+		<p class="player p8">
+			<b>氷上　融</b>
+			お、う<br>
+			ありがとうござい、ました・・・・！！！
+		</p>
+	</div>
+</body>
+</html>

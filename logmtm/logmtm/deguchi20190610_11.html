@@ -1,0 +1,3341 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>出口なし</title>
+	<style>
+		html {
+			font-size: 14px;
+		}
+		body {
+			-webkit-text-size-adjust: 100%;
+			background-color: #bd6748;
+		}
+		.tab {
+			border: 1px solid #999;
+			width: 60%;
+			margin: 2rem auto;
+			line-height: 1.5;
+			position: relative;
+			background-color: #feecd2;
+			border-color: #999999;
+		}
+		.tabtitle {
+			color: #000;
+			border: 1px solid transparent;
+			border-color: inherit;
+			background-color: inherit;
+			position: absolute;
+			top: -.8rem;
+			left: 1rem;
+			width: 8rem;
+			text-align: center;
+			font-size: 1rem;
+			z-index: 9999;
+			line-height: 1.4rem;
+		}
+		.player {
+			margin: 0;
+			padding: 0 .5rem;
+			padding-left: 10.5rem;
+			border-bottom: 1px dotted transparent;
+			border-color: inherit;
+			position: relative;
+		}
+		.player:last-child {
+			border-bottom: 0;
+		}
+		.player b {
+			display: block;
+			height: 100%;
+			width: 9rem;
+			padding: 0 .5rem;
+			border-right: 1px solid transparent;
+			border-color: inherit;
+			position: absolute;
+			top: 0;
+			left: 0;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.tabtitle + .player {
+			padding-top: .7rem;
+		}
+		.tabtitle + .player b {
+			padding-top: .7rem;
+			height: calc(100% - .7rem);
+		}
+		.diceroll {
+			padding: 0 .5em;
+			color: #fff;
+		}
+
+		/* 発言者：GM */
+		.p0 { color: #000000; }
+		.p0 .diceroll { background-color: #000000; }
+
+		/* 発言者：mikouri */
+		.p1 { color: #000000; }
+		.p1 .diceroll { background-color: #000000; }
+
+		/* 発言者：y */
+		.p2 { color: #000000; }
+		.p2 .diceroll { background-color: #000000; }
+
+		/* 発言者：化野ドレス */
+		.p3 { color: #000000; }
+		.p3 .diceroll { background-color: #000000; }
+
+		/* 発言者：みこうり */
+		.p4 { color: #000000; }
+		.p4 .diceroll { background-color: #000000; }
+
+		/* 発言者：みこうり */
+		.p5 { color: #993333; }
+		.p5 .diceroll { background-color: #993333; }
+
+		/* 発言者：GM */
+		.p6 { color: #000099; }
+		.p6 .diceroll { background-color: #000099; }
+
+		/* 発言者：キリ */
+		.p7 { color: #993333; }
+		.p7 .diceroll { background-color: #993333; }
+
+		/* 発言者：化野ドレス */
+		.p8 { color: #6633cc; }
+		.p8 .diceroll { background-color: #6633cc; }
+
+		/* 発言者：GM */
+		.p9 { color: #336600; }
+		.p9 .diceroll { background-color: #336600; }
+
+		/* 発言者：mikouri */
+		.p10 { color: #993333; }
+		.p10 .diceroll { background-color: #993333; }
+
+		/* 発言者：どどんとふ */
+		.p11 { color: #00aa00; }
+		.p11 .diceroll { background-color: #00aa00; }
+
+		/*横幅＝携帯サイズの設定（以下の記述は、↑の記述を上書きする）*/
+		@media(max-width:767px){
+				.tab {
+					width: 100%;
+					margin: 0;
+				}
+		}
+	</style>
+</head>
+<body>
+	<div class="tab">
+		<p class="player p0">
+			<b>GM</b>
+			それではシノビガミシナリオ「出口なし」始めていきましょう。<br>
+			よろしくお願いします！
+		</p>
+		<p class="player p1">
+			<b>mikouri</b>
+			よろしくおねがいします
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			えーとPC紹介はー　えーと　これ要ります？　一応してもらおっか。
+		</p>
+		<p class="player p2">
+			<b>y</b>
+			よろしくおねがいしまーす
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			してもらおう。PC1のわいさんから。名前変えつつキャラシはってさらっと。
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			はーい
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			オッかっこいい
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			立ち絵でかいな、もっと上で切ろう<br>
+			まああとで調整します<br>
+			<u><a href='http://character-sheets.appspot.com/shinobigami/edit.html?key=ahVzfmNoYXJhY3Rlci1zaGVldHMtbXByFwsSDUNoYXJhY3RlckRhdGEYiIbwnQIM' target='_blank'>http://character-sheets.appspot.com/shinobigami/edit.html?key=ahVzfmNoYXJhY3Rlci1zaGVldHMtbXByFwsSDUNoYXJhY3RlckRhdGEYiIbwnQIM</a></u>
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			よろしくおねがいします
+		</p>
+		<p class="player p4">
+			<b>みこうり</b>
+			あっえっちなキャラだ
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			化野（あだしの）　ドレス　年齢は18だけど、外見はもうちょっと若いイメージです15以下かな
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			若い！
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			隠忍の中の血社の忍者ですね
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			しえしゃーですね　吸血鬼
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			あとなんだろ、なんだ。えーっと元々は血社で、ずっと前線というか、工作を行い続けていたのだけど
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			人材を集めたりとかそういう工作を
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			まあそのせいで体が大分ボロボロという感じですね
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			出口がなさそうな情報だ
+		</p>
+		<p class="player p5">
+			<b>みこうり</b>
+			リクルーターだ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			まあ細かい設定はメインで出して頂ければいい感じですからねこのシナリオ<br>
+			リクルーターヴァンパイア化野ドレスちゃん
+		</p>
+		<p class="player p5">
+			<b>みこうり</b>
+			場に出たときにコスト2以下のクリーチャーをデッキから探してくる能力を持っている
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			ですねえ。まあかなり元々は任務に忠実で
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			信念忠
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			かなり真面目に、真面目すぎるぐらいこなしてきたって感じかな
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			真面目さんだ。応援したくなりますね。
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			年齢より見た目が若いのもその辺ですね。血社の隠忍だし、侵食が進んでいる
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			そう<br>
+			侵食。<br>
+			侵食なんだよなぁ～～～。
+		</p>
+		<p class="player p5">
+			<b>みこうり</b>
+			ゆふしからも許されないというコメントが届いています
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			おとといぐらいにみこうりさんが<br>
+			いやもっとまえだったか
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			止めようかと思ったけどまぁだいじょうぶか、と思って通しました。
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			侵食の話をそうそう
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			言ってたね。まぁいいかって。
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			してて　笑った
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			笑いながら進めていきましょう
+		</p>
+		<p class="player p5">
+			<b>みこうり</b>
+			ほんとにとってくるとはな
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			いやこれはGMはしってのとおり
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			HAHAHA
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			最初にシート出した時点でもうこうだった
+		</p>
+		<p class="player p5">
+			<b>みこうり</b>
+			はい
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			最初から侵食一筋でしたね
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			セーフセーフ
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			まあ……だいじょうぶだろ！　二人を信じます。
+		</p>
+		<p class="player p5">
+			<b>みこうり</b>
+			何がセーフやねん
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			知らない人同士だったら止めてた。
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			ははは
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			知り合いならまぁなんとかなるやろと思って……
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			まあ隠忍がしたかった
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			ははは<br>
+			がんばって隠忍ってください<br>
+			そんな感じかな？
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			あとちゃんと出口なしっていうシナリオにあわせたんやろ！！！！！俺は無実やで！！！
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			わははわはははは　わははわはははは<br>
+			ではもういいかな　次はPC2の巫女瓜さんお願いします
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			今回はかなり真面目に取り組んでね、キャラ作りもしてきたので、がんばります。いじょうです
+		</p>
+		<p class="player p0">
+			<b>GM</b>
+			がんばえー
+		</p>
+		<p class="player p5">
+			<b>みこうり</b>
+			は～い
+		</p>
+		<p class="player p6">
+			<b>GM</b>
+			よろしくおねがいしまーす
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			<u><a href='https://character-sheets.appspot.com/shinobigami/edit.html?key=ahVzfmNoYXJhY3Rlci1zaGVldHMtbXByFwsSDUNoYXJhY3RlckRhdGEYgsTznAIM' target='_blank'>https://character-sheets.appspot.com/shinobigami/edit.html?key=ahVzfmNoYXJhY3Rlci1zaGVldHMtbXByFwsSDUNoYXJhY3RlckRhdGEYgsTznAIM</a></u>
+		</p>
+		<p class="player p6">
+			<b>GM</b>
+			セクシーな名医さん。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			文字色かえよう<br>
+			セクシーな。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			スーパーセクシーな女医、ニ々宮 限です。<br>
+			少なくとも、本人はそう自己申告しています。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			セクシーですね
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			真面目な自己紹介をすると、<br>
+			御斎の旧校舎管理委員会というのをやっており、<br>
+			迷宮となっている旧校舎を転移・置換する忍法「弗阿賀」というのを使うことが出来ます。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			カッコいい。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			その忍法を使って病院をペルソナ1状態にするのが趣味です。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			趣味。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			限でキリって名前がいいよね。今回自分は洋風名にしたので<br>
+			趣味
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			趣味の規模がデカい
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			なぜ旧校舎の忍者がセクシーな女医をやっているのかは、謎に包まれています。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ミステリアスですね。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			おそらくセッション中に明らかになるでしょう。<br>
+			ならないかもしれません。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			楽しみ！<br>
+			ワハハハ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			神秘的もってるのこっちなのに！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ミステリアス対決！
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			表情筋は発達してないタイプですね。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			この（特別）ってこれと交換できるのか、なるほど
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			そう。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			強い
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			表情筋発達してない同士じゃん
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			おもしろい
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			お互い表情筋を刺激し合ったりしなかったりしていただきたいですね
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			キャラかぶりである。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			お互い無表情
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			同じ属性のキャラは二人いらない……
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			クールキャラマウント勝負だ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			髪型まで似てる<br>
+			って云われてるし
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			一騎打ちじゃん<br>
+			ｗ<br>
+			そんな感じかな？
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			というわけで吸血鬼にはマットに沈んでいただきましょう。<br>
+			病室で天井のシミを数えているがいい……<br>
+			よろしくおねがいします。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			マットって旧校舎的な。<br>
+			よろしくおねがいしまーす。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			よろしくおねがいします！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			GMはのんべんだらりと　いやちゃんと交通整理します。よろしくおねがいします。<br>
+			えーとでは今回出口なしですね。特別レギュレーションがあるのでまぁちょっと再掲。<br>
+			<br>
+			▼プライズあり。プライズの秘密は持ち主のみ閲覧可能。<br>
+			▼プライズの移動は戦闘の結果によってのみ行われる。勝者は戦果として「プライズを相手に渡す」ことを選んでもよい。<br>
+			▼互いの居所は入手済で開始。第2サイクルではPC1が行動順を決定できる。<br>
+			▼クライマックスは2サイクル目の終了後に自動的に発生する。<br>
+			ほいほい。<br>
+			このあたり再確認よろしくお願いします。<br>
+			ドラマシーンで手渡し不可能なんですね、プライズ。<br>
+			そんでもってええと導入がこんな感じ。<br>
+			<br>
+			とある地方の山中。ぽつりと建つ古びた木造の病院の入院病棟、2階の203号室。<br>
+			ベッドに腰掛けた患者の傍らに、ひとりの医師が腰掛けて話を聞いている。<br>
+			患者は言う。何か大きな罪を犯したのに、それが何なのか思い出せない。<br>
+			静かな病室で、カウンセリングは続く。<br>
+			<br>
+			病室の外に人影はない。長い廊下を見渡しても、階下に降りたとしても。<br>
+			生きて動く者は一人もいない。<br>
+			ただ、203号室から、話し声がぽつぽつと無人の廊下に漏れ聞こえている。<br>
+			<br>
+			（??数か月前、忍務の帰途で大怪我を追った忍者をこの病院の医師の1人が保護した。<br>
+			　隠れ潜む忍者であったその医師は、同情か仁愛か気紛れか、傷ついた忍者が身元を隠して心身を癒せるように尽力した。<br>
+			　病院の人々は患者をあたたかく遇し、忍者は生まれて初めて味わうような静かで安らかな日々を過ごした。<br>
+			　その束の間の静穏が、壊れる日までは）<br>
+			<br>
+			その日壊れたものは、ほんとうは何だったのだろう。<br>
+			真実は何処に？<br>
+			<br>
+			??さあ、先生。あなたの患者が待っています。<br>
+			　<br>
+			と、いうふうになっておりますので、<br>
+			導入フェイズでなんかこう、PC2の限さんがドレスさんのところに往診に来るシーンから始めまして、<br>
+			あとはなんかぬるぬるっといい感じにイチャついてシーンやっていっていただこうかなという感じです。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			ヌルッ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ぬるぬる
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ぬるっと。割とシーンの区切りがヌルヌルしたシナリオです。場面転換も大してなくてずっと病室だしね。<br>
+			じゃあそんな感じで、はじめていきましょうか。よろしくおねがいしまーす。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			よろしくおねがいします
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			おねがいしまーす
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			　<br>
+			??シノビガミ「出口なし」<br>
+			■導入フェイズ<br>
+			2d6<br>
+			ShinobiGami : (2D6) → 11[5,6] → 11<br>
+			10～11：古い木造の入院病棟、203号室。サイドテーブルの花瓶には数日前に生けた花<br>
+			その木造病棟には、凡そ人気らしいものが感じられない。<br>
+			人の声のない寂れた病院。吹く風は緩やかにうら寂しく、ただ活けられた花弁を揺らすだけ。<br>
+			それを、化野ドレスさん。あなたはベッドに腰掛けて眺めています。<br>
+			??やがて足音がする。それは既に聞き慣れた??聞き慣れている??はずの、耳慣れた足音。<br>
+			病室へと近付くその音のリズムは、何か、確かな予感を感じさせるようで??。<br>
+			限さん。登場お願いします。<br>
+			そのまま入って頂いてイチャイチャしつつ導入を進めていって頂けますと。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			OK.<br>
+			（ゴゥンゴゥンゴゥンゴゥンゴゥン……）<br>
+			いつものように移動床に乗ってセクシーな女医がやってきます。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			足音してなかった。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「化野さん。回診のお時間ですよ」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「………」<br>
+			音は一つ。それ以外にこの病院の生命反応はない。窓の外を見ているあいだも忍者感覚が事実を再確認する。<br>
+			そうして、滑るよう白衣をはためかせてきた相手に向き直る。「はい、…先生」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「どうですか。最近はよく眠れていますか？　……」<br>
+			書類の挟まったバインダーを持って、健康状態などについて質問したりしましょう。<br>
+			あの……お医者さんがよく持ってるアレです。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			アレね
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ドイツ語だったりするアレね
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			忍者注意力が充分に働いているとわかりますが、バインダーは上下逆さまです。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「そうですね、ここは静かですから…眠るのに妨げはありません。」<br>
+			答えている間にも、右目からじんわりと赤い涙が溢れて、傷のように裂けている肌を伝っていく。<br>
+			だがそれはお互い見慣れた光景のはずであり、今の入院の本来の理由ではない…<br>
+			今治療している本来の理由は<br>
+			「それで…、先生。私の治療は、進みそうでしょうか」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「ハッキリと申し上げると、現状の経過観察では難しいと思います」<br>
+			伝う赤い液体をガーゼで拭う。<br>
+			「まだ、記憶の回復の兆しはないんでしょう？」<br>
+			手にしたカルテに「ヤバイ」とペンで書く。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「…まあ、そうですね」<br>
+			答えてから、拭われた瞳でキリをじいっと見上げる<br>
+			「…ありません」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「そこで……」<br>
+			こつこつと木の床に靴を鳴らして歩く。<br>
+			備え付けられていたホワイトボードに「イノベーション」と書いて、丸で囲む。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			室内を歩き回りはじめたキリを視線で追う。足元から、頭頂まで、順に眺める。<br>
+			「いのべーしょん」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「当病院で思いついた先進的な方法を用いて、記憶回復を試みたいと思います」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「なるほど…そうですね、確かにそういう新しい方法が必要かも、しれません…」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			矢印を引く。「業績V字回復」という威圧的な文言が並び、グラフも描かれる。<br>
+			「この手段には大いなる苦痛が伴うかもしれません」<br>
+			咳払いをする。<br>
+			「下手をすれば、あなたの生命点がゼロになる……すなわち死ぬぐらいの痛みが……」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「…大いなる苦痛、ですか」V字回復の字を追う視線が上げ下げされる
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「それでも構いませんね？」と、同意書を差し出す。<br>
+			『甲は乙に好き勝手されてもかまいません』などと書かれている。<br>
+			署名欄があります。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			差し出された紙を受け取り「それは、勿論構いません。いくら癒えたとて私の体には限度があることを、先生もわかっていらっしゃるでしょうし」<br>
+			そこまで言ってからまた上目遣いにキリを見据える。赤い涙が溢れる。<br>
+			「ここままというわけにはいかない、と、私は思っています」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「よっしゃ」ガッツポーズ。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「そのためには痛みを…甘んじる必要が、あるなら、それは仕方ない…」ペンを手に持ち
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			特別教室で接近戦攻撃を不開と交換しておきます。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解しました。ありがとうございます。<br>
+			ではドレスさんはまぁ　するするっと流れで行動をよろしくお願いします<br>
+			■第一サイクル第一シーン　シーンプレイヤー：化野ドレス
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ぽたり、と涙が紙に落ちる。そこには乙：化野ドレス　甲：二々宮限と記されている。<br>
+			ペンが動く。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			（あれっ？）
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「……」同意に○を、つける。右目が赤く染まっている。<br>
+			「この幻術は、かつて私が血社に捧げたあるシノビのものですね。まあ、戦の最中に使えるようなものではありませんでしたが…」<br>
+			「…これぐらいは、もちろん破れますよね。先生。だから早く、治療を開始してください」<br>
+			さもないと<br>
+			「…本当にこうなってしまいますよ」と言った瞬間同意書が膨れ上がり、無数のコピーになって四方八方に飛び散る。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			何ィ????ッ！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			シエシャー・シノビ・ジツ！
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			そしてその同意書の『好き勝手されてもかまいません』の文字は、全て血で書いたかのように真っ赤だ。<br>
+			シーン宣言は戦闘です
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解です。戦場表は？
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			来い！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			振るならBT、振らないなら平地。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			平地かな
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解です。平地。<br>
+			戦闘参加人数は２人なので２ラウンドで終了ですね。<br>
+			プロットのやり方はー　あっ　二人共分かります？（……）
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			おうよ！
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			OK
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			オッケー。じゃあお願いします。<br>
+			プロット置けたら申告くださいまし。GMがコールしたら開けてください。<br>
+			OK？
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			プロットOK！
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			mattene
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			はいはい
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「化野ドレス」のダイスシンボルの値が変更されました。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			おｋ？<br>
+			悩んでるな　メインフェイズは悩むからなプロット
+		</p>
+		<p class="player p10">
+			<b>mikouri</b>
+			「mikouri」のダイスシンボルの値が変更されました。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			私もちょっと変えた
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			おk
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			はーい<br>
+			ではオープンプロット！　お願いします
+		</p>
+		<p class="player p11">
+			<b>どどんとふ</b>
+			「mikouri」がダイスをオープンしました。出目は5(6面ダイス)です。<br>
+			「化野ドレス」がダイスをオープンしました。出目は5(6面ダイス)です。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			よし
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			仲良し。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			読まれたか
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			じゃあ双方2d6をお願いします
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			後を取りたいな<br>
+			2d6<br>
+			ShinobiGami : (2D6) → 6[2,4] → 6
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			さかなGMは同時行動は2d6振って低い方から動いてもらいます
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			2d6<br>
+			ShinobiGami : (2D6) → 9[4,5] → 9
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			キリさんからですね！！！！<br>
+			後取るほうが有利だから出目高い方後なの。そんな感じで裁定しています。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			くっ
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			がんばれ～がんばれ～　どうします？
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			しかたない。先に行動宣言してやろう。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ヒュー
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			攻められる
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「治療に意欲的なのはいいことですね」ホワイトボードを蹴って病室内を跳躍する。<br>
+			「スタンフォード監獄実験を知っていますか？」<br>
+			「あなたは患者。私は医者。その役回りを引き受けた時点であなたは勝てないということ！」<br>
+			奥義を使います。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ひゅう。効果と演出をどうぞ！
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			■奥義<br>
+			《弗阿賀・殺人迷路》<br>
+			指定特技　：人脈<br>
+			エフェクト：クリティカルヒット／貫き／威力低下<br>
+			効果・演出：対象の立つ場所を殺人トラップの張り巡らされた旧校舎の廊下と入れ替える。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			えーと　頑健２点と１点ですね
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「車掌は私乗客はあなた！　弗阿賀・殺人迷路（デストラップ・ダンジョン）！」
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			キリさんはかっこよく演出しつつRTTを
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(6,6) → 『妖術』封術
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			殺意をかんじた。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			うわ人脈遠いな<br>
+			妖術いきなりはかいかー
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ではドレスさんの頑と健と妖が潰されます<br>
+			殺意が高いよ殺意が。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			床や壁や天井からノコギリ・炎・犬などが飛び出してドレスを襲います。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			それではデストラップを受けつつドレスさんの同時公道を。<br>
+			殺意が高い！！！
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「なるほど、しかし、それは」<br>
+			襲いかかるノコギリ、炎、犬。全方位からの奇襲にドレスの体は応じきれず、四方から叩き込まれていく。<br>
+			「カルテにヤバイと書く人の言っていいセリフではありません」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「気づいていたというの……？」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			奥義使用します。ユリネの場合でも奥義は開帳でいいんでしょうか？
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			シリアスに驚いた顔をします。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			開帳でいいですね<br>
+			システム的な奥義情報が渡るかどうかに判定が必要なだけなので。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			奥義<br>
+			《禁足墓地》<br>
+			指定特技　：医術<br>
+			エフェクト：追加忍法：増やし：回数制限<br>
+			使用忍法は裏真言
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解。判定をどうぞ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			間合いが短いから範囲攻撃かと思ったら。
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			2D6&gt;=5 （判定：医術）<br>
+			ShinobiGami : (2D6&gt;=5) → 8[3,5] → 8 → 成功
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			出目が高い　キリさんは医術から回避判定を
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			2D6&gt;=7 （判定：鳥獣術）<br>
+			ShinobiGami : (2D6&gt;=7) → 8[2,6] → 8 → 成功<br>
+			かわした！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			よけた。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			あ、まじで
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			まじですね。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			あとは揺音の判定？
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ですね
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ですね。判定をどうぞ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			2D6&gt;=8 （判定：対人術）見切り判定<br>
+			ShinobiGami : (2D6&gt;=8) → 4[1,3] → 4 → 失敗<br>
+			凪！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			凪だ。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			意味ないし！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			奥義情報は渡りませんでした。<br>
+			が、そのままドレスさんは脱落。<br>
+			勝者はキリさんですね。なんかかっこよく演出しつつ戦果の宣言をどうぞ。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			というかこっちの攻撃演出しないとな
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			そうですね　なんかそこらへんもコミコミでいい感じに
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			本来、ドレスの奥義・禁足墓地は彼我の肉体を操作し、過去に血社にくだったシノビの忍術を再現するもの。<br>
+			それこそが、ドレスを血社の先駆けたらしめいたものであり、先駆け故に手にした奥義…だが<br>
+			（入…っていない…）殺人迷路の猛攻を受けることを覚悟しての発動が、しかし焦点をあわせられていない。　<br>
+			（まず、い…離脱、を…）
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「患者は医者に、車掌は運転手に、囚人は看守に??勝てない！」<br>
+			天井から石柱が降り注ぎ、木造の床を叩き壊し、足場を崩す。<br>
+			「今しばらく、私の奈落（ダンジョン）をさまようがいい！」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			（患者は医者に、か……）血の溢れる右目を閉じ、そのまま崩落した床の下へと落ちていきます
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			猟奇の勝利！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			勝った。ではキリさんは戦果の宣言を。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			プライズを押し付けつつ、不開で変調を与えます。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ようしゃがない<br>
+			変調は何を？
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			お、プライズはきたのか…
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			判定が必要だった。<br>
+			2D6&gt;=5 （判定：封術）<br>
+			ShinobiGami : (2D6&gt;=5) → 12[6,6] → 12 → スペシャル(生命点1点か変調1つ回復)
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			あっそうだ。判定を
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			みーすーれー
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			うわっ。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ああああ<br>
+			あああああ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			無駄スペ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			いやもうこれ勝てないでしょ
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			意味ないんだよな。<br>
+			まあ変調を
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			故障してください。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			まあそういえばそうだな
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			故障ですね。はい。<br>
+			では<br>
+			プライズがドレスさんに渡ります。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ですよねーーー
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			秘密、貼って頂いて大丈夫ですか？
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			えーと、アレした上で貼ればいいんですよね
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			そうですね。アレしたやつをお願いします。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			ちょっとまってね
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			はーい
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			貼ります
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			よろしくおねがいします
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			■記憶　概要：プライズ<br>
+			・秘密：<br>
+			このプライズの真の名称は『罪』である。下記文中の「あなた」はその時点でのこのプライズの持ち主を指す。<br>
+			このプライズを手に入れたタイミング（配布時を含む）が訪れるたび、持ち主は下の「」内の文章中の、任意の一つの［　］の中を消して好きに書き換えてよい。この時、書き換えた［　］についている番号を消去すること。番号の消えた［　］内は以降上書きされない。<br>
+			<br>
+			「あなたは(1)［3日前］、(2)［あなたの所在を突き止めた追手が迫っている事を知り、あなたの情報を知る者を消す］ために、この病院の人々を全て殺した。あなたは(3)［慣れた手際で、人形のように首を落として］彼らを殺した。<br>
+			目の前の相手だけは殺さなかった。［目の前の相手こそが自分の主だ］からだ。記憶の混乱の治療にはもっと時間を掛けたかったが、今日までが限界だった。あなたは(5)[痕跡を消すため、既に病棟の下階に火を放った]。<br>
+			　これこそが、これだけが、(6)［　真実　］である。」
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			　
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			以上です。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ありがとうございます。<br>
+			ではプライズ『記憶』はキリさんからドレスさんの元へと渡りました。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			4が消えた？
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			4が書き換わってますね。<br>
+			ドレスさんは今から記憶の書き換えをお願いします。GMに提出はー　しなくていいよ。書き換えたやつを持っててください。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			OK
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			書き換えが終わったら再開します。質問あったらどうぞ。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			これってPC秘密と別にこれを持つんだよね？
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			別々ですね<br>
+			ただまあ、そうですねえ<br>
+			PCの秘密に関しては、PC本人の主観です。とだけ。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			矛盾する時は罪が優先なんだよね。真実なんだから<br>
+			なるほどね
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			うん。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			渡した時に主観秘密が意味を持つということか<br>
+			なるほどだいたいわかった
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			今記憶を持ってる人の主観の真実が記憶ですね。<br>
+			現時点での記憶の「あなた」はドレスさんです。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			ではやっていきましょう。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			メインフェイズ第一サイクル　第二シーン　シーンプレイヤー：ニ々宮　限<br>
+			シーンはどうしますか？
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			戦闘シーンをやりましょう。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			OK。追いかけていく感じかな。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			シーン表は振らないで好き勝手寝言を言いたいです。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			BT振るならどうぞ。ふらなければ平地。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			完全に陵辱じゃん
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ｗｗｗ<br>
+			では演出したり陵辱したりしつつプロットを
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			化野ドレス。あなたは病院の一階と二階の狭間にいます。そう……狭間空間に。<br>
+			一階にも二階にもなれなかったフロアが集まる場所……1と1/2階に。<br>
+			そこは演出一発で死ぬモブコボルトとかモブブッシュワーカーとかが襲いかかってくる恐ろしいダンジョンです。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			（熱を感じる…下階は完全に炎上していますね…これは恐らく限さんによる異空間…）<br>
+			ちょっとまって変更　限さん＞限様
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			キャッ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			（…脱出…しなければ、時間はない…）
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「いかがですか？　何か思い出せましたか？」　迷宮にキリの声が響く。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「…はい。勿論です、限様。だから私をここから出してください」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「まさか」<br>
+			「治療はここからが??本番ですよ！」<br>
+			カカカッと棒手裏剣が数本投じられ、その後にキリが虚空から姿を現す。<br>
+			あなたは理解する。そう??このセクシーな女医と戦わずしてこの空間から脱出することはできない。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			腰布に隠してあった短刀で手裏剣を弾く。手裏剣と同時に右目から赤い涙が落ちた。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			かっこいい。そろそろプロットかな。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			というわけで戦闘しましょうか。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			イエーイ。お願いします。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「キリ」のダイスシンボルの値が変更されました。<br>
+			プロットOK.
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			プロットok
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			はーい　ではプロットオープンを！
+		</p>
+		<p class="player p11">
+			<b>どどんとふ</b>
+			「キリ」がダイスをオープンしました。出目は2(6面ダイス)です。<br>
+			「化野ドレス」がダイスをオープンしました。出目は6(6面ダイス)です。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			サイクル１　プロット６：ドレス　２：キリ<br>
+			プロット６，ドレスさんから。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			奥義、禁足墓地！<br>
+			使用忍法は　魔界転生　です
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			なんだと！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			おっ。判定を<br>
+			あと潰す分野も。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			潰すのは器術
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解　判定お願いします
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			2D6&gt;=5 （判定：医術）<br>
+			ShinobiGami : (2D6&gt;=5) → 7[1,6] → 7 → 成功
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			い　いちたりた
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			あっぶね
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ではドラマシーンですね　の前に<br>
+			忘れちゃいそうなので見切り判定だけやってもらっていいですか？
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			あいよ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ですね
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			2D6&gt;=8 （判定：対人術）<br>
+			ShinobiGami : (2D6&gt;=8) → 7[1,6] → 7 → 失敗
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			そのあとどっぷりドラマやってもらう感じがよいかと
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			失敗。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			イチタリナイ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			よしよし
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ですね。では改めてドラマシーンをどうぞ。<br>
+			メインフェイズ第一サイクル　追加シーン　シーンプレイヤー：化野ドレス<br>
+			シーン表どうします？
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			えーっとあの２０３号室しかないやつですよね？
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			なんでもいいですよいっそ<br>
+			病院のシーンやりたいならあれですね。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			まあ過去だもんな
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			でもなんかそれより前のなんかならまあ自由かなって
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			捏造される過去
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			病院なら2d6振ってもらえればGMがはりまーす<br>
+			最終的な罪の結果次第ではこの過去も妄想に成り果てる　そういう危うさの魔界転生
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			盛り上がってきた<br>
+			魔界転生選んでマジで良かった<br>
+			最高じゃんこれ
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ロマンですね。まあドレスさんの自由な感じで。<br>
+			ぶつけろ！　妄想
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			えーっとシーンは、そうだな<br>
+			いや描写していきます
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			はーい
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			…ありえざる光速の機動の中、ありえざる血涙がドレスの頬を伝う。瞳は真っ赤に燃えて、禁足墓地により操作された脳が光の速さを無限に伸張させる。<br>
+			『禁足墓地シャロウ・グレイブ、魔界転生』<br>
+			───血が、滴っている。<br>
+			滴る血はドレスの右目からではない、その手に持つ短刀からであり、折り重なった死体からだ。<br>
+			咲いた血の華は燃える炎のよう。もうすぐ本当にそうなるだろう。火はすでに放っている。<br>
+			あ、そうだ。ちゃんと確認とらないといけないんだったな。ドラマシーン限でてもらっていいですか？
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			いいよ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「限様」振り返る。右目から血は流れていない。今はまだ。<br>
+			「倒しました。全て。倒しました。大丈夫です。大丈夫。刺客はもう残っていません」<br>
+			病院にいた人々はすべて、確かに殺戮しつくした。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「そう」<br>
+			倒れた刺客達にはさほど興味もなさそうに、ドレスのそばに立つ。<br>
+			その頬に手を伸ばす。<br>
+			「……あなたはこれでよかったのですか？」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「勿論です。こうしなければ、貴女は失われてしまう…そうさせるわけには、いきません」<br>
+			「どんなことが、あっても」ドロリ、と右目から血溢れる。頬に伸びたキリの手へ、流れていく。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「まるで斜歯の絡繰のようなことを言うんですね」<br>
+			ドレスの顔から朱を拭う。生きている証であり、失われていくものの象徴を。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「…そうですか？そうでしょうか…」<br>
+			「それでは、いけませんか？」<br>
+			ここで行為判定を入れたいなと
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			はい
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ほうほう　何をしましょう？
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			感情判定です
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ひゃっはー。どうぞ！
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			対象は、もちろんキリです
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			OK
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			えーっとこれは特技を指定するんだよねこっちが
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			なんでもいいですね　指定してください<br>
+			シノビガミのドラマシーンは特技はPLの任意。やさしいねー。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			指定特技は遊芸
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			クノイチじゃなくて？
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			あれ<br>
+			ああ
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			６になるけど＞遊芸
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			これ自分だけか<br>
+			＜判定するの<br>
+			そりゃそうか
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			そうそう<br>
+			自分だけでいいですよ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			じゃあ別になんでもいいんだななるほど
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			うんなんでもいいの
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			そうじゃよ
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			自分で選べてなんでもよくて判定値５。そうそう失敗なんてしませんね。ワハハワハハハ。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			じゃあくのいちでいいな
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			83.3％
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			クノイチしましょ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			一応言い訳を先にしておくとくのいちをとったのはメタを考えてのことで
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ｗ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			別に感情判定に使うためであhないです
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			はいｗ<br>
+			判定どうぞｗ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			何そのいらんエクスキューズ
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			2D6&gt;=5 （判定：九ノ一の術）<br>
+			ShinobiGami : (2D6&gt;=5) → 6[2,4] → 6 → 成功
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			オッケー
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			あぶな
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			お互いETを
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ET<br>
+			ShinobiGami : 感情表(3) → 愛情（プラス）／妬み（マイナス）
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ひひひｗｗｗ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			ET<br>
+			ShinobiGami : 感情表(6) → 狂信（プラス）／殺意（マイナス）
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			エライストレートなのでたな
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ワハハワハハハハハ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			狂信で
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			愛情で
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			OK
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			そして<br>
+			奥義使用します
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			どうぞ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			まだあるのか！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			増やし回数制限ですからね
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			質問の答えを待つことなく「私はただ…貴女が、ずっと失われないことを、望んでいるだけです。そのための、私だと思っているのです」<br>
+			「だから」<br>
+			『禁足墓地ディグミーノーグレイヴ　秘棺』<br>
+			「貴女は、貴女が、私の主」
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			では
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			対象はキリ
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			キリに背景【魔人】が。<br>
+			OK<br>
+			満足するまでRPしていただいたら〆ていただいて戦闘に戻りましょう
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			そしてこのシーンでそのまま妖魔化を強制起動させます
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ひｗ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			こいつ
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			では限さんはMT<br>
+			あと潰す分野も宣言を
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			MT<br>
+			ShinobiGami : 異形表(2) → 1D6を振り、「妖魔忍法表B」で、ランダムに忍法の種類を決定する。妖魔化している間、その妖魔忍法を修得しているものとして扱う。この異形は、違う種類の妖魔忍法である限り、違う異形として扱う。 妖魔忍法表B → 【木魂】(怪p.253)
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			木魂。汚れはどこに？
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			器で
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解です　では続けてどうぞ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			血社の血が為す医術忍法の極み。禁足墓地。その脈動が、キリの全身を覆う。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「何故……」血の呪力に囚われ、その不快さに、顔をしかめる。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			禁足墓地により繰り出される疑似忍法の大半は、こうして効力を発揮する。だが無論、その体全てを永久に作り変えることは、いくら墓地（ケッカイ）の中とて可能なものではない。<br>
+			顔をしかめた一瞬で、ドレスの両手がキリの肩を掴んだ。「大丈夫です」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「私は、そんなものは、いらない……。」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「限様は、心配しないでください。貴女なら、大丈夫。私の見出した貴女なら」<br>
+			ドレスの右目が真っ赤に輝く。どろどろと血を流すそれが、ゆっくりとキリの視界で近づいていく。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「こんなもので、満足したつもりですか……？　あなたは」<br>
+			腕が上がらない。自分の中に何かが侵入し、自分を作り変えていく感覚に、抵抗するのに精一杯だった。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ゆっくりと近づく、その瞳がキリの言葉で不意に止まった。<br>
+			笑う。「どうでしょう…」<br>
+			「でも、もうわからないのです。ずっとこうしてきたから」それは泣き顔のような笑いだった。<br>
+			「それでも私は、貴女が失われないで、ほしい…」顔が重なる。唇が。そして、瞳が、血で、ねちゃ、と音をたてる。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「入ることは、許可なんてしていない。……私の迷宮（こころ）、には……」<br>
+			それが何を意味するか知っていながら、目を離すことが出来ない。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			邪眼から、血が混ざる。入り込む。キリの迷宮へ、ぬるぬるとドレスという隠忍の血が滑り込んでいく。<br>
+			「もしも、貴女が私のすべてを拒むとしても」<br>
+			「貴女の存在に、私の墓碑を残したいのです。ごめんなさい」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			視界が霞む。<br>
+			「……謝罪はいらない……。」<br>
+			「せめて……その勝利を誇れ。化野ドレス。……」<br>
+			……。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			世界が反転する。<br>
+			ドラマシーンが終了、戦闘に戻ります、が、<br>
+			その前にキリさんに奥義見切り判定してもらおうかな。秘棺のぶん。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			2D6&gt;=8 （判定：対人術）<br>
+			ShinobiGami : (2D6&gt;=8) → 7[2,5] → 7 → 失敗<br>
+			足りないし
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			また微妙に届かないんだなぁ<br>
+			ではドレスさんの手番が終わりまして。<br>
+			プロット２、キリさんの手番へ。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			引き伸ばされた時空が垣間見せる過去に、呼吸を浅くする。<br>
+			「私には……」<br>
+			「あなたのことが、未だにわからない」<br>
+			集団戦忍法で攻撃します。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			判定を
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			2D6&gt;=5 （判定：騎乗術）<br>
+			ShinobiGami : (2D6&gt;=5) → 3[1,2] → 3 → 失敗<br>
+			うぇー
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			分からなくなっている。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			神通丸使っとこ
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解　どうぞ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「大丈夫です。迷わないで。さあ、貴女の言う通り、本番です」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			2D6&gt;=5 （判定：騎乗術）<br>
+			ShinobiGami : (2D6&gt;=5) → 10[4,6] → 10 → 成功
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			とおった。ドレスさんは騎乗術から回避を
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			2D6&gt;=8 （判定：手練）<br>
+			ShinobiGami : (2D6&gt;=8) → 10[5,5] → 10 → 成功
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			連撃……は、まだ使えないですね。回避だ。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			演出で砕け散るモブヴォーパルバニーやモブウーズなどが襲いかかります
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			襲いかかってくるキリの式鬼を、軽々とかわします。体自体は悲鳴をあげているはずなのに。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			そのまま次のラウンドへ。脱落希望者いればどうぞ。<br>
+			脱落しないのであればプロットを。<br>
+			最終ラウンドですね。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「どうしましたか。手元が、おかしいようです。限様」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「そうですね。これはきっとあなただけを治療するものではない」<br>
+			「わたしたちの過去を……ここで療治に至らしめなければならない」<br>
+			脱落しません。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			OK
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			プロットOK.
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ドレスさんはどうでしょう。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			んー　のころう
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			OK　がんばってください　プロットを
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ok
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			オッケー　それではプロットオープンを
+		</p>
+		<p class="player p11">
+			<b>どどんとふ</b>
+			「キリ」がダイスをオープンしました。出目は2(6面ダイス)です。<br>
+			「化野ドレス」がダイスをオープンしました。出目は4(6面ダイス)です。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ラウンド２　プロット４：ドレス　２：キリ<br>
+			ドレスさんから。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			では奥義禁足墓地からの裏真言です
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解です。判定を<br>
+			これで最後ですね、裏真言
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			2D6&gt;=5 （判定：医術）<br>
+			ShinobiGami : (2D6&gt;=5) → 8[3,5] → 8 → 成功
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			キリさんは医術から回避を
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			2D6&gt;=7 （判定：鳥獣術）<br>
+			ShinobiGami : (2D6&gt;=7) → 8[3,5] → 8 → 成功
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			む、無情<br>
+			ついでに見切り判定もどうぞ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			2D6&gt;=8 （判定：対人術）<br>
+			ShinobiGami : (2D6&gt;=8) → 3[1,2] → 3 → 失敗
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			鳥獣にとってるオンサイってのがきつすぎた
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ファンブルではない。<br>
+			特技構成ばっかりはなー。そのままキリさんの手番です
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			低プロットの強みよ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			一番きつい相手だからな　うおおーーよけるーーー
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			低プロット強い
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			集団戦攻撃！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			どうぞ～
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			2D6&gt;=5 （判定：騎乗術）<br>
+			ShinobiGami : (2D6&gt;=5) → 4[1,3] → 4 → 失敗<br>
+			くっ！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			低プロットよ……
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			出目が萎えている
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			疲れてますね<br>
+			ではラウンド終末ですが。<br>
+			どちらか落ちます？　落ちなければ勝者なし。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			アブナイが回避ができなくてクリティカル狙えねえ
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			戦果も発生しません。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			残ります
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ドレスさんは？
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			残りー
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			じゃあ勝者なしで戦闘終了ですね。<br>
+			拮抗する感じの演出をやっていただいて本日は〆ましょうか。<br>
+			お互いの攻撃が届かない。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			この場はキリの領域。不利は明白。しかし＜墓地＞にさえ捉えれば手はある。高速移動で撹乱しながらキリを狙うドレスだが…<br>
+			（ダメ、だ。捉えられ、ない…）どろり、と瞳から血が溢れる。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			迷宮の罠や怪物をけしかけるが、致命打に至らない。攻めあぐねるのはこちらも同じだった。<br>
+			「さすがに、あなたの目には慣れすぎているようですね。この手品は」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「はい。私の目が保つ限りは…ですね」滴る血が迷宮に、落ちた。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「この迷宮には、もう、何も残っていません」　その言葉通り、一時怪物の襲撃が途切れる。<br>
+			いや、怪物のことを言っているのではないのだろう。<br>
+			「あなたはすでに勝利している」<br>
+			「この上どんな宝物を求めるというのです？」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			云われて、無表情な顔に笑いが浮かぶ。泣いているのと、区別のつかない笑いを。<br>
+			「だって、まあ貴女の治療は終わっていない。それだけは、終えます…私がどうなろうとも」<br>
+			まあ＞未だ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「そうですね」<br>
+			「宝物（トレジャー）が、報酬（リワード）が、約束されていないとしても」<br>
+			「わたしたちは探索（クエスト）を続けなければならない」<br>
+			飛び上がる。<br>
+			光が差し込んでいる。上り階段があった。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「……その結末（エンディング）が、墓であろうとも」<br>
+			キリを追うように、飛ぶ。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			　<br>
+			ありがとうございました。ではメインフェイズ第一サイクルがこれにて終了。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			故障の判定をお忘れなく
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			あ、そうだ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			いや、ごめんねみこうりさん　むちゃくちゃなものを差し込んで
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			今やっちゃおっか。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			故障判定だけしますか　忘れそうだし
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			今やっちゃってください　絡繰術から<br>
+			うんよろしく
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			2D6&gt;=10 （判定：手練）<br>
+			ShinobiGami : (2D6&gt;=10) → 3[1,2] → 3 → 失敗
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			うん。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			低い出目がここで出たと思えばいい
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			■メインフェイズ第二サイクル第一シーン　シーンプレイヤー：化野ドレス
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			あ、特別教室使っときます。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			そうだった。何を変えます？
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			もうすでに完封だよ！！やめろ！！
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			連撃⇔特別教室。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解。変更されました。<br>
+			では改めてドレスさんどうぞ。昨日の続きから。<br>
+			キリを追って昇った光の向こうには。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			サイクルの手番って自動決定だったのか　なんかふるのかとおもってた（ブラクル意識）
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			シノビガミは普通相談なんですけど、このシナリオは第二サイクルPC1からスタートって指定がありますね<br>
+			振るの逆にブラクルくらいじゃない？　さかなにはよくわからないが……
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			そうなんだ～。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ブラクル？　ブラムン。ブラクルは相談だったね。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			サイフィク、だいたい手番はPC間で相談ですね（決まらなかったらランダマイザや席順などに頼る）
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ですね
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			あ、なるほど<br>
+			＜指定
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			今回はなんか指定があるので指定どおりドレスさんからやっていただきましょう。おねがいしまーす。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			第二サイクルだけ指定なんだ。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			登った先は元の部屋のはずだから203号室だよね
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			そのはずですね。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			そのはずとしか言いようがない状況
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			20∞号室とかにしてもいいですが
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			いいですよ。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			シーン表はSTだったか
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			2d6ですね
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ああオリジナルだもんな
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			2d6のはずだけど まぁ 好きでもいい……<br>
+			そのはずとしかいいようがないから……
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ま、まあね
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			自由度高く行きます。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			わたしたちは203号室に帰っただろうか（不確定ロール）
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			2d6なら出目見てGMがオリジナルのやつ貼ります<br>
+			出島でもいいよ.
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			シーンはまあ203なんだけど　とりあえずふるか
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			急に日常シーン表とか回想シーン表とか振り始めてもかまわない
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			出島EXでもいいよ。表には従ってもらうが。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			出島EX?
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			DXST<br>
+			ShinobiGami : 出島EXシーン表(9[5,4]) →  9:昏い酒場。バーテンが無言でグラスを磨き続けている。あなたの他に客の気配はないが……。<br>
+			DXST<br>
+			ShinobiGami : 出島EXシーン表(7[2,5]) →  7:立ちふさがるのは妖魔の群れ。他に道などない、真正面から突き進むほかは…災厄シーン表(CLST)を振ること。<br>
+			CLST<br>
+			ShinobiGami : 災厄シーン表(1[1]) → 瘴気に晒され続けたことであなたの身体が妖魔へと変貌する。《封術》の判定に失敗したシーンプレイヤーは、背景：劣勢因子と背景：魔人を獲得する。<br>
+			こういうやつですね。<br>
+			ダンジョンぽいかなって。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			なるほど…
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			シノビガミには出島という異世界への入り口ゾーンがあります。（視聴者向けの解説）
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			あ、ドラマならね
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			へー
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			戦闘やるのにフレーバーなら表に従わなくてもいいかな……いや……面白いから従ってもらおうかな……<br>
+			面白いから従ってもらお。戦闘シーンとドラマどっちにします？　とりあえず。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			んードラマかな　というか　故障回復しないとまじでうごけないし
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			切実な問題があった　了解です。では好きなシーン表から。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			まあ203号室シーン表で<br>
+			2d6<br>
+			ShinobiGami : (2D6) → 6[1,5] → 6
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			06～07：古い木造の入院病棟、203号室。窓から吹き込む晩秋の風がカーテンを静かに揺らす<br>
+			驚くほどに静かな病室。<br>
+			キリさんは出しますか？　それとも一人で？
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			回復判定するしかないから一人で良い気がするけど、
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			イチャつきながら回復してもいいんですよ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			そうだな、というかキリの忍法がああだから、一手番目終了からここまでの流れは全部異界であったことという感じだよな
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			１と1/2階での出来事ですからね……
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			そうですね
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			静かな病室～だし、戻ってきた時点で203号室自体は全部元に戻ってるぐらいのイメージのほうがいいか
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			それでよさそう。<br>
+			本当に203号室かどうかは置いといて。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			そうですね
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			幻影というわけじゃないけどなんだろ、1戦目の勝負がついた時点から元の場所から異界の出来事に移動してかつそこから更に魔界転生で過去に移動してみたいな
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			ややこしい
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			シノビパワーで異界を渡り歩いたあとって感じ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			多重構造状態で一旦それが終わった感じで最初の状況に戻る、と
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			いいですね。リセットされて第二サイクル仕切り直し。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			いうことでベッドに座っている所に戻り、キリにもでてもらう<br>
+			みたいな形がいいな！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			キリさん出ます？
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			出ていいなら出ます。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			本人が言ってるならオッケーかな　ではいい感じによろしくイチャついてください
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			では<br>
+			光が溢れ、気づけばドレスはまたベッドに座っている。視線は窓の外。風が髪を揺らす。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			我が物顔でブラックコーヒーをすすっている。<br>
+			先程までの戦いは夢だったかのように。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			何もかも穏やかな療養の日々と同じ。ただ右目からはぽたぽたと赤い涙が落ちる。<br>
+			赤くにじむ手元の同意書には　甲：化野ドレス　乙：二々宮限　の文字がある。<br>
+			「では…貴女の治療を、続けてください」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「そうですね。続けなければ」<br>
+			「戦闘行為による記憶の揺り戻しの試行は一定の成果を上げたようですが」<br>
+			「様々なアプローチを試みるのもいいかもしれませんね」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「記憶の、揺り戻し……」血溜まりと、その中心で重なり合う二人を思い起こす
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「どうですか。まだ思い出したいですか？」<br>
+			中身の残ったマグカップを置いて、涙をガーゼで拭う。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「そう…ですね。全てを思い出すべきです。私は…それがキリ様のためにも、なるのであれば…」<br>
+			「それにこの通り。貴女の治療に異論はありません」と同意書を示す<br>
+			「しかし様々なアプローチとは？」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			椅子を座ったまま回転させてドレスを向く。<br>
+			とん、とベッドに座るドレスの肩を両手で押した。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			フラッシュバック。自分が相手の肩を掴んでいたあの瞬間。<br>
+			あの時、眼前の相手は己が仕えるべき血の魔となった。はずだ。だから目を閉じる。<br>
+			手にはずっと、同意書がある。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「今までしなかったことを、してみるというのはどうですか？」<br>
+			きしと音を立ててベッドに座り、見下ろしている。<br>
+			頬の横に垂れる髪を指に取って漉いた。<br>
+			「あなたは私の心を奪った。」<br>
+			「だから、私はあなたの身体を奪ってもいい……」<br>
+			「そう思いませんか？」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			うつろな表情が、しかし蕩けるように紅潮し、頬を赤いものがまた一滴流れ落ちる。<br>
+			「はい…はい。如何様にも。ドレスは、キリ様の忠実なしもべです」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「…………。」<br>
+			穿いていた靴を脱いで、両脚もベッドの上に乗せる。<br>
+			「そうではありません」<br>
+			「ドレス……。目を開いてください。」<br>
+			「私を見てください。」<br>
+			「私のことを。」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			云われ、目を開く。己にのしかかるようにして居るキリを。<br>
+			「は、い…」だが触れている、キリがそうしているだけで、ドレスの肌の下の血は沸騰するように蠢く。それが血社のシノビであるがゆえに…
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「別に何も思い出せなくてもいい。そんな風に思うこともあります。」<br>
+			「これからを深く高く積み重ねることは、いくらでもできるのですから。」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「…はい。私がもし尽きたとしても、貴女の中で、私の墓穴は深く深く続いていくでしょう。貴女こそ、私の眼に相違なく、いと深きひとなのですから」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			目を伏せる。ベッドの上で小さく姿勢を変えて、覆いかぶさるようになる。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			今度はドレスこそが開いたままの瞳でキリを見上げ続ける。据わったままのようなまなこに、しかし明白な恍惚が浮かんでいる。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「どうせなら、私は何もかも奪われてしまいたかった。身体も心も。」<br>
+			「けれどそうはなっていない。私には残っている。まだ。身体も。……心も。」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			全てを捧げる。血社の徒としてのどうしようもない根源的な欲求。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			口を閉ざし、睨みつけるような強い視線を、ドレスの瞳に向ける。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「はい。残った貴女は、だから奪わなければならない。全てを。そう目覚めたのだから…」刺すような視線、その痛みを悦ぶように、口元がこぼれる。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			痛みに耐えるように一度目をつぶり、開くと<br>
+			その手を取り、甲に唇を添わせる。<br>
+			瞬きをするほどの時間を置いて、キリは立ち上がる。<br>
+			「まだ……」<br>
+			「私はあなたの墓標には、なりません。」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「はい。まだ…ここにある私を、"憎んで(あいして)"ください…」<br>
+			では回復判定を行います。指定特技はくのいち
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			判定どうぞー
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			2D6&gt;=5 （判定：九ノ一の術）<br>
+			ShinobiGami : (2D6&gt;=5) → 7[3,4] → 7 → 成功
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			良かった。何を回復しますか？
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			故障を回復します
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			OK<br>
+			では故障が回復。<br>
+			いい具合にRPしつつキリさんにバトンタッチしてください。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			唇を離すキリを、ドレスはじっと視線で追い続ける。<br>
+			一瞬だけの接触。だが触れた場所は燃えるほど熱く血が沸騰する。<br>
+			それこそ我が主の証。全てを捧ぐべきいと深き人。そのためなら、ドレスの身は未だ動く。終わり果てるその瞬間まで。<br>
+			立ち上がったキリを見上げる瞳。右のそれからとろとろと赤い涙が流れ続けていた。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			では<br>
+			■第二サイクル第二シーン　シーンプレイヤー：ニ々宮　限<br>
+			シーンはどうしましょう。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			戦闘を仕掛けます。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解。戦場表は？
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			キャッ（？）
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			平地で。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			はーい。では演出しつつプロットを
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			キャッっていうかマジでもうどう戦って良いのかなにもわからない
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			スタン！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			がんばって　プロットを読んで
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			宙返りしてベッドのドレスと距離を取る。<br>
+			「では、治療の続きです」冷然と言い放つ。<br>
+			「……片足は墓穴にありて、我は立つ」<br>
+			プロットOK.
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「わかっています」　同時に、いつのまにかドレスはベッドの上に立っている。手にはまだ同意書をもったまま。<br>
+			プロットok
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			Ok<br>
+			ではプロットオープン！
+		</p>
+		<p class="player p11">
+			<b>どどんとふ</b>
+			「キリ」がダイスをオープンしました。出目は4(6面ダイス)です。<br>
+			「化野ドレス」がダイスをオープンしました。出目は3(6面ダイス)です。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			あっ。<br>
+			プロット　４：キリ　３：ドレス
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			んーーおしい
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			４のキリさんから。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			さて、<br>
+			どうしてくれようか。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			いぢめられちゃうよう
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			調理し放題みたいな構え
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			一方的な陵辱だよ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「1と1/2階に行かずとも」<br>
+			「もとよりここは私の監獄（ダンジョン）」<br>
+			「逃れられる定めはないと知れ……」<br>
+			「弗阿賀（ドルアーガ）??」　指揮者のように腕を振り上げる。<br>
+			「殺人迷路（デストラップ・ダンジョン）！」　振り下ろす。<br>
+			奥義を使用します。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解。ドレスさんは人脈から奥義破りですね<br>
+			今忍具使ってもいいですよ。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			んー<br>
+			そうですね、忍具使用。兵糧丸。回復は妖術
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			そして奥義やぶりいきます
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			GOGO
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			2D6&gt;=9 （判定：瞳術）<br>
+			ShinobiGami : (2D6&gt;=9) → 6[1,5] → 6 → 失敗
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			振り直しは。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			神通丸使用
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			どうぞ
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			2D6&gt;=9 （判定：瞳術）<br>
+			ShinobiGami : (2D6&gt;=9) → 8[2,6] → 8 → 失敗
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			だめかーー
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			とった！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			通しかな
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ですね
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ではキリさんはRTTを３つ。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(3,7) → 『忍術』隠形術<br>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(6,11) → 『妖術』憑依術<br>
+			RTT<br>
+			ShinobiGami : ランダム指定特技表(2,11) → 『体術』刀術
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			たけぇんだよな　さついがな<br>
+			忍術妖術体術潰れ。<br>
+			……脱落前のタイミングで忍具の追加があるなら使っていいですよ。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			食らった直後、脱落前に兵糧丸使用で妖術復帰
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			OK
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ていうか最初こうすればよかったんじゃん！！！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			そうだね……ごめんね……
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			ドレスの周囲に現れたワイヤートラップが、円錐状にうねり、彼女の身体を嬲っていく！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ドレスさんが脱落、勝者はキリさん。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ドレスも高速移動で振り切ろうとするが、もう体がついてこない。「私は囚人（ドレイ）…確かに、私が逃れられることはないのかもしれません…」
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ほどよく演出しつつ戦果の宣言を。あと不開もするなら判定を
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「ぐ…ぅ、それでもまだ、まだ…私は…」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			不開を使います。<br>
+			2D6&gt;=5 （判定：封術）<br>
+			ShinobiGami : (2D6&gt;=5) → 3[1,2] → 3 → 失敗<br>
+			げっ！
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			おっと。<br>
+			ここに来て手が緩んだか。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			運の尽きだな。<br>
+			まあいい。まだチャンスはある。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			仕方ないですね。なんか違うものがもっと尽きてる人もいますしね。<br>
+			続けてくださいな。戦果とかを。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			決めました。<br>
+			ドレスさんから私への愛情を殺意にしてもらいましょう。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			OK<br>
+			ではドレスさんからキリさんへの感情が殺意へ。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			おお～
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			演出あったらどうぞ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			演出します。<br>
+			ドレスはワイヤーの罠に絡め取られ動きを封じられる。<br>
+			「返してもらいましょう」<br>
+			「私から奪ったものを」<br>
+			ワイヤーに作られた傷を通して、ドレスの心から妄執と呼ぶべきものが流れ出していくのがわかる。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「どう、して…？　これが、貴女の、治療…」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「……忍法『弗阿賀・心理交錯迷宮（マインドクロスフレーム）』」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			軋む。血社のシノビとしての在り方と、今生まれつつあるもの、その齟齬が心に罅を入れる。右頬のように。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			あなたを形作っていたものが、秒を追うごとに色あせていく。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「これが、貴女の、選択…これが、ああ…あ、あ…」
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「あなたがまだ生きているというのなら」<br>
+			「ただ、滅びを待つものでないというのなら」<br>
+			「奪い返してみるがいい」<br>
+			「できるものなら」
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			赤い涙が垂れる。だがそれは甘い雫ではなく。<br>
+			「そう、それが……貴女の望みですか」真紅に染まった双眸が、キリを睨めつけ返した。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			　<br>
+			■クライマックスフェイズ<br>
+			――古い木造の入院病棟、203号室。扉の外、建物のどこかから、パチッ、と、木片が小さく爆ぜるような音がした。<br>
+			その音に、きっとあなた達は、気付かなかったはずもないけれど。<br>
+			どちらが放った炎か。この際そんなことは些末で、<br>
+			木造校舎に放たれた炎は徐々に広がり、この20∞病室をも包み込んで燃え上がりつつある。<br>
+			限界が近い。時間が、もうない。<br>
+			あなた達には、出口も、また。<br>
+			クライマックスフェイズ、戦場は極地です。<br>
+			演出しつつプロットをどうぞ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「ようこそ。セクシー女医・ニ々宮限の診察室へ」<br>
+			「営業時間は午前九時から午後三時でございます……。」<br>
+			病室を舐めつつある炎に構いもせず、キリは構えを取る。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「はい、化野ドレスです。最期の診察をお願いします……先生」
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			プロットOK？
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「キリ」のダイスシンボルの値が変更されました。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			真っ赤な双眸からは血が溢れ、ほとんど棒立ちのまま構えたキリを迎える。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			プロットはこれで。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			一枚の紙を、右手に握りしめたまま。<br>
+			「化野ドレス」のダイスシンボルの値が変更されました。<br>
+			プロットok
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解。<br>
+			ではプロットオープンを！
+		</p>
+		<p class="player p11">
+			<b>どどんとふ</b>
+			「化野ドレス」がダイスをオープンしました。出目は5(6面ダイス)です。<br>
+			「キリ」がダイスをオープンしました。出目は2(6面ダイス)です。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ラウンド１　プロット５：ドレス　２：キリ<br>
+			ドレスさんから。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			勿論おわかりの通り、奥義使用。魔界転生します
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			オーケー　キリさん見切ります？
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			やるだけやりましょう
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			どうぞ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			2D6&gt;=8 （判定：対人術）<br>
+			ShinobiGami : (2D6&gt;=8) → 12[6,6] → 12 → スペシャル(生命点1点か変調1つ回復)
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			本気が。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			無駄スペ
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			は！？
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			変調か生命力を回復していいですよ。<br>
+			ない。<br>
+			ではドレスさんは改めて判定を
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			汚れは回復できないんじゃ
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			できないですね！<br>
+			言いたかっただけです。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			イエーイ
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			2D6&gt;=5 （判定：医術）<br>
+			ShinobiGami : (2D6&gt;=5) → 8[3,5] → 8 → 成功
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			通しよる。どこ潰します？
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			削るのは戦術
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			OK。ではドラマシーンを。もう好きにどうぞ。<br>
+			全部好きにどうぞ。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			もう好きにどうぞ笑った
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ずっと好きにやってもらってますけどね！！<br>
+			シーン表も全部好きでGOGOGO
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			そうですね、ではシーンはやはり<br>
+			最初でしょう。『??数か月前、忍務の帰途で大怪我を追った忍者をこの病院の医師の1人が保護した。』<br>
+			殺意がある。眼前の相手への、抑えきれない殺意。<br>
+			出口なき場所の、結末（エンディング）は近い<br>
+			同時に、自分にとって、炎の中の相手は確かに主だった。それこそが、それだけが、自分に残ったただ一つの真実。<br>
+			いや、全てが瞳から流れ落ちていく中で信じたもの。<br>
+			「奥義……終極禁足墓地。診ていていてください。これが私の視るすべて。最期の…魔界転生」<br>
+			景色がぶれる。ドレスの真っ赤な瞳だけを残して、暗転する。<br>
+			??数か月前、忍務の帰途で大怪我を追った忍者をこの病院の医師の1人が保護した。<br>
+			隠れ潜む忍者であったその医師は、同情か仁愛か気紛れか、傷ついた忍者が身元を隠して心身を癒せるように尽力した。<br>
+			病院の人々は患者をあたたかく遇し、忍者は生まれて初めて味わうような静かで安らかな日々を過ごした。<br>
+			その束の間の静穏が、壊れる日までは。<br>
+			その時のドレスは、まさしく血をまとっていた。あの時、病院が死に絶える時の血の海でもなければ、20∞室で無限に流れ落ちる血の涙でもない。<br>
+			返り血も傷も区別さえつかない。<br>
+			うめき声すら上げることもできず、ただ流れ行く血をうつろに眺めていた。<br>
+			後悔はない。血社の手足として働き続けた。いつかこうなることはわかっていた。<br>
+			やがて来る終わりがきた。墓地たる己自身が入る墓はなく、墓標が立つこともない…<br>
+			血社に対して恨みもなかった。多くのシノビやシノビでないものが血社の贄となり、あるいは妖魔として目覚めていった。そのために働き続けた。<br>
+			ただ、ただ、もし一つだけ願わくば。<br>
+			…そうして願いを抱いて果てるその直前、シノビはかすかな音を聞いた。<br>
+			誰かが近づいてくる。力尽きてもいいはずの瞳が、だが視線を動かした。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			靴が土を踏む音。<br>
+			まだセクシー女医ではなかったころの旧校舎管理委員会の忍が、あなたを見下ろしている。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			視界は真っ赤に染まっている。なんとかそれが人影だということがわかるのは、勿論シノビとしての感覚のおかげもあるだろう。<br>
+			それがはじまり。この出口なき迷宮、墓へと至る道の、『入口』。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			（隠忍……血社か）<br>
+			（いまとどめを刺すことはたやすい……が。）
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			御斎学園旧校舎管理委員会にとって仇敵たるもの。滅ぼすべき敵。化野ドレスはそれで、化野ドレスはこの瞬間確かに果てようとしていた。<br>
+			だがそうはならなかった。はずだ。だから化野ドレスは今あそこにいる。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			そう。キリは手を差し伸べた。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			邪視を使用します
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			それがいかなる理由だったのかは、忘却の向こう側にある。<br>
+			はい。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			判定を
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			2D6&gt;=5 （判定：瞳術）<br>
+			ShinobiGami : (2D6&gt;=5) → 6[2,4] → 6 → 成功
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			通すなあ！<br>
+			さてどうしますか。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			キリの感情を変更。殺意へ。<br>
+			だからこれはそうあるべきだったもの。そうでなかったもの。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			これがもはや真実かどうか、それはもうわからない。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			キリ→ドレスへの感情が殺意へ。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ただ彼女が信じた実（もの）。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			（かけちがっていたボタンが、戻っていく）<br>
+			（そうだ）
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			輝いた瞳の中、追憶の世界が巡り廻る。緋の色を残して黒く溶けていく。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			（こうであるべきだったんだ、私達は……）
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			化野ドレスは、確かに殺した。キリと自分の中で彷徨う何かを。<br>
+			──シーンエンドです。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解です。ありがとうございました。<br>
+			では、プロット２。キリの手番へ。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			集団戦攻撃で攻撃を行います。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			判定を
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			2D6&gt;=5 （判定：騎乗術）<br>
+			ShinobiGami : (2D6&gt;=5) → 4[2,2] → 4 → 失敗
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			緩むなあ。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			嫌われているな。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			1d6 極地<br>
+			ShinobiGami : (1D6) → 5<br>
+			ダメージなし。次のラウンドへ行きましょうか。<br>
+			プロットを
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			外す演出だけしときます。<br>
+			「弗阿賀・迷宮組曲（エンドレス・スート）」<br>
+			キリの動きに合わせ、壁や床が生き物のように蠢き、ドレスを追い詰めていく。<br>
+			だが、その攻撃はどこか『足りない』。<br>
+			（これでいいはず……なんだ。）
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			いかな死に体になろうと、手練のシノビであれば、迷いのある攻撃など届くはずがない。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			プロットOK？
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			だからドレスの瞳に殺意がある。迫りくるものを化野ドレスは見据えている。殺す。故に、殺せ。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			（次だ……次で、決める）<br>
+			プロットOK.
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			「化野ドレス」のダイスシンボルの値が変更されました。<br>
+			OK
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			OK　開示をお願いします
+		</p>
+		<p class="player p11">
+			<b>どどんとふ</b>
+			「キリ」がダイスをオープンしました。出目は6(6面ダイス)です。<br>
+			「化野ドレス」がダイスをオープンしました。出目は3(6面ダイス)です。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ラウンド２　プロット６：キリ　３：ドレス<br>
+			キリさんから。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			集団戦攻撃で攻撃。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			どうぞ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			2D6&gt;=5 （判定：騎乗術）<br>
+			ShinobiGami : (2D6&gt;=5) → 10[5,5] → 10 → 成功<br>
+			成功。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			回避を
+		</p>
+		<p class="player p3">
+			<b>化野ドレス</b>
+			2D6&gt;=9 （判定：医術）<br>
+			ShinobiGami : (2D6&gt;=9) → 8[3,5] → 8 → 失敗
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ダメージこのままで？<br>
+			このままだと射撃戦が１と集団戦が１ですね
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			回想で乗せます。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			OK。回想シーンをどうぞ。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			「…………」<br>
+			「私が医者、あなたが患者」<br>
+			もちろん、キリはセクシー女医ではない。<br>
+			ただその役割を引き受けることにしただけだ。<br>
+			スタンフォード監獄実験のように。<br>
+			だが、思えば、本当はどちらがその役割を引き受けたのだろう。<br>
+			それも全ては蜃気楼の彼方にある。<br>
+			「奪うついでに、あなたの罪もひとつ、頂戴していきましょう」<br>
+			・秘密：<br>
+			あなたには分かっている。罪を犯したのは実は彼ではない。あなただ。<br>
+			PC1は、あなが病院の人々を殺戮したショックからか記憶に混乱をきたしている。事件の記憶の中の犯人、つまりあなたを、自分自身と取り違えてしまっているのだ。<br>
+			主治医として、彼が自ら思い出せるよう少しずつカウンセリングを続けていたが、タイムリミットが迫っている。<br>
+			あなたは決断した。彼の記憶を修正し、思い出させねばならない。もう手段は選ばない。彼に憎まれ追われることになろうとも、それがあなたへの罰となり贖罪の手段となるだろう。<br>
+			あなたの【本当の使命】は、あなたからPC1にプライズを渡し、かつ最終的なプライズの所持者となることだ。<br>
+			以上が秘密です。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			OK。回想シーンの演出はまだ続きます？
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			鍵盤を弾くように床を指で叩くと、<br>
+			床から現出した白木の杭がドレスを撃つ。<br>
+			「終わりにしましょう、迷宮組曲を」<br>
+			以上。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ありがとうございます。分野は……必要ないですね。<br>
+			ドレスは脱落、背景侵蝕にて死亡。<br>
+			最期の行動は何かしますか？
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			結末にたどり着いた。キリの杭がドレスの身体を貫く。<br>
+			血社のシノビ。滅ぼされるべき血の隠忍に、墓標が突き立った。<br>
+			こちらは以上です。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			了解。ありがとうございます。<br>
+			では、キリさんは戦果の宣言を。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			プライズを奪います。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			分かりました。プライズの秘密も渡ります。<br>
+			ドレスさんお願いします。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			これで本来の使命も満たせる。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ちょっとまってね<br>
+			「あなたは(1)［3日前］、［流派に捨てられた自分を拾ってくれた恩人が、周りを対立派閥の刺客に囲まれている事に気づき、恩人を守る］ために、この病院の人々を全て殺した。あなたは(3)［慣れた手際で、人形のように首を落として］彼らを殺した。<br>
+			目の前の相手だけは殺さなかった。［目の前の相手こそが自分の主だ］からだ。記憶の混乱の治療にはもっと時間を掛けたかったが、今日までが限界だった。あなたは(5)[痕跡を消すため、既に病棟の下階に火を放った]。<br>
+			　これこそが、これだけが、(6)［　真実　］である。」
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ありがとうございます。<br>
+			ではこれを受けてキリさんが最後の書き換えを<br>
+			制御判定はー<br>
+			2d6<br>
+			ShinobiGami : (2D6) → 7[1,6] → 7<br>
+			言霊術から。<br>
+			制御判定と演出と書き換えと好きにやっていただきつつ最後に公開してもらっていい感じに〆ましょう。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			少々時間をください。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			OK<br>
+			待ちます待ちます
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			先に制御判定を済ませますか。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			そうですね
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			汚れと功績点でプラマイゼロかな。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ですね
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			6以上か……。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			けっこうちかい
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			まあやってみましょう。<br>
+			2D6&gt;=6 （判定：封術）<br>
+			ShinobiGami : (2D6&gt;=6) → 6[1,5] → 6 → 成功
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			ぴったりだ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			無駄のない出目。
+		</p>
+		<p class="player p8">
+			<b>化野ドレス</b>
+			ギリギリ
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			ではやっていきます。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			よろしくお願いします。
+		</p>
+		<p class="player p7">
+			<b>キリ</b>
+			業火が病室を蝕む中、早贄となったドレスに歩み寄る。<br>
+			そっと顎に手を添える。<br>
+			その眼窩に、もはや呪力が残っていないことを確かめる。<br>
+			「…………」<br>
+			燃え盛る火炎が壁に創り出す二人の影が、重なる。<br>
+			白衣がばさりと投げ捨てられ、火に巻かれて灰となる。<br>
+			「終業の時間ですね。」<br>
+			（私は、）<br>
+			（あなたの主人になりたいわけでも、）<br>
+			（あなたの従者になりたいわけでもなかった。）<br>
+			終わらないはずの組曲に、終止符は打たれた。<br>
+			火にまかれた壁が崩落する。<br>
+			きりなしの迷宮に出口が生まれた。<br>
+			すべては終わった。<br>
+			治療も、実験も、探索も??ふたりの日々は。<br>
+			床を蹴る。<br>
+			炎と早贄を背に、振り返ることなく、<br>
+			……<br>
+			「忍法」<br>
+			「弗阿賀・冥宮からの脱出（オルフェウス）」<br>
+			その瞬間、<br>
+			キリの脱出した病院は、忽然と『なくなった』。<br>
+			……<br>
+			キリの儀式忍法によって、この病院は、数多の死者を呑み込んだまま、『旧校舎』の供物となった。<br>
+			『旧校舎』の最奥の存在は、その供物に答えて、いつかキリの願いをかなえるかもしれない。<br>
+			それは明日か、一年後か、百年後か。<br>
+			かなわないかもしれない。<br>
+			どのみち、振り返る選択肢は、キリにはなかった。<br>
+			歩いていく。<br>
+			すべての終わりの先には、始まりがある。<br>
+			■記憶　概要：プライズ<br>
+			・秘密：<br>
+			「あなたは(1)［3日前］、［流派に捨てられた自分を拾ってくれた恩人が、周りを対立派閥の刺客に囲まれている事に気づき、恩人を守る］ために、この病院の人々を全て殺した。あなたは(3)［慣れた手際で、人形のように首を落として］彼らを殺した。<br>
+			目の前の相手だけは殺さなかった。［目の前の相手こそが自分の主だ］からだ。記憶の混乱の治療にはもっと時間を掛けたかったが、今日までが限界だった。あなたは[いつかきっと彼女と巡り合う]。<br>
+			　これこそが、これだけが、(6)［　真実　］である。」<br>
+			……<br>
+			終わり。
+		</p>
+		<p class="player p9">
+			<b>GM</b>
+			　<br>
+			――シノビガミ「出口なし」了
+		</p>
+	</div>
+</body>
+</html>
