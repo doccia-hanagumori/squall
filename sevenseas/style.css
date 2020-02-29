@@ -1,0 +1,363 @@
+@charset "Shift_JIS";
+
+/* 全称セレクタ */
+*{
+margin:0;padding:0;
+font:normal normal normal x-small/1.5 Verdana,Osaka,Chicago,sans-serif;
+border:none;
+}
+
+/* 全体指定------------------------------------------------- */
+
+body {
+width:100%;
+color:#373737;
+text-align:center;
+}
+
+html {
+scrollbar-arrow-color:#373737;
+scrollbar-face-color:#ffffff;
+scrollbar-highlight-color:#373737;
+scrollbar-3dlight-color:#a3a3a2;
+scrollbar-track-color:#373737;
+scrollbar-shadow-color:#373737;
+scrollbar-darkshadow-color:#a3a3a2;
+}
+/* スクロールバー指定が不要の場合は削除して下さい */
+
+a{text-decoration:none;}
+a:link,a:visited {color:#373737;}
+a:active {color:#373737;}
+a:hover {color:#a3a3a2;position:relative;top:1px;left:1px;}
+
+em {font-weight:bold;}/* 強調 */
+strong {color:#a3a3a2;font-size:120%;font-weight:bold;}/* より強調 */
+ins {text-decoration:underline;}/* 追加(下線) */
+del {text-decoration:line-through;}/* 削除 */
+b {color:#ffffff;}/* 文字白 */
+
+hr {display:none;}/* ライン(非表示) */
+ul li {list-style:none;}/* マーカー非表示 */
+
+
+/* ********************************************************* */
+/* レイアウト */
+/* ********************************************************* */
+
+
+/* ヘッダー */
+#head {
+padding:7px 10px;
+background:#373737;/* 背景色 */
+border-bottom:6px solid #a3a3a2;/* 下のライン部分 */
+}
+
+/* メイン */
+#main {
+width:650px;/* メイン記事全体の横幅 */
+margin:20px auto 50px auto;
+text-align:left;
+}
+
+/* フッター */
+#foot {
+padding:7px 10px;
+background:#373737;/* 背景色 */
+border-top:6px solid #a3a3a2;/* 上のライン部分 */
+}
+
+
+/* ********************************************************* */
+/* 詳細設定 */
+/* ********************************************************* */
+
+
+/* ヘッダー------------------------------------------------- */
+
+/* サイトタイトル */
+#head h1 {
+color:#ffffff;
+font-size:100%;
+text-align:right;
+}
+
+/* メニュー------------------------------------------------- */
+
+ul#menu {
+margin:4px 10px;
+text-align:right;
+}
+
+ul#menu li {
+margin:0px 2px 0px 6px;
+display:inline;/* 横並び */
+}
+
+/* 境目ライン画像表示 */
+ul#menu li.line {
+margin:0px 0px;
+background:url(img/menu-line.gif) no-repeat center;
+}
+
+/* トップ画像表示------------------------------------------- */
+
+/* 横幅と縦幅を画像サイズに合わせて変更して下さい */
+#main .topimg {
+width:650px;
+height:250px;
+margin:0px auto 15px auto;
+text-align:center;
+background:url(img/top.png) no-repeat;/* 画像指定 */
+text-indent:-9999px;/* テキストが表示されないように画面外に飛ばす */
+}
+
+/* 見出し--------------------------------------------------- */
+
+#main h2,#main h3,#main h4 {
+color:#ffffff;
+font-size:120%;
+margin:0px 0px 10px 0px;
+padding:2px 5px;
+background:#373737;/* 背景色 */
+}
+
+/* サブ見出し */
+#main .title {
+color:#373737;
+font-size:120%;
+font-weight:bold;
+margin:5px 5px;
+padding:0px 2px 3px 2px;
+background:url(img/w-line.gif) repeat-x bottom;/* ライン画像 */
+}
+
+/* P段落---------------------------------------------------- */
+
+#main p {
+font-size:100%;
+margin:5px 5px 15px 5px;
+line-height:180%;
+}
+
+/* P下部に余白を付ける */
+#main p.blank {padding-bottom:30px;}
+
+/* 文字を大きくする */
+#main p.text {
+font-size:120%;
+line-height:200%;
+}
+
+/* 背景有り装飾BOX */
+#main p.box {
+font-size:100%;
+padding:10px 10px;
+background:url(img/back.gif);
+border:1px solid #a3a3a2;
+}
+
+/* 記事内リンク用 */
+#main p a {font-size:100%;}
+
+/* サムネイル画像用(周りに余白と枠をつける) */
+#main .img {
+margin:1px 1px;
+border:1px solid #323934;
+}
+
+/* index.html用 */
+#main p.index {margin:20px 5px 20px 5px;}
+
+/* リスト--------------------------------------------------- */
+
+#main ul {
+padding:5px 5px;
+list-style:square inside;
+}
+
+#main li {list-style:square inside;}
+
+/* マーカーを画像にする */
+#main ul.list01 {list-style:none;}
+
+#main ul.list01 li {
+list-style:none;
+background:url(img/ci-b43.gif) no-repeat left center;
+}
+
+/* IE6以外用ハック */
+body > #main ul.list01 li {
+list-style:none;
+padding-left:12px;
+background:url(img/ci-b43.gif) no-repeat left center;
+}
+
+/* リンクページ用------------------------------------------- */
+
+#main ul.link01 {
+margin:5px 0px 10px 0px;
+list-style:none;
+}
+
+/* P下部余白を無くす */
+#main ul.link02 {
+margin:5px 0px -10px 0px;
+list-style:none;
+}
+
+#main ul.link01 li,#main ul.link02 li {
+display:inline;/* 横並び */
+list-style:none;
+}
+
+/* 説明項目付きリスト--------------------------------------- */
+
+#main dl {padding:5px 5px;}
+
+#main dt {
+color:#999999;
+font-size:110%;
+}
+
+#main dd {padding:3px 0px 5px 15px;}
+
+
+/* 戻りリンク----------------------------------------------- */
+
+#main ul.pagetop {
+margin:0px 5px 5px 0px;
+text-align:right;
+list-style:none;
+}
+
+#main ul.pagetop li {
+padding:0px 0px;
+display:inline;/* 横並び */
+list-style:none;
+}
+
+/* フッター------------------------------------------------- */
+
+#foot ul {
+padding:5px 0px 10px 0px;
+text-align:right;
+list-style:none;
+}
+
+#foot li {
+color:#ffffff;
+margin:0px 2px 0px 6px;
+display:inline;/* 横並び */
+list-style:none;
+}
+
+/* li用リンク */
+#foot li a {color:#ffffff;}
+#foot li a:hover {color:#a3a3a2;}
+
+/* 境目ライン画像表示 */
+#foot li.line {
+margin:0px 0px;
+background:url(img/menu-line.gif) no-repeat center;
+}
+
+
+/* ********************************************************* */
+/* イラスト展示ページ用 */
+/* ********************************************************* */
+
+
+/* 全体の横幅指定と真ん中寄せ */
+#pict {
+width:600px;
+margin:10px auto;
+text-align:center;
+}
+
+/* 見出し */
+#pict h2 {
+color:#ffffff;
+font-size:120%;
+margin:10px 0px 15px 0px;
+padding:2px 5px;
+background:#373737;/* 背景色 */
+}
+
+#pict p {margin:5px 0px;}
+
+#pict p.text {
+font-size:120%;
+line-height:160%;
+margin:10px 5px 20px 5px;
+}
+
+/* イラストに枠を付ける */
+#pict .img {border:1px solid #373737;}
+
+/* 戻りリンク------------------------------------------------- */
+
+#pict ul.pagetop {
+padding:10px auto;
+padding-bottom:30px;
+text-align:center;
+}
+
+#pict ul.pagetop li {
+padding:0px 3px;
+display:inline;/* 横並び */
+}
+
+
+/* ********************************************************* */
+/* 小説展示ページ用 */
+/* ********************************************************* */
+
+
+/* 全体の横幅指定と真ん中寄せ */
+#novel {
+width:600px;
+margin:10px auto;
+text-align:left;
+}
+
+/* 見出し */
+#novel h2 {
+color:#373737;
+font-size:140%;
+font-weight:bold;
+margin:10px 0px 50px 0px;
+}
+
+#novel p {
+font-size:120%;
+line-height:200%;
+margin:10px 0px 20px 0px;
+}
+
+#novel p.com {
+font-size:100%;
+line-height:160%;
+margin:80px 0px 50px 0px;
+padding:10px 10px;
+background:url(img/back.gif);
+border:1px solid #a3a3a2;
+}
+
+
+/* 戻りリンク------------------------------------------------- */
+
+#novel ul.pagetop {
+padding:10px auto;
+padding-bottom:30px;
+text-align:center;
+}
+
+#novel ul.pagetop li {
+padding:0px 3px;
+display:inline;/* 横並び */
+}
+
+/* ********************************************************* */
+
+
