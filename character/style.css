@@ -1,0 +1,340 @@
+﻿@charset "Shift_JIS";
+
+/* テンプレート#p001 * designed by starlit * http://sky.starlit.biz/ */
+
+
+/* 全称セレクタ--------------------------------------------- */
+
+* {
+margin:0;padding:0;
+font:normal normal normal 12px/1.6 Verdana,Osaka,Chicago,sans-serif;
+border:none;
+}
+
+/* 全体指定------------------------------------------------- */
+
+body {
+color:#333333;
+text-align:center;
+}
+
+html {
+scrollbar-arrow-color:#cccccc;
+scrollbar-face-color:#ffffff;
+scrollbar-highlight-color:#cccccc;
+scrollbar-3dlight-color:#ffffff;
+scrollbar-track-color:#ffffff;
+scrollbar-shadow-color:#cccccc;
+scrollbar-darkshadow-color:#ffffff;
+background:url(img/top-back2.jpg) repeat-x top fixed;/* 背景画像の指定 */
+}
+/* スクロールバー指定が不要の場合はその部分のみ削除して下さい */
+
+/* リンク--------------------------------------------------- */
+
+a{text-decoration:none;font-size:100%;}
+a:link,a:active {color:#2E9AFE;}
+a:visited {color:#2E9AFE;}
+a:hover {color:#cccccc;position:relative;top:1px;left:1px;}
+
+/* 文字----------------------------------------------------- */
+
+em {font-size:100%;font-weight:bold;}/* 強調 */
+strong {font-size:120%;font-weight:bold;border-bottom:2px solid #87ac9e;}/* より強い強調 */
+del {font-size:100%;text-decoration:line-through;}/* 削除 */
+ins {font-size:100%;text-decoration:underline;}/* 追加 */
+
+/* その他--------------------------------------------------- */
+
+ul li {list-style:none;}/* リストマーカー(非表示) */
+hr {display:none;}/* ライン(非表示) */
+a {font-size:100%;}
+
+
+/* ********************************************************* */
+/* ヘッダー */
+/* ********************************************************* */
+
+
+/* :::::::::: タイトルバーについて :::::::::: */
+
+/* 角丸画像をそれぞれ左右に配置し、二つの画像を重なり合わせて一つのタイトルバーに見えるように指定しています */
+
+/* ★★★マークの「400pxと350px」を合計して上で指定した全体の横幅(750px)と同じになるようにしてます */
+
+/* 横幅変更の場合は★★★マーク部分の数値すべて変更して下さい(3箇所) */
+
+/* ☆☆☆マークの箇所→角丸画像の高さ(26px)と同じ数値を指定。行間も同じ26pxにすることで真ん中に表示されます */
+
+
+/* ヘッダー(上部の黒いタイトルバ部分ー) */
+#header {
+height:26px;/* ☆☆☆ */
+margin:30px auto 15px auto;/* バーの上下余白 */
+}
+
+/* 左・サイトタイトル */
+#header h1 {
+width:400px;/* ★★★ */
+height:26px;/* ☆☆☆ */
+line-height:26px;/* ☆☆☆ */
+color:#87ac9e;
+font-size:110%;
+font-family:"Century Gothic",Tahoma,Osaka;
+letter-spacing:1px;
+text-align:left;
+margin-bottom:-26px;/* ☆☆☆ margin-bottom:-26px;の部分で右側のメニュー部分と重なりあうように指定してます */
+padding:0px 0px 0px 15px;/* 左余白15px */
+background:url(img/titlebar26-1.png) no-repeat left center;/* 角丸画像指定 */
+float:left;/* 左寄せ */
+}
+
+/* 右・メニュー */
+#header ul#bar {
+width:350px;/* ★★★ */
+height:26px;/* ☆☆☆ */
+text-align:right;
+padding:0px 15px 0px 0px;/* 右余白15px */
+background:url(img/titlebar26-2.png) no-repeat right center;/* 角丸画像指定 */
+float:right;/* 右寄せ */
+}
+#header ul#bar li {
+color:#87ac9e;
+font-size:90%;
+line-height:26px;/* ☆☆☆ */
+display:inline;/* 横並び */
+}
+
+/* 右・メニュー用リンク */
+#header ul#bar li a {
+font-family:"Century Gothic",Tahoma,Osaka;
+letter-spacing:1px;
+}
+#header ul#bar li a:link,ul#bar li a:active{color:#eeeeee;}
+#header ul#bar li a:visited{color:#eeeeee;}
+#header ul#bar li a:hover{color:#e85466;}
+
+
+/* ********************************************************* */
+/* レイアウト */
+/* ********************************************************* */
+
+
+/* 全体の横幅指定 */
+#header,#main,#footer {width:750px;}/* ★★★ */
+
+/* メイン */
+#main {
+margin:0px auto;
+padding:20px 0px;/* 枠内上下の余白 */
+text-align:left;
+border:1px solid #cccccc;/* 枠 */
+background:#ffffff;/* 背景色 */
+}
+
+/* フッター */
+#footer {
+margin:0px auto;
+padding:10px 0px 30px 0px;/* 余白 */
+text-align:center;
+}
+
+
+/* ********************************************************* */
+/* トップ画像を置く場合の指定 */
+/* ********************************************************* */
+
+
+.topimg {
+text-align:center;
+margin:0px auto 15px auto;
+}
+
+
+/* ********************************************************* */
+/* メイン(枠内) */
+/* ********************************************************* */
+
+
+/* ◆マークは枠内の左右余白(25pxに統一) */
+
+/* 見出し--------------------------------------------------- */
+
+#main h2,#main h3,#main h4 {
+color:#e85466;
+font-size:110%;
+letter-spacing:1px;
+margin:0px 0px 20px 0px;/* 余白 */
+padding:1px 24px;/* ◆ */
+border-top:1px solid #000000;
+border-bottom:1px solid #000000;
+background:#333333;/* 背景色指定 */
+}
+
+/* サブ見出し */
+#main .title {
+color:#e85466;
+font-size:110%;
+font-weight:bold;
+margin:0px 25px 5px 25px;/* ◆ */
+padding-left:20px;
+background:url(img/heart-1.gif) no-repeat left center;/* ハートアイコン指定 */
+}
+
+/* P段落---------------------------------------------------- */
+
+#main p {
+font-size:100%;
+line-height:170%;
+margin:0px 25px 20px 25px;/* ◆ */
+}
+
+/* 段落下の余白調整 */
+#main p.blank1 {
+margin:0px 25px 5px 25px;/* ◆ *//* 少なめ */
+}
+#main p.blank2 {
+margin:0px 25px 30px 25px;/* 多め */
+}
+
+/* 文字を小さくする */
+#main p.small {
+font-size:80%;
+line-height:180%;
+}
+
+/* 真ん中寄せにする */
+#main p.center {
+text-align:center;
+margin:0px 25px 15px 25px;/* ◆ */
+}
+
+/* ノート線付き */
+#main p.note {
+font-size:100%;
+line-height:19px;/* 行間(下のノート画像の高さと合わせてます) */
+margin:0px 25px 20px 25px;/* ◆ */
+background:url(img/note.gif);/* ノート線画像の背景指定 */
+}
+
+/* 枠付きBOX */
+#main p.box1 {
+font-size:100%;
+line-height:170%;
+margin:0px 25px 20px 25px;/* ◆ */
+padding:10px 10px;
+border:1px solid #cccccc;
+background:url(img/back.gif);/* 背景画像指定 */
+}
+
+/* 更新履歴------------------------------------------------- */
+
+#main p.rireki {
+line-height:140%;
+margin:0px 25px 10px 25px;/* ◆ */
+padding:0px 1px 12px 1px;
+background:url(img/w-line.gif) repeat-x bottom;
+}
+
+/* アイコン付き */
+#main ul.rireki2 {
+margin:5px 25px 10px 25px;/* ◆ */
+padding:5px 5px 12px 1px;
+background:url(img/w-line.gif) repeat-x bottom;
+}
+/* ↓使用するアイコンの横サイズを指定して下さい */
+#main ul.rireki2 li.icon {
+width:60px;
+}
+/* ↓上で指定したアイコンのサイズで余白指定も変わるので調整して下さい(53pxと60px) */
+#main ul.rireki2 li.com {
+margin:-66px 10px 10px 70px;
+line-height:140%;
+}
+
+/* リスト--------------------------------------------------- */
+
+#main ul.list01,#main ul.list02 {margin:0px 25px 10px 25px;}/* ◆ */
+
+/* リストマーク付 */
+#main ul.list01 li {
+font-size:100%;
+list-style:disc inside;/* 黒丸指定 */
+}
+
+/* リストマーク付(白丸) */
+#main ul.list02 li {
+font-size:100%;
+list-style:circle inside;/* 白丸指定 */
+}
+
+/* テーブル------------------------------------------------- */
+
+#main table.table1 {
+margin:0px 25px 20px 25px;/* ◆ */
+background:#333333;/* テーブル線の色指定 */
+}
+
+#main table.table1 td {
+padding:8px 10px;
+background:#ffffff;
+}
+
+/* td色付き */
+#main table.table1 td.td1 {
+background:#87ac9e;
+}
+#main table.table1 td.td2 {
+color:#ffffff;
+background:#e85466;
+}
+
+/* 戻るリンク----------------------------------------------- */
+
+#main ul.pagetop {
+margin:0px 25px 10px 25px;/* ◆ */
+text-align:right;
+}
+
+#main ul.pagetop li {
+padding:0px 0px;
+display:inline;/* 横並び */
+}
+
+
+/* ********************************************************* */
+/* フッター */
+/* ********************************************************* */
+
+
+/* 下部メニュー */
+#footer ul {margin:0px 0px 5px 0px;}
+
+#footer li {
+color:#333333;
+font-size:80%;
+display:inline;/* 横並び */
+}
+
+#footer p {margin:0px 0px 3px 0px;}
+
+#footer li a {
+font-family:"Century Gothic",Tahoma,Osaka;
+letter-spacing:1px;
+}
+
+/* 著作権表示部分 */
+#footer address {
+color:#333333;
+margin:0px 0px;
+}
+
+#footer address a {
+font-size:80%;
+color:#e85466;
+}
+
+
+/* ********************************************************* */
+
+
