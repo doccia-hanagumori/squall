@@ -897,15 +897,16 @@ span.pink {
   color: #fa3c72;
 }
 
-/リプレイのための色々/
+/*リプレイのための色々*/
 
 /*文字色*/
-.gm 	{color:#101210;}
+.dammy {color:#101010;}
+.gm {color:#101010;}
 .sabato {color:#D2143F;}
 /*PC*/
-/*遊び*/
 .yukito {color:#4682b4;}
 .tohu {color:#778899;}
+
 
 
 .photoWrap{
@@ -929,13 +930,13 @@ span.pink {
   background: rgba(150, 150, 150, 0.2);
     border: solid 1px #313536;/*線*/
     border-radius: 10px;/*角の丸み*/
-  width: 70%;
+  width: 80%;
 }
 
 .box p {
     margin: 0; 
     padding: 0;
-    font-size: 85%;
+    font-size: 80%;
 }
 
 .box2 {
@@ -944,13 +945,13 @@ span.pink {
   background: rgba(205, 133, 63, 0.3);
     border: solid 1px #313536;/*線*/
     border-radius: 10px;/*角の丸み*/
-  width: 70%;
+  width: 80%;
 }
 
 .box2 p {
     margin: 0; 
     padding: 0;
-    font-size: 85%;
+    font-size: 80%;
 }
 
 H6{
