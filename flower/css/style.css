@@ -41,7 +41,7 @@ body {
   color: #313536;
 font-family: 'メイリオ', Meiryo,'ヒラギノ角ゴシック','Hiragino Sans','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
     font-weight: 500;
-text-shadow: 1px 1px 3px #cccccc
+text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.25 );
 -webkit-text-size-adjust: 100%;
 }
 
@@ -897,12 +897,65 @@ span.pink {
   color: #fa3c72;
 }
 
+/*文字色*/
+.gm 	{color:#101210;}
+.sabato {color:#D2143F;}
+/*PC*/
+.yasiro {color:#330066;}
+.daisuke {color:#A74451;}
+.wani 	{color:#336666;}
+.tigasa {color:#6B281A;}
+/*遊び*/
+.yukito {color:#4682b4;}
+.tohu {color:#778899;}
+
+
+
+
+.box {
+  padding: 10px 15px;
+  	margin: 1.0em auto;
+  background: rgba(150, 150, 150, 0.2);
+    border: solid 1px #313536;/*線*/
+    border-radius: 10px;/*角の丸み*/
+  width: 70%;
+}
+
+.box p {
+    margin: 0; 
+    padding: 0;
+    font-size: 85%;
+}
+
+.box2 {
+  padding: 10px 15px;
+  	margin: 1.0em auto;
+  background: rgba(205, 133, 63, 0.3);
+    border: solid 1px #313536;/*線*/
+    border-radius: 10px;/*角の丸み*/
+  width: 70%;
+}
+
+.box2 p {
+    margin: 0; 
+    padding: 0;
+    font-size: 85%;
+}
+
+H6{
+ color:#505060;
+ float:right;
+  margin:10px 3em;
+   margin-top:0px;}
+
+/*<div class="box2"><h6>注釈</h6><p>*/
+
+
 blockquote {
   background: rgba(0, 0, 0, 0.3);
   padding: 20px 30px;
   margin: 20px;
   font-size: 15px;
-  font-style: italic;
 }
 
 h2.h2-a {
@@ -938,8 +991,9 @@ h2.h2-b:after {
 }
 
 h2.h2-c {
+  border-left: 5px solid #313536;
   border-bottom: #313536 double 4px;
-  padding: 0 0 5px;
+  padding: 0 7px 5px;
 }
 
 h3.h3-a {
@@ -949,6 +1003,7 @@ h3.h3-a {
 
 h3.h3-b {
   border-left: 5px solid #313536;
+  border-bottom: 1px solid #313536;
   padding-left: 10px;
 }
 
