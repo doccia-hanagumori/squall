@@ -1,0 +1,777 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>深海</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script> <!-- CreateJSのライブラリー読み込み -->
+  <script src="https://cdn.rawgit.com/ics-creative/ParticleJS/release/1.0.0/libs/particlejs.min.js"></script> <!-- ParticleJSのライブラリー読み込み -->
+  <script src="js/jquery.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/rellax.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<body id="text">
+
+  <main>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12">
+          <h2 class="h2-b">出口なし</h2>
+<span class="gm"><b>狗飼誠</b>：では</span><br>
+<span class="gm"><b>狗飼誠</b>：シノビガミシナリオ「出口なし」始めていきましょう。</span><br>
+          <h2 class="h2-c">キャラクター紹介</h2>
+
+<span class="yukito"><b>七篠ユキト</b>：<a href='http://character-sheets.appspot.com/shinobigami/edit.html?key=ahVzfmNoYXJhY3Rlci1zaGVldHMtbXByFwsSDUNoYXJhY3RlckRhdGEY4OPK1QIM' target='_blank'>七篠志人</a>（ナナシノユキト）です</span><br>
+<span class="yukito"><b>七篠ユキト</b>：患者さんです。メガネです。穏やかな感じです</span><br>
+<span class="yukito"><b>七篠ユキト</b>：がんばりま～～す！！！</span><br>
+<span class="gm"><b>狗飼誠</b>：がんばれ～～！</span><br>
+<p><a href="img/asb_01.png" target="_blank"><img src="img/asbicon_01.png"></a></p>
+<span class="gm"><b>狗飼誠</b>：PC2、<a href='http://character-sheets.appspot.com/shinobigami/edit.html?key=ahVzfmNoYXJhY3Rlci1zaGVldHMtbXByFwsSDUNoYXJhY3RlckRhdGEYrIDM1QIM' target='_blank'>狗飼誠</a>です。</span><br>
+<span class="gm"><b>狗飼誠</b>：斜歯忍軍所属になってますが元はハグレ。</span><br>
+<span class="gm"><b>狗飼誠</b>：割と珍しい少数流派だったので、斜歯の忍法狩りにあってそのまま取り込まれた形ですね。</span><br>
+<span class="gm"><b>狗飼誠</b>：魔界工学とか施された。斜歯は最低だよ。</span><br>
+<span class="gm"><b>狗飼誠</b>：そんなこんなで今は穏やかにお医者さんやってます。そんな感じです。</span><br>
+<span class="gm"><b>狗飼誠</b>：よろしくお願いしまーす。</span><br>
+<span class="gm"><b>狗飼誠</b>：PC紹介、以上！</span><br>
+<span class="gm"><b>狗飼誠</b>：この二人で患者さんとお医者さんしていきます。よろしくお願いします。</span><br>
+
+<div class="box"><p>■今回予告<br>
+とある地方の山中。ぽつりと建つ古びた木造の病院の入院病棟、2階の203号室。<br>
+ベッドに腰掛けた患者の傍らに、ひとりの医師が腰掛けて話を聞いている。<br>
+患者は言う。何か大きな罪を犯したのに、それが何なのか思い出せない。<br>
+静かな病室で、カウンセリングは続く。<br>
+<br>
+病室の外に人影はない。長い廊下を見渡しても、階下に降りたとしても。<br>
+生きて動く者は一人もいない。<br>
+ただ、203号室から、話し声がぽつぽつと無人の廊下に漏れ聞こえている。<br>
+<br>
+（――数か月前、忍務の帰途で大怪我を追った忍者をこの病院の医師の1人が保護した。<br>
+　隠れ潜む忍者であったその医師は、同情か仁愛か気紛れか、傷ついた忍者が身元を隠して心身を癒せるように尽力した。<br>
+　病院の人々は患者をあたたかく遇し、忍者は生まれて初めて味わうような静かで安らかな日々を過ごした。<br>
+　その束の間の静穏が、壊れる日までは）<br>
+<br>
+その日壊れたものは、ほんとうは何だったのだろう。<br>
+真実は何処に？<br>
+<br>
+――さあ、先生。あなたの患者が待っています。</p></div>
+          <h2 class="h2-c">導入シーン</h2>
+<div class="box"><p><span class="gm"><b>狗飼誠</b>：2d6<br>
+ShinobiGami : (2D6) → 9[4,5] → 9</span><br>
+<span class="gm"><b>狗飼誠</b>：08～09：古い木造の入院病棟、203号室。2人部屋だがPC1の使っていないベッドは空いている</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：うら寂しい病室の、薄いカーテンが外から吹き込む緩やかな風になびく。</span><br>
+<span class="gm"><b>狗飼誠</b>：静かだった。</span><br>
+<span class="gm"><b>狗飼誠</b>：人の気配はない。声も当然しない。小動物の足取りくらいは或いは感じられるかもしれないが、</span><br>
+<span class="gm"><b>狗飼誠</b>：どちらにせよ、病院という施設にしては奇妙なこと。</span><br>
+<span class="gm"><b>狗飼誠</b>：ただ、ベッドに横たわるあなたの小さな息遣いと、</span><br>
+<span class="gm"><b>狗飼誠</b>：階下から聞こえてくる、無造作な足音だけが全て。</span><br>
+<span class="gm"><b>狗飼誠</b>：――ぎしり、ぎしりと、</span><br>
+<span class="gm"><b>狗飼誠</b>：踏み締めるように足音がする。古い病院の床の軋む音。</span><br>
+<span class="gm"><b>狗飼誠</b>：それが少しずつこの203号室へと近づいて、</span><br>
+<span class="gm"><b>狗飼誠</b>：ばたんとこれまた無造作に、扉が開かれた。</span><br>
+<span class="gm"><b>狗飼誠</b>：「……ッス」</span><br>
+<span class="gm"><b>狗飼誠</b>：白衣を着た、顔色の悪い男のぶっきらぼうな挨拶。</span><br>
+<span class="gm"><b>狗飼誠</b>：肩に似合わないバインダーを担いで、貴方を見つめている。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「先生。こんにちは」</span><br>
+<span class="gm"><b>狗飼誠</b>：「相変わらず顔色だけはいいッスね」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：ベッドの上、半身を起こして。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「そうですね、おかげさまで」</span><br>
+<span class="gm"><b>狗飼誠</b>：粗い足取りでユキトの方へと近づくと、雑にパイプ椅子を引っ張り出してくる。</span><br>
+<span class="gm"><b>狗飼誠</b>：バインダーに留められたカルテらしき紙に印刷はない。</span><br>
+<span class="gm"><b>狗飼誠</b>：胸元からペンを取り出して、手袋をした指でくるりと回す。</span><br>
+<span class="gm"><b>狗飼誠</b>：「その調子でアタマの方もなんとかなってくれりゃいいんですけどね」</span><br>
+<span class="gm"><b>狗飼誠</b>：「どうです、様子」</span><br>
+<span class="gm"><b>狗飼誠</b>：どっかと腰掛ける。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「記憶の方は、さっぱり……」</span><br>
+<span class="gm"><b>狗飼誠</b>：僅かに眉が寄る。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「まあ、気長にお付き合いいただけると」</span><br>
+<span class="gm"><b>狗飼誠</b>：「気長に、ね……」</span><br>
+<span class="gm"><b>狗飼誠</b>：ペンの尻でこめかみを叩いている。</span><br>
+<span class="gm"><b>狗飼誠</b>：「…………」</span><br>
+<span class="gm"><b>狗飼誠</b>：「……思ってもねえことを」聞き取れるか聞き取れないかの声音で、ぼそりと零す。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「？　何か？」</span><br>
+<span class="gm"><b>狗飼誠</b>：「いや」</span><br>
+<span class="gm"><b>狗飼誠</b>：ため息。</span><br>
+<span class="gm"><b>狗飼誠</b>：それから。</span><br>
+<span class="gm"><b>狗飼誠</b>：「まあ、あんたがそのつもりなら、それでいい」</span><br>
+<span class="gm"><b>狗飼誠</b>：「……です」</span><br>
+<span class="gm"><b>狗飼誠</b>：「いや」</span><br>
+<span class="gm"><b>狗飼誠</b>：「あー」</span><br>
+<span class="gm"><b>狗飼誠</b>：がしがしと頭を掻いて。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「先生の方は、大変かもしれませんが。こんな厄介な患者を抱えて」</span><br>
+<span class="gm"><b>狗飼誠</b>：頭を掻く手が止まる。</span><br>
+<span class="gm"><b>狗飼誠</b>：ゆっくりと手を下ろして、</span><br>
+<span class="gm"><b>狗飼誠</b>：大きく、深呼吸をした。</span><br>
+<span class="gm"><b>狗飼誠</b>：「……まあ、そうだな」</span><br>
+<span class="gm"><b>狗飼誠</b>：「だから、まあ――いい加減、焦れた」</span><br>
+          <h2 class="h2-c">メインフェイズ第一サイクル</h2>
+          <h3 class="h3-b">第一シーン　シーンプレイヤー：狗飼誠</h3>
+<span class="gm"><b>狗飼誠</b>：メインフェイズに入りましょう。PC2、狗飼誠の手番。</span><br>
+<div class="box"><p><span class="gm"><b>狗飼誠</b>：BT 戦闘を仕掛けます。<br>
+ShinobiGami : 戦場表(5) → 雑踏:人混みや教室、渋滞中の車道など。この戦場では、行為判定のとき、2D6の目がプロット値+1以下だとファンブルする。</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：「手っ取り早く済ませよう。患者サマ」</span><br>
+<span class="gm"><b>狗飼誠</b>：言い放つと同時、</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……先生？」</span><br>
+<span class="gm"><b>狗飼誠</b>：キチリ、と何か、歯車の軋む音がした。</span><br>
+<span class="gm"><b>狗飼誠</b>：不可視の刃がユキトの喉へと放たれる。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……っ！！」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：身体を撚る。刃が、喉をかすめた。</span><br>
+<span class="gm"><b>狗飼誠</b>：パイプ椅子が倒れるやかましい音。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……気長に付き合ってくれるのでは？」</span><br>
+<span class="gm"><b>狗飼誠</b>：「医者ってのは割と嘘をつくもんだ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「知らなかったのか？」</span><br>
+<span class="gm"><b>狗飼誠</b>：プロットをしましょう。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：影分身　使います</span><br>
+<div class="box"><p><span class="yukito"><b>七篠ユキト</b>：2D6&gt;=5 （判定：分身の術）<br>
+ShinobiGami : (2D6&gt;=5) → 6[1,5] → 6 → 成功</span><br></p></div>
+<span class="tohu"><b>どどんとふ</b>：「狗飼誠」がダイスをオープンしました。出目は4(6面ダイス)です。</span><br>
+<span class="tohu"><b>どどんとふ</b>：「七篠ユキト」がダイスをオープンしました。出目は4(6面ダイス)です。</span><br>
+<span class="tohu"><b>どどんとふ</b>：「七篠ユキト」がダイスをオープンしました。出目は2(6面ダイス)です。</span><br>
+<div class="box"><p>ラウンド１　プロット４：誠　２：ユキト</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：プロット４，誠から行動です。</span><br>
+<span class="gm"><b>狗飼誠</b>：ベッドから降りたユキトは気付くでしょう。</span><br>
+<span class="gm"><b>狗飼誠</b>：病院に蔓延る魂の放つ、怨嗟の声に。</span><br>
+<span class="gm"><b>狗飼誠</b>：誠はその中央に佇んで涼しい顔をしている。</span><br>
+<span class="gm"><b>狗飼誠</b>：えーと、ユキトに必中。</span><br>
+<div class="box"><p><span class="gm"><b>狗飼誠</b>：2D6&gt;=6 （判定：火術）代用判定です<br>
+ShinobiGami : (2D6&gt;=6) → 6[3,3] → 6 → 成功</span><br>
+<span class="yukito"><b>七篠ユキト</b>：2D6&gt;=8 （判定：潜伏術）<br>
+ShinobiGami : (2D6&gt;=8) → 5[2,3] → 5 → 失敗</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：射撃戦ダメージが一点なので、潰す分野を１つ宣言お願いします。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：体術を</span><br>
+<span class="gm"><b>狗飼誠</b>：体術潰しで脱落ですね　OK</span><br>
+<span class="gm"><b>狗飼誠</b>：ではええとそうだな　RP</span><br>
+<span class="gm"><b>狗飼誠</b>：まあでも一瞬だからな……</span><br>
+<span class="gm"><b>狗飼誠</b>：見る間もない。</span><br>
+<span class="gm"><b>狗飼誠</b>：怨嗟の声を引き裂くように、火花が奔る。</span><br>
+<span class="gm"><b>狗飼誠</b>：それはユキトの胸元に炸裂して小爆発を起こす。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「ぐ……っ！」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：誠の急襲に、成すすべもなく。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：傷口を押さえたまま、気が遠くなり……。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：ベッドに、倒れ込んだ。</span><br>
+<span class="gm"><b>狗飼誠</b>：その上に土足のまま、迷いなく上がる。</span><br>
+<span class="gm"><b>狗飼誠</b>：ユキトに伸し掛かるように膝をつくと、</span><br>
+<span class="gm"><b>狗飼誠</b>：彼の額へと、手を伸ばした。</span><br>
+<span class="gm"><b>狗飼誠</b>：戦果を宣言。</span><br>
+<span class="gm"><b>狗飼誠</b>：記憶をユキトに譲渡します。</span><br>
+<span class="gm"><b>狗飼誠</b>：これによってユキトはプライズ『記憶』の秘密を取得。</span><br>
+<span class="gm"><b>狗飼誠</b>：提示しましょう。</span><br>
+<div class="box"><p>【秘密：記憶】<br>
+<br>
+このプライズの真の名称は『罪』である。下記文中の「あなた」はその時点でのこのプライズの持ち主を指す。<br>
+このプライズを手に入れたタイミング（配布時を含む）が訪れるたび、持ち主は下の「」内の文章中の、任意の一つの［　］の中を消して好きに書き換えてよい。この時、書き換えた［　］についている番号を消去すること。番号の消えた［　］内は以降上書きされない。<br>
+<br>
+「あなたは(1)［3日前］、(2)［あなたの所在を突き止めた追手が迫っている事を知り、あなたの情報を知る者を消す］ために、この病院の人々を全て殺した。あなたは(3)［慣れた手際で、人形のように首を落として］彼らを殺した。<br>
+目の前の相手だけは殺さなかった。(4)［境遇を自分と重ねて情が移りすぎてしまっていた］からだ。記憶の混乱の治療にはもっと時間を掛けたかったが、今日までが限界だった。あなたは(5)[痕跡を消すため、既に病棟の下階に火を放った]。<br>
+　これこそが、これだけが、(6)［　真実　］である。」<br></p></div>
+          <h3 class="h3-b">第二シーン　シーンプレイヤー：七篠ユキト</h3>
+<span class="yukito"><b>七篠ユキト</b>：ドラマで</span><br>
+<div class="box"><p><span class="yukito"><b>七篠ユキト</b>：2D6<br>
+ShinobiGami : (2D6) → 6[1,5] → 6</span><br>
+<span class="gm"><b>狗飼誠</b>：06～07：古い木造の入院病棟、203号室。窓から吹き込む晩秋の風がカーテンを静かに揺らす</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：二人の立ち位置や乱れたベッド、倒れたパイプ椅子以外、何も変わらない。</span><br>
+<span class="gm"><b>狗飼誠</b>：ただ、息遣いの感じられるほど近くに、相手がいる。</span><br>
+<span class="gm"><b>狗飼誠</b>：手が離れる。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：——遠くなりかけた意識が、引き戻される。</span><br>
+<span class="gm"><b>狗飼誠</b>：白衣の男があなたを見下ろしている。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：ベッドに倒れ込んだ身体に、力を入れて。上半身を再度起こしながら。</span><br>
+<span class="gm"><b>狗飼誠</b>：ぼさぼさに乱れた髪、隈の目立つ顔、硬質な雰囲気。</span><br>
+<span class="gm"><b>狗飼誠</b>：似合わない、と思うかも知れない。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……一体、どうしたんですか、突然」</span><br>
+<span class="gm"><b>狗飼誠</b>：「さて」</span><br>
+<span class="gm"><b>狗飼誠</b>：「本当に理由が分からないか？」</span><br>
+<span class="gm"><b>狗飼誠</b>：おそろしいほどの真顔。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……貴方が焦る必要はないでしょう」</span><br>
+<span class="gm"><b>狗飼誠</b>：「…………」</span><br>
+<span class="gm"><b>狗飼誠</b>：溜息。</span><br>
+<span class="gm"><b>狗飼誠</b>：「いつまでも、そうやって通すつもりか」</span><br>
+<span class="gm"><b>狗飼誠</b>：或いは。</span><br>
+<span class="gm"><b>狗飼誠</b>：忍びの聴覚が、どこか遠くで、</span><br>
+<span class="gm"><b>狗飼誠</b>：ぱちりと弾ける火花の音を聞く。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……もう終わりですね。この病院も、ごっこ遊びも」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「もっと続けていられたら良かったんですけど」</span><br>
+<span class="gm"><b>狗飼誠</b>：「はっ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「楽しかったとでも？」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「狗飼さんは楽しくなかったんですか？」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：『先生』ではなく、名前を呼ぶ。</span><br>
+<span class="gm"><b>狗飼誠</b>：「――俺は」</span><br>
+<span class="gm"><b>狗飼誠</b>：「斜歯から離れていられるのが嬉しかっただけだ。別に、誰でも」</span><br>
+<span class="gm"><b>狗飼誠</b>：「……誰でも良かった」</span><br>
+<span class="gm"><b>狗飼誠</b>：何が、とは言わない。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「それは残念。僕は結構楽しかったですけど」</span><br>
+<span class="gm"><b>狗飼誠</b>：「どちらにせよ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「一生続けられるもんでもない」</span><br>
+<span class="gm"><b>狗飼誠</b>：ユキトの胸倉を掴む。</span><br>
+<span class="gm"><b>狗飼誠</b>：「……分かってんだろ」</span><br>
+<span class="gm"><b>狗飼誠</b>：唸るような声音の根底にどこか、</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……分かってますよ。僕が終わらせたんですから」</span><br>
+<span class="gm"><b>狗飼誠</b>：頑なな呪縛が潜んでいる。</span><br>
+<span class="gm"><b>狗飼誠</b>：そういうものだ、という、諦観。</span><br>
+<span class="gm"><b>狗飼誠</b>：眉を寄せる。</span><br>
+<span class="gm"><b>狗飼誠</b>：「……まだそんなこと言ってんのか」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「それはこちらのセリフですよ」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「この病院も、僕たちの関係も終わる。貴方はどこへなりと行けばいい」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「ここを離れれば、貴方の記憶の混濁も治るはずです」</span><br>
+<span class="gm"><b>狗飼誠</b>：「あんたが」</span><br>
+<span class="gm"><b>狗飼誠</b>：「あんたがんな譫言を言ってる間は」</span><br>
+<span class="gm"><b>狗飼誠</b>：「そうはいかねえな」</span><br>
+<span class="gm"><b>狗飼誠</b>：胸倉を掴む手に力が入る。</span><br>
+<span class="gm"><b>狗飼誠</b>：ぐ、と引き寄せて、顔を近づける。</span><br>
+<span class="gm"><b>狗飼誠</b>：「よく見ろ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「あんたの中の、本当の記憶と重ねろ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「――返り血に汚れていたのは、誰だ？」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：至近距離で、目と目が合う。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：本当の記憶？　自分の記憶こそが真実だ。——そのはずだ。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：情報判定　見敵術で誠の秘密を抜きます</span><br>
+<div class="box"><p><span class="yukito"><b>七篠ユキト</b>：2D6&gt;=5 （判定：見敵術）<br>
+ShinobiGami : (2D6&gt;=5) → 8[3,5] → 8 → 成功</span><br></p></div>
+<div class="box"><p>【秘密：狗飼誠】<br>
+あなたには分かっている。罪を犯したのは実は彼ではない。あなただ。<br>
+PC1は、あなたが病院の人々を殺戮したショックからか記憶に混乱をきたしている。事件の記憶の中の犯人、つまりあなたを、自分自身と取り違えてしまっているのだ。<br>
+主治医として、彼が自ら思い出せるよう少しずつカウンセリングを続けていたが、タイムリミットが迫っている。<br>
+あなたは決断した。彼の記憶を修正し、思い出させねばならない。もう手段は選ばない。彼に憎まれ追われることになろうとも、それがあなたへの罰となり贖罪の手段となるだろう。<br>
+あなたの【本当の使命】は、あなたからPC1にプライズを渡し、かつ最終的なプライズの所持者となることだ。<br></p></div>
+<span class="gm"><b>狗飼誠</b>：ユキトを突き放す。</span><br>
+<span class="gm"><b>狗飼誠</b>：「よく分かったろ」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……ええ、よく分かりましたよ」</span><br>
+<span class="gm"><b>狗飼誠</b>：ベッドから足を下ろして、距離を取る。</span><br>
+<span class="gm"><b>狗飼誠</b>：機械の駆動音が纏わりつくように微かに響く。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「やはり、貴方にはまだ治療が必要だ。僕には、それをする責任がある」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「多少、荒療治になってもね」</span><br>
+<span class="gm"><b>狗飼誠</b>：「……はー」</span><br>
+<span class="gm"><b>狗飼誠</b>：隠しもしない溜息。</span><br>
+          <h2 class="h2-c">メインフェイズ第二サイクル</h2>
+          <h3 class="h3-b">第一シーン　シーンプレイヤー：七篠ユキト</h3>
+
+<span class="yukito"><b>七篠ユキト</b>：戦闘で</span><br>
+<span class="gm"><b>狗飼誠</b>：戦場表は？</span><br>
+<span class="yukito"><b>七篠ユキト</b>：なしで</span><br>
+<span class="gm"><b>狗飼誠</b>：オッケー</span><br>
+<span class="gm"><b>狗飼誠</b>：ではプロットしましょう。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：影分身使います</span><br>
+<div class="box"><p>
+<span class="yukito"><b>七篠ユキト</b>：2D6&gt;=5 （判定：分身の術）<br>
+ShinobiGami : (2D6&gt;=5) → 10[4,6] → 10 → 成功</span><br></p></div>
+<span class="tohu"><b>どどんとふ</b>：「狗飼誠」がダイスをオープンしました。出目は5(6面ダイス)です。</span><br>
+<span class="tohu"><b>どどんとふ</b>：「七篠ユキト」がダイスをオープンしました。出目は2(6面ダイス)です。</span><br>
+<span class="tohu"><b>どどんとふ</b>：「七篠ユキト」がダイスをオープンしました。出目は4(6面ダイス)です。</span><br>
+<div class="box"><p>
+ラウンド１　プロット５：誠　２：ユキト</p></div>
+<span class="gm"><b>狗飼誠</b>：プロット５、誠からですが届きません。</span><br>
+<span class="gm"><b>狗飼誠</b>：視界がぶれる。</span><br>
+<span class="gm"><b>狗飼誠</b>：立ち尽くしたまま、赤い瞳でユキトを見ている。</span><br>
+<span class="gm"><b>狗飼誠</b>：プロット２,ユキトの手番です。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：奥義使います</span><br>
+<div class="box"><p>
+■奥義<br>
+《範囲攻撃》<br>
+指定特技　：分身の術<br>
+エフェクト：攻撃の代わりに使用できる。<br>
+任意の相手を好きなだけ対象に取り、その生命力を２点喪失させる。<br>
+間合い３。<br></p></div>
+
+<span class="yukito"><b>七篠ユキト</b>：ユキトはまっすぐに、誠の視線を受け止める。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：死角から、分身の放った縄が誠を拘束すべく放たれた。</span><br>
+<span class="gm"><b>狗飼誠</b>：２点喪失ですね。</span><br>
+<span class="gm"><b>狗飼誠</b>：ですが。</span><br>
+<span class="gm"><b>狗飼誠</b>：奥義を切ります。</span><br>
+<div class="box"><p>
+■奥義<br>
+《喰楽深津/真眼・魔界工学》<br>
+指定特技　：仕込み<br>
+エフェクト：絶対防御<br>
+効果・演出：見通す瞳は失われた。<br>
+代わりに仕込まれた機巧の瞳が魔界へと、視抜いたものを引き摺り込む。<br></p></div>
+<span class="gm"><b>狗飼誠</b>：その喪失を打ち消します。</span><br>
+<span class="gm"><b>狗飼誠</b>：誠はユキトを見ていた筈だった。</span><br>
+<span class="gm"><b>狗飼誠</b>：違う。その瞳は、確かにユキトを射抜いている。</span><br>
+<span class="gm"><b>狗飼誠</b>：ただ、赤い瞳とは違う何かが、それを見抜いて掻き消しただけだ。</span><br>
+<span class="gm"><b>狗飼誠</b>：かしゃりと。無機質な歯車の音が静かに響く。</span><br>
+<span class="gm"><b>狗飼誠</b>：「……本気じゃねえかよ」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「もちろん」</span><br>
+<span class="gm"><b>狗飼誠</b>：「まあいい」</span><br>
+<span class="gm"><b>狗飼誠</b>：「それでいい」</span><br>
+<span class="gm"><b>狗飼誠</b>：「その方が、話が早い」</span><br>
+<span class="gm"><b>狗飼誠</b>：「俺もあのクソッタレな斜歯に追いつかれずに済む」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「僕たちにもう時間は残されていませんからね」</span><br>
+<span class="gm"><b>狗飼誠</b>：「誰のせいだか」</span><br>
+<span class="gm"><b>狗飼誠</b>：次のプロットに移りましょう。</span><br>
+<span class="gm"><b>狗飼誠</b>：誠に向かう半ばで異界に呑み込まれ、途切れて落ちた縄を踏み躙る。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「それはもう、僕のせいですよ。だから責任は取りますって」</span><br>
+<span class="gm"><b>狗飼誠</b>：「熱烈だねえ」</span><br>
+<span class="gm"><b>狗飼誠</b>：白々しく茶化すように笑う。</span><br>
+
+<span class="yukito"><b>七篠ユキト</b>：影分身使います</span><br>
+<div class="box"><p>
+<span class="yukito"><b>七篠ユキト</b>：2D6&gt;=5 （判定：分身の術）<br>
+ShinobiGami : (2D6&gt;=5) → 6[2,4] → 6 → 成功</span><br></p></div>
+<span class="tohu"><b>どどんとふ</b>：「七篠ユキト」がダイスをオープンしました。出目は2(6面ダイス)です。</span><br>
+<span class="tohu"><b>どどんとふ</b>：「七篠ユキト」がダイスをオープンしました。出目は5(6面ダイス)です。</span><br>
+<span class="tohu"><b>どどんとふ</b>：「狗飼誠」がダイスをオープンしました。出目は4(6面ダイス)です。</span><br>
+<div class="box"><p>ラウンド２　プロット５：ユキト　４：誠</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：プロット５，ユキトから。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：奥義使います。範囲攻撃</span><br>
+<span class="gm"><b>狗飼誠</b>：はーい　分身の術から破ります</span><br>
+<div class="box"><p><span class="gm"><b>狗飼誠</b>：2D6&gt;=8 （判定：拷問術）オラッでろ！<br>
+ShinobiGami : (2D6&gt;=8) → 7[2,5] → 7 → 失敗</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：イチタリナイ　では奥義を切ります。絶対防御</span><br>
+<span class="gm"><b>狗飼誠</b>：仕込みから破ってください　同じ感じで。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：縄術で破ります</span><br>
+<div class="box"><p><span class="yukito"><b>七篠ユキト</b>：2D6&gt;=7 （判定：縄術）<br>
+ShinobiGami : (2D6&gt;=7) → 5[1,4] → 5 → 失敗</span></p></div>
+<span class="gm"><b>狗飼誠</b>：では再び縄は半ばで途切れ。</span><br>
+<div class="box"><p><span class="gm"><b>狗飼誠</b>：2D6&gt;=5 （判定：仕込み）ユキトに接近戦攻撃！<br>
+ShinobiGami : (2D6&gt;=5) → 9[3,6] → 9 → 成功</span><br>
+<span class="yukito"><b>七篠ユキト</b>：回避します　縄術</span><br>
+<span class="yukito"><b>七篠ユキト</b>：2D6&gt;=7 （判定：縄術）<br>
+ShinobiGami : (2D6&gt;=7) → 11[5,6] → 11 → 成功</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：クロスカウンターで放たれた不可視の刃が空を切る。</span><br>
+<span class="gm"><b>狗飼誠</b>：舌打ち。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：とっさに張り巡らせた縄が、誠の行動を阻害した。</span><br>
+<span class="gm"><b>狗飼誠</b>：縄に引かれて明後日の方向へと飛んだ刃が、壁へと突き立った。</span><br>
+<span class="gm"><b>狗飼誠</b>：戦闘終了ですね。</span><br>
+<span class="gm"><b>狗飼誠</b>：誠は自主脱落します。</span><br>
+<span class="gm"><b>狗飼誠</b>：ユキトは戦果の宣言をどうぞ。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：プライズを譲渡します</span><br>
+<div class="box"><p>【秘密：記憶】<br>
+<br>
+このプライズの真の名称は『罪』である。下記文中の「あなた」はその時点でのこのプライズの持ち主を指す。<br>
+このプライズを手に入れたタイミング（配布時を含む）が訪れるたび、持ち主は下の「」内の文章中の、任意の一つの［　］の中を消して好きに書き換えてよい。この時、書き換えた［　］についている番号を消去すること。番号の消えた［　］内は以降上書きされない。<br>
+<br>
+「あなたは［5日前］、(2)［あなたの所在を突き止めた追手が迫っている事を知り、あなたの情報を知る者を消す］ために、この病院の人々を全て殺した。あなたは(3)［慣れた手際で、人形のように首を落として］彼らを殺した。<br>
+目の前の相手だけは殺さなかった。(4)［境遇を自分と重ねて情が移りすぎてしまっていた］からだ。記憶の混乱の治療にはもっと時間を掛けたかったが、今日までが限界だった。あなたは(5)[痕跡を消すため、既に病棟の下階に火を放った]。<br>
+　これこそが、これだけが、(6)［　真実　］である。」<br></p></div>
+<div class="box2"><h6>注釈</h6><p>(1)が変更された。</p></div>
+<span class="gm"><b>狗飼誠</b>：誠はただその場に立っている。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：武器を弾いた縄が、今度は誠の腕を絡め取り。</span><br>
+<span class="gm"><b>狗飼誠</b>：その感触は硬い。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「本当は分かってるんじゃないですか？」</span><br>
+<span class="gm"><b>狗飼誠</b>：白衣の下の腕は、人の肉体をしていない。</span><br>
+<span class="gm"><b>狗飼誠</b>：「…………」</span><br>
+<span class="gm"><b>狗飼誠</b>：「何が」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「本当のことを、ですよ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「そりゃあ、そうだ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「あんたが手のかかる気狂いだってこと」</span><br>
+<span class="gm"><b>狗飼誠</b>：「俺はよーく知ってる」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「そうじゃなくて……はぁ」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「もう一度、よく思い出してください。あの日のことを」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：誠に近づく。</span><br>
+<span class="gm"><b>狗飼誠</b>：絡め取られた腕をそのままに、ユキトを見返す。</span><br>
+<span class="gm"><b>狗飼誠</b>：その顔をじっと見るうちに、</span><br>
+<span class="gm"><b>狗飼誠</b>：ああ、と小さく、慨嘆の声。</span><br>
+<span class="gm"><b>狗飼誠</b>：「そうだな」</span><br>
+<span class="gm"><b>狗飼誠</b>：「そういえば」</span><br>
+<span class="gm"><b>狗飼誠</b>：「一個、思い出したことがある」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「それはいい。何をですか？」</span><br>
+<span class="gm"><b>狗飼誠</b>：「さて」</span><br>
+<span class="gm"><b>狗飼誠</b>：「なんだと思う？」</span><br>
+          <h3 class="h3-b">第二シーン　シーンプレイヤー：狗飼誠</h3>
+
+<span class="gm"><b>狗飼誠</b>：このまま誠の手番、戦闘を仕掛けます。</span><br>
+<div class="box"><p>
+<span class="gm"><b>狗飼誠</b>：BT 振るぜ！<br>
+ShinobiGami : 戦場表(2) → 水中:海や川や、プール、血の池地獄など。この戦場では、回避判定に-2の修正がつく。</span><br></p></div>
+
+<span class="gm"><b>狗飼誠</b>：ワーハハハハ</span><br>
+<span class="gm"><b>狗飼誠</b>：いつしか雷鳴が低く鳴り響き。</span><br>
+<span class="gm"><b>狗飼誠</b>：叩きつける雨にびりびりと震えていた窓が、</span><br>
+<span class="gm"><b>狗飼誠</b>：瓦礫に突き破られて砕け散る。</span><br>
+<span class="gm"><b>狗飼誠</b>：雨が吹き込んで、リノリウムの床を濡らしていく。</span><br>
+<span class="gm"><b>狗飼誠</b>：プロットをしましょう！</span><br>
+<span class="yukito"><b>七篠ユキト</b>：影分身を</span><br>
+<div class="box"><p><span class="yukito"><b>七篠ユキト</b>：2D6&gt;=5 （判定：分身の術）<br>
+ShinobiGami : (2D6&gt;=5) → 6[2,4] → 6 → 成功</span><br></p></div>
+
+<span class="tohu"><b>どどんとふ</b>：「七篠ユキト」がダイスをオープンしました。出目は3(6面ダイス)です。</span><br>
+<span class="tohu"><b>どどんとふ</b>：「七篠ユキト」がダイスをオープンしました。出目は6(6面ダイス)です。</span><br>
+<span class="tohu"><b>どどんとふ</b>：「狗飼誠」がダイスをオープンしました。出目は6(6面ダイス)です。</span><br>
+<div class="box"><p>ラウンド１　プロット６：ユキト、誠</span><br></p></div>
+<div class="box"><p><span class="gm"><b>狗飼誠</b>：2d6 低いほうが先に動きます<br>
+ShinobiGami : (2D6) → 6[1,5] → 6</span><br>
+<span class="yukito"><b>七篠ユキト</b>：2d6<br>
+ShinobiGami : (2D6) → 6[2,4] → 6</span><br>
+<span class="gm"><b>狗飼誠</b>：2d6<br>
+ShinobiGami : (2D6) → 6[2,4] → 6</span><br>
+<span class="yukito"><b>七篠ユキト</b>：2d6<br>
+ShinobiGami : (2D6) → 5[1,4] → 5</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：ではユキトさんの手番から。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：まずは痛打を</span><br>
+<div class="box"><p><span class="yukito"><b>七篠ユキト</b>：2D6&gt;=5 （判定：縄術）<br>
+ShinobiGami : (2D6&gt;=5) → 7[1,6] → 7 → 成功</span><br></p></div>
+<div class="box"><p><span class="yukito"><b>七篠ユキト</b>：続いて鎌鼬</span><br>
+<span class="yukito"><b>七篠ユキト</b>：2D6&gt;=5 （判定：縄術）<br>
+ShinobiGami : (2D6&gt;=5) → 11[5,6] → 11 → 成功</span><br>
+<span class="gm"><b>狗飼誠</b>：2D6-2&gt;=7 （判定：拷問術）回避判定<br>
+ShinobiGami : (2D6-2&gt;=7) → 9[4,5]-2 → 7 → 成功</span><br>
+<span class="yukito"><b>七篠ユキト</b>：遁甲符使います</span><br>
+<span class="yukito"><b>七篠ユキト</b>：自分以外の誰かが行為判定のサイコロを振ったときに使用できる。そのサイコロを振り直すことができる。</span><br>
+<span class="gm"><b>狗飼誠</b>：2D6-2&gt;=7 （判定：拷問術）ふりなおし<br>
+ShinobiGami : (2D6-2&gt;=7) → 8[3,5]-2 → 6 → 失敗</span><br></p></div>
+<div class="box2"><h6>注釈</h6><p>今気づいたけどこれ初撃で当たってんじゃん！<br>(水中のせいで鎌鼬の-1補正忘れてる)</p></div>
+<span class="gm"><b>狗飼誠</b>：では絶対防御を切るぜ　仕込みから。</span><br>
+<div class="box"><p>
+<span class="yukito"><b>七篠ユキト</b>：縄術で破ります</span><br>
+<span class="yukito"><b>七篠ユキト</b>：2D6&gt;=7 （判定：縄術）<br>
+ShinobiGami : (2D6&gt;=7) → 4[1,3] → 4 → 失敗</span><br>
+<span class="yukito"><b>七篠ユキト</b>：神通丸で！</span><br>
+<span class="yukito"><b>七篠ユキト</b>：2D6&gt;=7 （判定：縄術）<br>
+ShinobiGami : (2D6&gt;=7) → 6[1,5] → 6 → 失敗</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：では縄がぶつりと途切れ落ち。</span><br>
+<div class="box"><p><span class="gm"><b>狗飼誠</b>：2D6&gt;=6 （判定：火術）必中をユキトに<br>
+ShinobiGami : (2D6&gt;=6) → 6[1,5] → 6 → 成功</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：ファンブルですね！！！！</span><br>
+<span class="gm"><b>狗飼誠</b>：刃隠だわ。</span><br>
+<span class="gm"><b>狗飼誠</b>：１点受けて落ちまーす。</span><br>
+<span class="gm"><b>狗飼誠</b>：妖術を潰します。</span><br>
+<span class="gm"><b>狗飼誠</b>：自分の身体を絡め取ろうと張り巡らせる刃を全て異界へと呑み込んで、</span><br>
+<span class="gm"><b>狗飼誠</b>：ユキトの懐へと潜り込んだ、かに思えた。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：床に飛び散っていたガラスの破片が、接近した誠に襲いかかる。</span><br>
+<span class="gm"><b>狗飼誠</b>：「っ！！」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「間合いに飛び込んでくるのは、分かってましたから」</span><br>
+<span class="gm"><b>狗飼誠</b>：宙に置かれたガラス片に突っ込む形で、身を穿たれる。</span><br>
+<span class="gm"><b>狗飼誠</b>：白衣が裂け、血が飛ぶ。</span><br>
+<span class="gm"><b>狗飼誠</b>：その下の。</span><br>
+<span class="gm"><b>狗飼誠</b>：露わになるは、裂かれた傷から赤い血を流す生身と、</span><br>
+<span class="gm"><b>狗飼誠</b>：半ばで繋がれて欠損を埋める、冷たい鉄の機巧。</span><br>
+<span class="gm"><b>狗飼誠</b>：戦果の宣言をどうぞ。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：プライズをもらいます</span><br>
+<span class="gm"><b>狗飼誠</b>：OK　記憶がユキトへ。</span><br>
+<span class="gm"><b>狗飼誠</b>：秘密を貼ります。</span><br>
+<div class="box"><p><span class="gm"><b>狗飼誠</b>：【秘密：記憶】<br>
+<br>
+このプライズの真の名称は『罪』である。下記文中の「あなた」はその時点でのこのプライズの持ち主を指す。<br>
+このプライズを手に入れたタイミング（配布時を含む）が訪れるたび、持ち主は下の「」内の文章中の、任意の一つの［　］の中を消して好きに書き換えてよい。この時、書き換えた［　］についている番号を消去すること。番号の消えた［　］内は以降上書きされない。<br>
+<br>
+「あなたは［5日前］、(2)［あなたの所在を突き止めた追手が迫っている事を知り、あなたの情報を知る者を消す］ために、この病院の人々を全て殺した。あなたは(3)［慣れた手際で、人形のように首を落として］彼らを殺した。<br>
+目の前の相手だけは殺さなかった。［或いは自分と同じ境遇に堕ちた相手がどうなるかに興味を持ってしまった］からだ。記憶の混乱の治療にはもっと時間を掛けたかったが、今日までが限界だった。あなたは(5)[痕跡を消すため、既に病棟の下階に火を放った]。<br>
+　これこそが、これだけが、(6)［　真実　］である。」<br></p></div>
+<div class="box2"><h6>注釈</h6><p>(4)が変更された。</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：溢れた血が、ユキトの頬を濡らす。</span><br>
+<span class="gm"><b>狗飼誠</b>：粘ついた感覚が記憶を喚起する。</span><br>
+<span class="gm"><b>狗飼誠</b>：あの日の。</span><br>
+<span class="gm"><b>狗飼誠</b>：溷濁した記憶が、僅かに晴れる。</span><br>
+<span class="gm"><b>狗飼誠</b>：傷を受けた誠は雨に濡れた床を転がる。</span><br>
+<span class="gm"><b>狗飼誠</b>：叩きつける雨に、白衣も色を変えて、</span><br>
+<span class="gm"><b>狗飼誠</b>：その下の人間では有り得ない身体の色が浮き上がる。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……少しは思い出せましたか？」</span><br>
+<span class="gm"><b>狗飼誠</b>：床に手を付く。身を起こす。</span><br>
+<span class="gm"><b>狗飼誠</b>：乱れて濡れた重たげなな髪が額に張り付き、表情を隠す。</span><br>
+<span class="gm"><b>狗飼誠</b>：「……下らない欲を、かいたことだけ」</span><br>
+<span class="gm"><b>狗飼誠</b>：そんなものは、この身の自由に比べれば、本来よほど。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「欲ですか。ご自身の記憶を取り戻すことにも、そう取り組んでほしいものですが」</span><br>
+<span class="gm"><b>狗飼誠</b>：鼻で笑う。</span><br>
+<span class="gm"><b>狗飼誠</b>：立て膝に身を起こす。</span><br>
+<span class="gm"><b>狗飼誠</b>：「さて」</span><br>
+<span class="gm"><b>狗飼誠</b>：「同じ目に遭っても、そうやって笑ってられるかね」</span><br>
+<span class="gm"><b>狗飼誠</b>：白衣の襟を掴む。破れて地の滲んだ襤褸を脱ぎ捨てる。</span><br>
+<span class="gm"><b>狗飼誠</b>：「あんたのその喋り方」</span><br>
+<span class="gm"><b>狗飼誠</b>：「”あいつら”によく似てる」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「貴方がどんな目に遭ってきたのかは知りませんが」　誠の、冷たい鉄の嵌った身体を見る。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「そうならないために、僕としても早く逃げてしまいたい所ですね」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……僕の最後の仕事を、終わらせてから」</span><br>
+<span class="gm"><b>狗飼誠</b>：「はは」</span><br>
+<span class="gm"><b>狗飼誠</b>：「下らねえとこばっか、一致しやがる」</span><br>
+<span class="gm"><b>狗飼誠</b>：「……気持ち悪ィな」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「案外似た者同士なのかもしれませんね？」</span><br>
+<span class="gm"><b>狗飼誠</b>：「やめろ」</span><br>
+<span class="gm"><b>狗飼誠</b>：反吐が出る、と吐き捨てて、</span><br>
+<span class="gm"><b>狗飼誠</b>：今度は、露わになったその機功の動きが見て取れる。</span><br>
+<span class="gm"><b>狗飼誠</b>：かしゃりと肩の羽車が鳴って、一直線に刃が伸びた。</span><br>
+<span class="gm"><b>狗飼誠</b>：歯車！</span><br>
+<span class="yukito"><b>七篠ユキト</b>：身体を捻り、その刃を躱す。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「あー、怖い怖い。スタッフへの乱暴はおやめください」</span><br>
+<span class="gm"><b>狗飼誠</b>：「うるせえな」</span><br>
+<span class="gm"><b>狗飼誠</b>：「医者は患者をどう扱ってもいいんだろ」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「暴れる患者さんは拘束してしまわないとね」</span><br>
+<span class="gm"><b>狗飼誠</b>：「はっ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「やってみろ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「その方が話が早くてありがたい」</span><br>
+<span class="gm"><b>狗飼誠</b>：「……俺も」</span><br>
+<span class="gm"><b>狗飼誠</b>：「いい加減、そのツラを思う存分叩き潰してえところだからよ」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「僕も、押し問答には飽き飽きです」</span><br>
+<span class="gm"><b>狗飼誠</b>：「じゃあ」</span><br>
+<span class="gm"><b>狗飼誠</b>：カシャリ、とスラックスの脹脛を破って仕込み刃が先端を現す。</span><br>
+<span class="gm"><b>狗飼誠</b>：「決まりだな」</span><br>
+          <h2 class="h2-c">クライマックスフェイズ</h2>
+<span class="gm"><b>狗飼誠</b>：ではクライマックスフェイズ、プロットに入りましょう。</span><br>
+<span class="gm"><b>狗飼誠</b>：以降は１点受けても脱落しません。生命力が０になるまでの殴り合い。ラウンド制限もなしです。</span><br>
+          <h3 class="h3-b">クライマックスフェイズ　ラウンド１</h3>
+
+<span class="yukito"><b>七篠ユキト</b>：影分身を</span><br>
+
+<div class="box"><p>
+<span class="yukito"><b>七篠ユキト</b>：2D6&gt;=5 （判定：分身の術）<br>
+ShinobiGami : (2D6&gt;=5) → 9[3,6] → 9 → 成功</span><br></p></div>
+
+<span class="gm"><b>狗飼誠</b>：忘れてた。宣言しておきますが極地です。</span><br>
+<span class="gm"><b>狗飼誠</b>：激しい雨も関係ない。</span><br>
+<span class="gm"><b>狗飼誠</b>：古い木造建築には容易く火が周り、それはやがて、この303号室にも至っている。</span><br>
+<span class="tohu"><b>どどんとふ</b>：「七篠ユキト」がダイスをオープンしました。出目は2(6面ダイス)です。</span><br>
+<span class="tohu"><b>どどんとふ</b>：「七篠ユキト」がダイスをオープンしました。出目は5(6面ダイス)です。</span><br>
+<span class="tohu"><b>どどんとふ</b>：「狗飼誠」がダイスをオープンしました。出目は3(6面ダイス)です。</span><br>
+<div class="box"><p>プロット５：ユキト　３：誠</span><br></p></div>
+
+<span class="gm"><b>狗飼誠</b>：プロット５，ユキトの行動から。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：奥義使います</span><br>
+<span class="yukito"><b>七篠ユキト</b>：《範囲攻撃》<br>
+指定特技　：分身の術</span><br>
+<div class="box"><p>
+<span class="gm"><b>狗飼誠</b>：2D6&gt;=8 （判定：拷問術）奥義破りです<br>
+ShinobiGami : (2D6&gt;=8) → 5[1,4] → 5 → 失敗</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：絶対防御しまーす</span><br>
+<span class="yukito"><b>七篠ユキト</b>：縄術で破ります</span><br>
+<div class="box"><p><span class="yukito"><b>七篠ユキト</b>：2D6&gt;=7 （判定：縄術）<br>
+ShinobiGami : (2D6&gt;=7) → 7[2,5] → 7 → 成功</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：戦術と体術を潰します。</span><br>
+<span class="gm"><b>狗飼誠</b>：雨と血に濡れたためか、機巧が軋む。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……ああ、邪魔だな、これ」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：雨に濡れたメガネを投げ捨てて</span><br>
+<span class="yukito"><b>七篠ユキト</b>：先端に刃を仕込んだ縄が、無数に誠を襲う。</span><br>
+<span class="gm"><b>狗飼誠</b>：「――ッ」</span><br>
+<span class="gm"><b>狗飼誠</b>：数を増したそれに、軋んだ機巧は対応できない。</span><br>
+<span class="gm"><b>狗飼誠</b>：幾らかぶつりと途中で途切らせたが、</span><br>
+<span class="gm"><b>狗飼誠</b>：そのうちいくつかに腕を取られる。</span><br>
+<span class="gm"><b>狗飼誠</b>：引かれて、がぎ、と接続部が鳴る。</span><br>
+<span class="gm"><b>狗飼誠</b>：筋肉の引き攣れる痛みとともに、</span><br>
+<span class="gm"><b>狗飼誠</b>：しかし縄に引かれるように、肉薄する。</span><br>
+<span class="gm"><b>狗飼誠</b>：必中をユキトに。</span><br>
+<div class="box"><p><span class="gm"><b>狗飼誠</b>：2D6&gt;=6 （判定：火術）<br>
+ShinobiGami : (2D6&gt;=6) → 6[2,4] → 6 → 成功</span><br>
+<span class="yukito"><b>七篠ユキト</b>：潜伏術で避けます</span><br>
+<span class="yukito"><b>七篠ユキト</b>：2D6&gt;=8 （判定：潜伏術）<br>
+ShinobiGami : (2D6&gt;=8) → 3[1,2] → 3 → 失敗</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：１点ですね。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：謀術潰します</span><br>
+<span class="gm"><b>狗飼誠</b>：OK</span><br>
+<span class="gm"><b>狗飼誠</b>：腕を絡め取った縄に引かれるままに。</span><br>
+<span class="gm"><b>狗飼誠</b>：濡れた床を蹴り、軋みを上げた腕を振り抜く。</span><br>
+<span class="gm"><b>狗飼誠</b>：縄ごと切り裂き、交差の瞬間、</span><br>
+<span class="gm"><b>狗飼誠</b>：炸裂した火花が、その肉を炙る。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……っ！」</span><br>
+<div class="box"><p><span class="gm"><b>狗飼誠</b>：1d6 極地ダイス<br>
+ShinobiGami : (1D6) → 6</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：まだですね。</span><br>
+          <h3 class="h3-b">クライマックスフェイズ　ラウンド２</h3>
+<span class="yukito"><b>七篠ユキト</b>：影分身</span><br>
+<div class="box"><p>
+<span class="yukito"><b>七篠ユキト</b>：2D6&gt;=5 （判定：分身の術）<br>
+ShinobiGami : (2D6&gt;=5) → 5[1,4] → 5 → 成功</span><br></p></div>
+<span class="tohu"><b>どどんとふ</b>：「七篠ユキト」がダイスをオープンしました。出目は5(6面ダイス)です。</span><br>
+<span class="tohu"><b>どどんとふ</b>：「七篠ユキト」がダイスをオープンしました。出目は3(6面ダイス)です。</span><br>
+<span class="tohu"><b>どどんとふ</b>：「狗飼誠」がダイスをオープンしました。出目は4(6面ダイス)です。</span><br>
+
+<div class="box"><p>４：誠　３：ユキト</p></div>
+<span class="gm"><b>狗飼誠</b>：プロット５，ユキトから。</span><br>
+<span class="gm"><b>狗飼誠</b>：では誠から必中ですね。</span><br>
+<div class="box"><p><span class="gm"><b>狗飼誠</b>：2D6&gt;=6 （判定：火術）ユキトに必中<br>
+ShinobiGami : (2D6&gt;=6) → 3[1,2] → 3 → 失敗</span><br>
+<span class="gm"><b>狗飼誠</b>：2D6&gt;=6 （判定：火術）神通丸！<br>
+ShinobiGami : (2D6&gt;=6) → 5[2,3] → 5 → 失敗</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：バカ！！！！！</span><br>
+<span class="gm"><b>狗飼誠</b>：逆凪だけ回避した</span><br>
+<span class="gm"><b>狗飼誠</b>：刃隠で１点、忍術を潰します。</span><br>
+<span class="gm"><b>狗飼誠</b>：踏み込みの寸前、</span><br>
+<span class="gm"><b>狗飼誠</b>：散らばったガラス片に脚を取られる。</span><br>
+<span class="gm"><b>狗飼誠</b>：姿勢が崩れる。前に傾いで、</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「だから、踏み込んでくるのは分かってたんですって」</span><br>
+<span class="gm"><b>狗飼誠</b>：「チッ――」</span><br>
+<span class="gm"><b>狗飼誠</b>：不格好な姿勢でユキトへと接近するが、放った火花は明後日に散る。</span><br>
+<span class="gm"><b>狗飼誠</b>：ではプロット３，ユキトの手番。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：奥義使います　範囲攻撃</span><br>
+<span class="gm"><b>狗飼誠</b>：奥義破りに回想シーンを入れます。</span><br>
+<div class="box"><p>【秘密：狗飼誠(再掲)】<br>
+あなたには分かっている。罪を犯したのは実は彼ではない。あなただ。<br>
+PC1は、あなたが病院の人々を殺戮したショックからか記憶に混乱をきたしている。事件の記憶の中の犯人、つまりあなたを、自分自身と取り違えてしまっているのだ。<br>
+主治医として、彼が自ら思い出せるよう少しずつカウンセリングを続けていたが、タイムリミットが迫っている。<br>
+あなたは決断した。彼の記憶を修正し、思い出させねばならない。もう手段は選ばない。彼に憎まれ追われることになろうとも、それがあなたへの罰となり贖罪の手段となるだろう。<br>
+あなたの【本当の使命】は、あなたからPC1にプライズを渡し、かつ最終的なプライズの所持者となることだ。</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：――さて。</span><br>
+<span class="gm"><b>狗飼誠</b>：実際のところ、どちらが正しいか、などということには、とうに自信がないのだ。</span><br>
+<span class="gm"><b>狗飼誠</b>：記憶は容易く霞んではぶれる。</span><br>
+<span class="gm"><b>狗飼誠</b>：あの日の惨劇の、返り血に濡れた横顔が、</span><br>
+<span class="gm"><b>狗飼誠</b>：鏡に映ったその横顔が、誰のものだったか、</span><br>
+<span class="gm"><b>狗飼誠</b>：揺らぐ頭はとんと保証してくれない。</span><br>
+<span class="gm"><b>狗飼誠</b>：だからこれは、恐らく意地だ。</span><br>
+<span class="gm"><b>狗飼誠</b>：目の前の相手の、白衣を着ていた、正しいものかも分からない記憶。</span><br>
+<span class="gm"><b>狗飼誠</b>：あの忌々しい研究者どもと良く似たその姿が、もし自分と同じ、</span><br>
+<span class="gm"><b>狗飼誠</b>：研究と観察を受ける側に堕ちたとしたら。</span><br>
+<span class="gm"><b>狗飼誠</b>：それはきっと酷く小気味が良いことだろうと、いつしかそう思っていた。</span><br>
+<br><span class="gm"><b>狗飼誠</b>：「――だから、まあ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「悪いな」</span><br>
+<span class="gm"><b>狗飼誠</b>：悪いなどとは思わぬ声で言う。</span><br>
+<span class="gm"><b>狗飼誠</b>：「あんたに恨みは、別にねえよ」</span><br>
+<div class="box"><p><span class="gm"><b>狗飼誠</b>：2D6+3&gt;=8 （判定：拷問術）奥義破り<br>
+ShinobiGami : (2D6+3&gt;=8) → 3[1,2]+3 → 6 → 失敗</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：だからか。</span><br>
+<span class="gm"><b>狗飼誠</b>：自らの身勝手を直視して、</span><br>
+<span class="gm"><b>狗飼誠</b>：そこから目を逸らすことも、叶わない。</span><br>
+<br><span class="gm"><b>狗飼誠</b>：でも絶対防御は切ります。</span><br>
+<span class="gm"><b>狗飼誠</b>：えーと　仕込みですね。仕込みで破ってくれ～</span><br>
+<span class="yukito"><b>七篠ユキト</b>：破ります</span><br>
+<span class="yukito"><b>七篠ユキト</b>：回想を　します</span><br>
+<div class="box"><p>【秘密：七篠ユキト(再掲)】<br>
+実はあなたこそがこの病院の医師である。<br>
+あなたはある理由（PLの任意）からこの病院の人々を殺した。その場に居合わせたショックからか、PC2は記憶に混乱をきたした。PC2の中で、匿われた忍者であるPC2と、その主治医であるあなたが逆転してしまっているのだ。<br>
+あなたが患者を演じているのは治療の手段だった。ごく僅かずつ事件の情報を伝えることで、PC2の状態を探っていたのだ。<br>
+そして判断し、決断した。PC2の記憶を修正し、思い出させねばならない。もう手段は選ばない。PC2に憎まれ追われることになろうとも、それがあなたへの罰となり贖罪の手段となるだろう。<br>
+あなたの【本当の使命】は、あなたからPC2にプライズを渡し、かつ最終的なプライズの所持者となることだ。</span><br></p></div>
+<span class="yukito"><b>七篠ユキト</b>：あの時凶行に手を染めたのが、自分だったのか、彼だったのか。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：惨劇の舞台となった病院が灰と化しつつある今、もはや真実を確かめる術など無いのかもしれない。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：斜歯の追手が彼に迫っていると知った時。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：反射的に、それを阻止しなければならないと、思った。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：それは決して彼のためなどではなく、この病院に手がかかれば自身の身にも危険が及ぶかもしれないという、ただそれだけの理由で。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：最後に彼をこの手にかけて、全て終わる——はずだった。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……上手く行かないものです」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：魔が差したとしか、言いようがない。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：そうだ、魔が差したのだ。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：逃げて逃げて、こんな山中に隠れ潜む負け犬の如き人生。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：道連れを望んでしまったのだ。おそらくは。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「まさか、こんな面倒なことになるとはね」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……そろそろケリをつけましょう」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：防がれるなら、防ぎきれないだけの手数を！　無数の縄が、その先端に輝く刃が。誠を襲う。</span><br>
+<span class="gm"><b>狗飼誠</b>：「……っ」</span><br>
+<div class="box"><p><span class="yukito"><b>七篠ユキト</b>：2D6+3&gt;=7 （判定：縄術）<br>
+ShinobiGami : (2D6+3&gt;=7) → 11[5,6]+3 → 14 → 成功</span><br></p></div>
+<span class="gm"><b>狗飼誠</b>：２点ですね。</span><br>
+<span class="gm"><b>狗飼誠</b>：……落ちましょう。</span><br>
+<span class="gm"><b>狗飼誠</b>：ぶつり、ぶつりと途切れていく縄が、</span><br>
+<span class="gm"><b>狗飼誠</b>：その全身を搦め捕る。</span><br>
+<span class="gm"><b>狗飼誠</b>：脚を突き出た刃は空を切り、引き落とされるように地面に転がる。</span><br>
+<span class="gm"><b>狗飼誠</b>：「か、…………っ」</span><br>
+<span class="gm"><b>狗飼誠</b>：がしゃんと、</span><br>
+<span class="gm"><b>狗飼誠</b>：致命的なけたたましい音ともに、機功の右腕がもげる。</span><br>
+<span class="gm"><b>狗飼誠</b>：炎の立ち昇る病室の、乾き始めていた床に部品が散らばり、</span><br>
+<span class="gm"><b>狗飼誠</b>：冷たい鉄の塊となって炎へと呑み込まれる。</span><br>
+<span class="gm"><b>狗飼誠</b>：「…………っ」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「全く、手のかかる患者でしたよ、貴方は」</span><br>
+<span class="gm"><b>狗飼誠</b>：叩きつけられた歳に、ガラス片までもが身を引き裂いて、ますますに床が血に濡れる。</span><br>
+<span class="gm"><b>狗飼誠</b>：蹲ったままにユキトに見上げる。</span><br>
+<span class="gm"><b>狗飼誠</b>：睨みつける。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「どうしますか？　このまま貴方をここに置いて、僕だけ逃げてしまっても構わないのですが……」</span><br>
+<span class="gm"><b>狗飼誠</b>：「……っは」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「ここは一時休戦がお互いのためではないですか？」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「僕としても、治療を放り出したくはありませんし」</span><br>
+<span class="gm"><b>狗飼誠</b>：「……あんたがそうしたがる、理由は？」</span><br>
+<span class="gm"><b>狗飼誠</b>：警戒心に満ちた瞳で見上げる。</span><br>
+<span class="gm"><b>狗飼誠</b>：機巧はとうに狂っている。長く斜歯から離れて、メンテナンスも受けていないそれは、</span><br>
+<span class="gm"><b>狗飼誠</b>：錆び付いて機能を狂わせつつあった。</span><br>
+<span class="gm"><b>狗飼誠</b>：今の一撃が止めになって、逃げるにも足手まといにしかならない。</span><br>
+<span class="gm"><b>狗飼誠</b>：それを自覚して、挑発的に問い掛ける。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「なんでもいいじゃないですか、理由なんて」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「でもまぁ、ほら」</span><br>
+<span class="gm"><b>狗飼誠</b>：「？」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「さっきも言ったとおり、僕は結構楽しかったので。狗飼さんと過ごすの」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「それじゃダメですかね」</span><br>
+<span class="gm"><b>狗飼誠</b>：這いずるようにして身を起こす。先までの無理な戦闘機動が祟って、酷く鈍重な動き。</span><br>
+<span class="gm"><b>狗飼誠</b>：その答えに、顔を顰めた。</span><br>
+<span class="gm"><b>狗飼誠</b>：「……趣味が悪い」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「じゃなきゃ医者なんてやってませんよ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「はっ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「患者を好きにできるから？」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「それはもう。患者さんには主治医の指示を聞いてもらわないと」</span><br>
+<span class="gm"><b>狗飼誠</b>：「……そうかよ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「それじゃあ主治医」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「はい」</span><br>
+<span class="gm"><b>狗飼誠</b>：重い身体を引き起こして、ユキトを見上げる。</span><br>
+<span class="gm"><b>狗飼誠</b>：猜疑の色こそ消えてはいないが。</span><br>
+<span class="gm"><b>狗飼誠</b>：「これから俺は、どうすればいい？」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「まぁ、とりあえずここから去りましょう。貴方の状態を考えると、少しでも早く行動したほうがいい」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「その後のことは……まぁ、追々」</span><br>
+<span class="gm"><b>狗飼誠</b>：「…………」</span><br>
+<span class="gm"><b>狗飼誠</b>：ずるりと身体を起こし、膝を立てようとして、</span><br>
+<span class="gm"><b>狗飼誠</b>：うまく機巧が動かずにつんのめる。</span><br>
+<span class="gm"><b>狗飼誠</b>：じろりとユキトを見上げる。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：隣に立ち、身体を支える。</span><br>
+<span class="gm"><b>狗飼誠</b>：憮然とした表情で支えられ、引き起こされる。</span><br>
+<span class="gm"><b>狗飼誠</b>：重い身体。</span><br>
+<span class="gm"><b>狗飼誠</b>：「……結局」</span><br>
+<span class="gm"><b>狗飼誠</b>：「あんたは何がしたかったんだ」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……主治医としての仕事ですよ、ずっとそう言ってるでしょう？」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「まぁ、少しばかり私情も混ざったかもしれませんが」</span><br>
+<span class="gm"><b>狗飼誠</b>：「…………」</span><br>
+<span class="gm"><b>狗飼誠</b>：「……あんだけ殺しといて……」ぼそり</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「……やりたくてやった訳じゃないです」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「でも、やったことはやったことですからね。責任は取らないと」</span><br>
+<span class="gm"><b>狗飼誠</b>：火花が爆ぜる。古い病院は焼け落ちていく。</span><br>
+<span class="gm"><b>狗飼誠</b>：脱ぎ捨てられた白衣も、壊れた機巧も、捨てられた眼鏡も、</span><br>
+<span class="gm"><b>狗飼誠</b>：何もかもが炎に消えゆくその中で。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「何もなくなっちゃいましたからね。僕の罪を覚えていてくれる人くらいは、残しておかないと」</span><br>
+<div class="box"><p>
+【秘密：記憶】<br>
+<br>
+このプライズの真の名称は『罪』である。<br>
+下記文中の「あなた」はその時点でのこのプライズの持ち主を指す。<br>
+このプライズを手に入れたタイミング（配布時を含む）が訪れるたび、持ち主は下の「」内の文章中の、任意の一つの［　］の中を消して好きに書き換えてよい。この時、書き換えた［　］についている番号を消去すること。番号の消えた［　］内は以降上書きされない。<br>
+<br>
+「あなたは［5日前］、［相手の所在を突き止めた追手が迫っている事を知り、相手の情報を知る者を消す］ために、この病院の人々を全て殺した。<br>
+あなたは(3)［慣れた手際で、人形のように首を落として］彼らを殺した。<br>
+目の前の相手だけは殺さなかった。［或いは自分と同じ境遇に堕ちた相手がどうなるかに興味を持ってしまった］からだ。記憶の混乱の治療にはもっと時間を掛けたかったが、今日までが限界だった。あなたは(5)[痕跡を消すため、既に病棟の下階に火を放った]。<br>
+　これこそが、これだけが、(6)［　真実　］である。」</span></p></div>
+<div class="box2"><h6>注釈</h6><p>(2)が変更された。</p></div>
+<span class="gm"><b>狗飼誠</b>：「……共犯者扱いだろ、実質」</span><br>
+<span class="gm"><b>狗飼誠</b>：「余計なことしやがって」</span><br>
+<span class="gm"><b>狗飼誠</b>：よろよろと、支えられるままに歩を進める。</span><br>
+<span class="gm"><b>狗飼誠</b>：精彩を欠いたその動きに、先程までの戦闘機動の面影はない。</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「はは、共犯者ですか。いいですねぇ」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「まぁ、文句は後で幾らでも聞きますから。今は足の方をキリキリ動かしてください」</span><br>
+<span class="gm"><b>狗飼誠</b>：「チッ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「めんどくせえ医者に引っかかったもんだ」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「丁度いいんじゃないですか。面倒な医者に、厄介な患者で」</span><br>
+<span class="gm"><b>狗飼誠</b>：「はっ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「下らないが、違いねえ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「――飽いて途中で放り出してくれるなよ、主治医サマ？」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「放り出すくらいなら、とっくにしてますって」</span><br>
+<span class="yukito"><b>七篠ユキト</b>：「少しは医者を信頼してくれてもいいんじゃないですかねぇ」</span><br>
+<span class="gm"><b>狗飼誠</b>：「白衣は嫌いなんだよ」</span><br>
+<span class="gm"><b>狗飼誠</b>：廃病院を炎が炙る。</span><br>
+<span class="gm"><b>狗飼誠</b>：炙られた天井がぎしりと傾いで、やがてがらりと燃えた瓦礫を落とし始める。</span><br>
+<span class="gm"><b>狗飼誠</b>：その中に二人揺らぐ影は、</span><br>
+<span class="gm"><b>狗飼誠</b>：出口を求めて前に進む。</span><br>
+<span class="gm"><b>狗飼誠</b>：どこに見つかるとも知れぬそれを。</span><br>
+<span class="gm"><b>狗飼誠</b>：探し求める陽炎を呑んで、炎に包まれた病院は崩れ去った。</span><br>
+        </div> <!-- end col-12 -->
+
+      </div> <!-- end row -->
+
+    </div> <!-- end container -->
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 center">
+          <a class="no-underline" href="index.html"><span class="sitename">あなたへの花</span></a>
+          <p>since 2020.</p>
+
+          <p>当サイトではTRPG「ブラッドムーン」のプレイログをまとめています。<br>冒険企画局及び斎藤高吉先生とは無関係・非公式のページです。</p>
+
+          <ul class="sns-list">
+            <li><a href="https://twitter.com/squall0was0over"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://doccia-hanagumori.github.io/squall/index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="https://docs.google.com/forms/d/1byvmopbOBGVXIZjDImVFDxcX2AwqbX11sq8sRj1XXoU/edit"><i class="fas fa-envelope"></i></a></li>
+          </ul>
+
+          <p class="bottom"><a href="https://do.gt-gt.org" target="_blank">template by do.</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var rellax = new Rellax(' .rellax ', {
+      // 中央寄せ
+      center: true
+    });
+  </script>
+</body>
+
+</html>
