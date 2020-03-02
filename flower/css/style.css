@@ -942,8 +942,8 @@ span.pink {
 .box2 {
   padding: 10px 15px;
   	margin: 1.0em auto;
-  background: rgba(205, 133, 63, 0.3);
-    border: solid 1px #313536;/*線*/
+  background: rgba(250, 232, 200, 0.8);
+    border: solid 1px #cc8866;/*線*/
     border-radius: 10px;/*角の丸み*/
   width: 80%;
 }
