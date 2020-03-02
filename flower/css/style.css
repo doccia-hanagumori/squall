@@ -897,20 +897,31 @@ span.pink {
   color: #fa3c72;
 }
 
+/リプレイのための色々/
+
 /*文字色*/
 .gm 	{color:#101210;}
 .sabato {color:#D2143F;}
 /*PC*/
-.yasiro {color:#330066;}
-.daisuke {color:#A74451;}
-.wani 	{color:#336666;}
-.tigasa {color:#6B281A;}
 /*遊び*/
 .yukito {color:#4682b4;}
 .tohu {color:#778899;}
 
 
+.photoWrap{
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  height: 200px;
+}
 
+.photoWrap img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+}
 
 .box {
   padding: 10px 15px;
