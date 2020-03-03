@@ -136,6 +136,13 @@ span{
     margin: 15px 0;
   }
 
+span{
+  font-size: 14px;
+  padding-left: 00px;
+  padding-right: 00px;
+  margin: 00px 0;
+}
+
 }
 
 p {
@@ -913,23 +920,6 @@ span.pink {
 /*PC*/
 .yukito {color:#325d80;}
 .tohu {color:#778899;}
-
-
-
-.photoWrap{
-  position: relative;
-  overflow: hidden;
-  width: 500px;
-  height: 200px;
-}
-
-.photoWrap img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: auto;
-}
 
 .box {
   padding: 10px 15px;
