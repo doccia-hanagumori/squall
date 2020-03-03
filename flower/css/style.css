@@ -933,13 +933,12 @@ span.pink {
 .box p {
     margin: 0; 
     padding: 0;
-    font-size: 13px;
+    font-size: 80%;
 }
 
 .box span {
-    margin: 0; 
-    padding: 0;
-    font-size: 13px;
+    font-size: 80%;
+  display:block;
 }
 
 
@@ -955,7 +954,7 @@ span.pink {
 .box2 p {
     margin: 0; 
     padding: 0;
-    font-size: 13px;
+    font-size: 80%;
     color: #663333;
 
 }
@@ -963,7 +962,7 @@ span.pink {
 .box2 span {
     margin: 0; 
     padding: 0;
-    font-size: 13px;
+    font-size: 80%;
 }
 
 
