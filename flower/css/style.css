@@ -933,8 +933,15 @@ span.pink {
 .box p {
     margin: 0; 
     padding: 0;
-    font-size: 80%;
+    font-size: 13px;
 }
+
+.box span {
+    margin: 0; 
+    padding: 0;
+    font-size: 13px;
+}
+
 
 .box2 {
   padding: 10px 15px;
@@ -948,7 +955,13 @@ span.pink {
 .box2 p {
     margin: 0; 
     padding: 0;
-    font-size: 80%;
+    font-size: 13px;
+}
+
+.box2 span {
+    margin: 0; 
+    padding: 0;
+    font-size: 13px;
 }
 
 H6{
