@@ -956,6 +956,8 @@ span.pink {
     margin: 0; 
     padding: 0;
     font-size: 13px;
+    color: #663333;
+
 }
 
 .box2 span {
@@ -963,14 +965,6 @@ span.pink {
     padding: 0;
     font-size: 13px;
 }
-
-H6{
- color:#505060;
- float:right;
-  margin:10px 3em;
-   margin-top:0px;}
-
-/*<div class="box2"><h6>注釈</h6><p>*/
 
 
 blockquote {
