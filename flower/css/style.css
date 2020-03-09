@@ -64,6 +64,7 @@ body#text main .container {
     padding: 5px;
     /*font-size: 50%;*/
   width: 95%;
+    line-height: 1.2;
   }
 }
 
