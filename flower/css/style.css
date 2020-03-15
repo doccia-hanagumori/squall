@@ -989,7 +989,7 @@ h2.h2-b {
 h2.h2-b:before {
   content: '';
   height: 2px;
-  width: 10%;
+  width: 5%;
   background: #313536;
   display: inline-block;
   vertical-align: middle;
@@ -999,7 +999,7 @@ h2.h2-b:before {
 h2.h2-b:after {
   content: '';
   height: 2px;
-  width: 10%;
+  width: 5%;
   background: #313536;
   display: inline-block;
   vertical-align: middle;
