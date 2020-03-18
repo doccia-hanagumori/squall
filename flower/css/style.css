@@ -62,7 +62,7 @@ body#text main .container {
 @media screen and (max-width: 767px) {
   body#text main .container {
     padding: 5px;
-    /*font-size: 50%;*/
+    font-size: 80%;
   width: 95%;
     line-height: 1.2;
   }
